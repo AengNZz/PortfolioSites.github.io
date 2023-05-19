@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.min.css">
+  <title>Design conference</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header" id="header">
+      <div class="container">
+        <div class="header__inner">
+          <span class="logo"><span>DESIGN</span>CONFERENCE</span>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__item-link" href="#how-it-was">о конференции</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__item-link" href="#speakers">спикеры</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__item-link" href="#program">программа</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__item-link" href="#gallery">фотогалерея</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__item-link" href="#tickets">билеты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="menu-right">
+            <a class="phone" href="tel:+79933261030">+7 993 326 - 10 - 30</a>
+            <button class="menu-right__button">
+              <svg width="20" height="12">
+                <path d="M1 1H19M4 6H16M8 11H12" stroke="white" stroke-width="1.5" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="intro">
+        <div class="container">
+          <h1 class="intro__title">Дизайн<br><span>конференция</span></h1>
+          <span class="intro__subtitle"><span>7-9 апреля</span>Культурный центр “ЗИЛ”</span>
+          <form class="intro__form" action="phone">
+            <input class="intro__input input" type="tel" placeholder="+ 7 --- --- -- --">
+            <button class="intro__button button" type="submit">Зарегистрироваться</button>
+          </form>
+          <div class="intro__box">
+            <a class="intro__button-move button-move" href="#speakers">
+              <svg width="15" height="24" viewBox="0 0 15 24">
+                <path
+                  d="M13.7394 13.329L8.39132 18.7163L8.39131 5.23071L6.60857 5.23071L6.60857 18.7162L1.26057 13.329L8.06573e-07 14.5988L7.5 22.1538L15 14.5988L13.7394 13.329Z"
+                  fill="white" />
+              </svg>
+              дальше
+            </a>
+            <ol class="intro__stages">
+              <li class="intro__stages-item">
+                <img class="intro__stages-img" src="./img/stages-1.webp" alt="">
+                <span class="intro__stages-num">01</span>
+                <p class="intro__stages-text">О бизнесе<br>и творчестве</p>
+              </li>
+              <li class="intro__stages-item">
+                <img class="intro__stages-img" src="./img/stages-2.webp" alt="">
+                <span class="intro__stages-num">02</span>
+                <p class="intro__stages-text">О трудном клиенте<br>и безудержном вдохновении</p>
+              </li>
+              <li class="intro__stages-item">
+                <img class="intro__stages-img" src="./img/stages-3.webp" alt="">
+                <span class="intro__stages-num">03</span>
+                <p class="intro__stages-text">О принципах работы, пользе и результатах</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+      <section class="how-it-was" id="how-it-was">
+        <div class="container">
+          <h2 class="how-it-was__title">как это было...</h2>
+          <button class="how-it-was__button">Почувствуте атмосферу</button>
+          <span class="how-it-was__text">
+            почувствуйте атмосферу и посмотрите
+            <a href="#">фоторепортаж</a> с конференций прошлых лет
+          </span>
+        </div>
+      </section>
+      <section class="speakers" id="speakers">
+        <div class="container">
+          <h2 class="speakers__title section__title">СПИКЕРЫ</h2>
+          <ul class="speakers__list section__list">
+            <li class="speakers__item">
+              <span class="speakers-pro">Pro</span>
+              <img class="speakers__item-img section__item-img" src="./img/speakers-1.webp" alt="speaker">
+              <h3 class="speakers__name">Покрас Лампас</h3>
+              <p class="speakers__text">художник, калиграф</p>
+            </li>
+            <li class="speakers__item">
+              <span class="speakers-pro">Pro</span>
+              <img class="speakers__item-img section__item-img" src="./img/speakers-2.webp" alt="speaker">
+              <h3 class="speakers__name">Артемий Лебедев</h3>
+              <p class="speakers__text">российский дизайнер, художник, бизнесмен</p>
+            </li>
+            <li class="speakers__item">
+              <img class="speakers__item-img section__item-img" src="./img/speakers-3.webp" alt="speaker">
+              <h3 class="speakers__name">Андрей Голуб</h3>
+              <p class="speakers__text">Основатель, руководитель, идеолог истудии АР-1</p>
+            </li>
+            <li class="speakers__item">
+              <img class="speakers__item-img section__item-img" src="./img/speakers-4.webp" alt="speaker">
+              <h3 class="speakers__name">Юлия Шарапова</h3>
+              <p class="speakers__text">Дизайнер интерьеров, основатель дизайн-студии</p>
+            </li>
+            <li class="speakers__item">
+              <img class="speakers__item-img section__item-img" src="./img/speakers-5.webp" alt="speaker">
+              <h3 class="speakers__name">Ксения Измайлова</h3>
+              <p class="speakers__text">Архитектор-дизайнер, основатель проекта «Просто Ремонт»</p>
+            </li>
+            <li class="speakers__item">
+              <img class="speakers__item-img section__item-img" src="./img/speakers-6.webp" alt="speaker">
+              <h3 class="speakers__name">Массимо Санти</h3>
+              <p class="speakers__text">Архитектор, директор по развитию направления «Ванная комната» KERAMA MARAZZI</p>
+            </li>
+            <li class="speakers__item">
+              <img class="speakers__item-img section__item-img" src="./img/speakers-7.webp" alt="speaker">
+              <h3 class="speakers__name">Мила Колпакова</h3>
+              <p class="speakers__text">Профессиональный<br> дизайнер интерьеров, призёр «Best Houzz» 2018 - 2021</p>
+            </li>
+            <li class="speakers__item">
+              <img class="speakers__item-img section__item-img" src="./img/speakers-8.webp" alt="speaker">
+              <h3 class="speakers__name">Сергей Трегубов</h3>
+              <p class="speakers__text">Дизайнер-декоратор, <br>глава студии IROOM DESIGN</p>
+            </li>
+          </ul>
+          <button class="speakers__button button">Зарегистрироваться</button>
+        </div>
+      </section>
+      <section class="program" id="program">
+        <div class="container">
+          <h2 class="program__title section__title">ПРОГРАММА</h2>
+          <div class="porgram__box-button">
+            <div class="program__tabs">
+              <button class="program__tabs-button program__tabs-button--active" data-day="#day-1">1 ДЕНЬ</button>
+              <button class="program__tabs-button" data-day="#day-2">2 ДЕНЬ</button>
+              <button class="program__tabs-button" data-day="#day-3">3 ДЕНЬ</button>
+            </div>
+            <button class="program__button button-move">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <path
+                  d="M8.28182 0C8.22659 0 8.18182 0.0447715 8.18182 0.1V8.18182H0.100001C0.0447721 8.18182 0 8.22659 0 8.28182V9.71818C0 9.77341 0.0447715 9.81818 0.1 9.81818H8.18182V17.9C8.18182 17.9552 8.22659 18 8.28182 18H9.71818C9.77341 18 9.81818 17.9552 9.81818 17.9V9.81818H17.9C17.9552 9.81818 18 9.77341 18 9.71818V8.28182C18 8.22659 17.9552 8.18182 17.9 8.18182H9.81818V0.100001C9.81818 0.0447721 9.77341 0 9.71818 0H8.28182Z"
+                  fill="white" />
+              </svg>
+              подробнее
+            </button>
+          </div>
+          <ul class="program__box program__box--active" id="day-1">
+            <li class="program__item">
+              <div class="program__item-info">
+                <p class="program__item-text">Сбор гостей</p>
+                <h3 class="program__item-title">All community</h3>
+              </div>
+              <span class="program__item-time">9:00-9:30</span>
+            </li>
+            <li class="program__item">
+              <div class="program__item-info">
+                <p class="program__item-text">Сессия «Изменение подхода к дизайну»</p>
+                <h3 class="program__item-title">All community</h3>
+              </div>
+              <span class="program__item-time">10:00-11:00</span>
+            </li>
+            <li class="program__item program__item-more">
+              <div class="program__item-info">
+                <p class="program__item-text">«Антикризисная программа дизайнера»</p>
+                <h3 class="program__item-title">Покрас Лампас <span>pro</span></h3>
+              </div>
+              <span class="program__item-time">11:00-12:30</span>
+            </li>
+            <li class="program__item program__item-more">
+              <div class="program__item-info">
+                <p class="program__item-text">«Дизайн как образ жизни: опыт работы<br> в Европе, обучение и
+                  исполнение<br>
+                  заветных желаний»</p>
+                <h3 class="program__item-title">Мила Колпакова</h3>
+              </div>
+              <span class="program__item-time">12:30-13:30</span>
+            </li>
+            <li class="program__item program__item-more">
+              <div class="program__item-info">
+                <p class="program__item-text">Технологичный дизайн для ванной комнаты.<br> Презентация Новой коллекции
+                  санкерамики<br> KERAMA MARAZZI»</p>
+                <h3 class="program__item-title">Массимо Санти</h3>
+              </div>
+              <span class="program__item-time">13:30-14:30</span>
+            </li>
+            <li class="program__item">
+              <div class="program__item-info">
+                <p class="program__item-text">Перерыв</p>
+                <h3 class="program__item-title">All community</h3>
+              </div>
+              <span class="program__item-time">14:30-15:45</span>
+            </li>
+            <li class="program__item">
+              <div class="program__item-info">
+                <p class="program__item-text">Сессия «Практические инструменты»</p>
+                <h3 class="program__item-title">Директор Design Conference<span>pro</span></h3>
+              </div>
+              <span class="program__item-time">16:00-16:50</span>
+            </li>
+            <li class="program__item program__item-more">
+              <div class="program__item-info">
+                <p class="program__item-text">«Синдром цветоголика: как влюбить<br>заказчика в яркие решения.
+                  Палитра<br>практических инструментов работы с цветом»</p>
+                <h3 class="program__item-title">Ксения Измайлова</h3>
+              </div>
+              <span class="program__item-time">17:00-18:10</span>
+            </li>
+            <li class="program__item program__item-more">
+              <div class="program__item-info">
+                <p class="program__item-text">«Как за 15 минут собрать концепцию<br>интерьера без компьютера.
+                  Пошаговая<br>инструкция в режиме реального времени»</p>
+                <h3 class="program__item-title">Юлия Шарапова</h3>
+              </div>
+              <span class="program__item-time">18:10-19:00</span>
+            </li>
+            <li class="program__item">
+              <div class="program__item-info">
+                <p class="program__item-text">Сессия «Сделано в России: технологии и инновации в дизайне. Новинки
+                  2021-2022».
+                  Спикеры: представители и технологи интерьерных компаний</p>
+                <h3 class="program__item-title">All community</h3>
+              </div>
+              <span class="program__item-time">19:00-20:00</span>
+            </li>
+            <li class="program__item program__item-more">
+              <div class="program__item-info">
+                <p class="program__item-text">«Новые возможности: ритейл-дизайн,<br>как новая ниша для дизайнеров: как
+                  войти<br>на рынок и привлечь клиентов. Технология<br>работы»</p>
+                <h3 class="program__item-title">Андрей Голуб</h3>
+              </div>
+              <span class="program__item-time">20:00-21:00</span>
+            </li>
+            <li class="program__item">
+              <div class="program__item-info">
+                <p class="program__item-text">Перерыв</p>
+                <h3 class="program__item-title">All community</h3>
+              </div>
+              <span class="program__item-time">21:00-21:30</span>
+            </li>
+            <li class="program__item">
+              <div class="program__item-info">
+                <p class="program__item-text">Конец первого дня, подведение итогов</p>
+                <h3 class="program__item-title">All community</h3>
+              </div>
+              <span class="program__item-time">21:30-22:00</span>
+            </li>
+          </ul>
+          <ul class="program__box" id="day-2">
+            <li class="program__item">
+              <div class="program__item-info">
+                <p class="program__item-text">Сессия «Изменение подхода к дизайну»</p>
+                <h3 class="program__item-title">All community</h3>
+              </div>
+              <span class="program__item-time">10:00-11:00</span>
+            </li>
+            <li class="program__item program__item-more">
+              <div class="program__item-info">
+                <p class="program__item-text">«Антикризисная программа дизайнера»</p>
+                <h3 class="program__item-title">Покрас Лампас <span>pro</span></h3>
+              </div>
+              <span class="program__item-time">11:00-12:30</span>
+            </li>
+            <li class="program__item program__item-more">
+              <div class="program__item-info">
+                <p class="program__item-text">«Дизайн как образ жизни: опыт работы<br> в Европе, обучение и
+                  исполнение<br>
+                  заветных желаний»</p>
+                <h3 class="program__item-title">Мила Колпакова</h3>
+              </div>
+              <span class="program__item-time">12:30-13:30</span>
+            </li>
+            <li class="program__item program__item-more">
+              <div class="program__item-info">
+                <p class="program__item-text">Технологичный дизайн для ванной комнаты.<br> Презентация Новой коллекции
+                  санкерамики<br> KERAMA MARAZZI»</p>
+                <h3 class="program__item-title">Массимо Санти</h3>
+              </div>
+              <span class="program__item-time">13:30-14:30</span>
+            </li>
+            <li class="program__item">
+              <div class="program__item-info">
+                <p class="program__item-text">Перерыв</p>
+                <h3 class="program__item-title">All community</h3>
+              </div>
+              <span class="program__item-time">14:30-15:45</span>
+            </li>
+            <li class="program__item">
+              <div class="program__item-info">
+                <p class="program__item-text">Сессия «Практические инструменты»</p>
+                <h3 class="program__item-title">Директор Design Conference<span>pro</span></h3>
+              </div>
+              <span class="program__item-time">16:00-16:50</span>
+            </li>
+            <li class="program__item program__item-more">
+              <div class="program__item-info">
+                <p class="program__item-text">«Синдром цветоголика: как влюбить<br>заказчика в яркие решения.
+                  Палитра<br>практических инструментов работы с цветом»</p>
+                <h3 class="program__item-title">Ксения Измайлова</h3>
+              </div>
+              <span class="program__item-time">17:00-18:10</span>
+            </li>
+            <li class="program__item program__item-more">
+              <div class="program__item-info">
+                <p class="program__item-text">«Как за 15 минут собрать концепцию<br>интерьера без компьютера.
+                  Пошаговая<br>инструкция в режиме реального времени»</p>
+                <h3 class="program__item-title">Юлия Шарапова</h3>
+              </div>
+              <span class="program__item-time">18:10-19:00</span>
+            </li>
+            <li class="program__item">
+              <div class="program__item-info">
+                <p class="program__item-text">Сессия «Сделано в России: технологии и инновации в дизайне. Новинки
+                  2021-2022».
+                  Спикеры: представители и технологи интерьерных компаний</p>
+                <h3 class="program__item-title">All community</h3>
+              </div>
+              <span class="program__item-time">19:00-20:00</span>
+            </li>
+            <li class="program__item program__item-more">
+              <div class="program__item-info">
+                <p class="program__item-text">«Новые возможности: ритейл-дизайн,<br>как новая ниша для дизайнеров: как
+                  войти<br>на рынок и привлечь клиентов. Технология<br>работы»</p>
+                <h3 class="program__item-title">Андрей Голуб</h3>
+              </div>
+              <span class="program__item-time">20:00-21:00</span>
+            </li>
+            <li class="program__item">
+              <div class="program__item-info">
+                <p class="program__item-text">Перерыв</p>
+                <h3 class="program__item-title">All community</h3>
+              </div>
+              <span class="program__item-time">21:00-21:30</span>
+            </li>
+            <li class="program__item">
+              <div class="program__item-info">
+                <p class="program__item-text">Конец первого дня, подведение итогов</p>
+                <h3 class="program__item-title">All community</h3>
+              </div>
+              <span class="program__item-time">21:30-22:00</span>
+            </li>
+          </ul>
+          <ul class="program__box" id="day-3">
+            <li class="program__item">
+              <div class="program__item-info">
+                <p class="program__item-text">Сбор гостей</p>
+                <h3 class="program__item-title">All community</h3>
+              </div>
+              <span class="program__item-time">8:00-8:30</span>
+            </li>
+            <li class="program__item">
+              <div class="program__item-info">
+                <p class="program__item-text">Сессия «подход к дизайну»</p>
+                <h3 class="program__item-title">All community</h3>
+              </div>
+              <span class="program__item-time">9:00-9:30</span>
+            </li>
+            <li class="program__item">
+              <div class="program__item-info">
+                <p class="program__item-text">Сессия «Изменение подхода к дизайну»</p>
+                <h3 class="program__item-title">All community</h3>
+              </div>
+              <span class="program__item-time">10:00-11:00</span>
+            </li>
+            <li class="program__item program__item-more">
+              <div class="program__item-info">
+                <p class="program__item-text">«Антикризисная программа дизайнера»</p>
+                <h3 class="program__item-title">Покрас Лампас <span>pro</span></h3>
+              </div>
+              <span class="program__item-time">11:00-12:30</span>
+            </li>
+            <li class="program__item program__item-more">
+              <div class="program__item-info">
+                <p class="program__item-text">«Дизайн как образ жизни: опыт работы<br> в Европе, обучение и
+                  исполнение<br>
+                  заветных желаний»</p>
+                <h3 class="program__item-title">Мила Колпакова</h3>
+              </div>
+              <span class="program__item-time">12:30-13:30</span>
+            </li>
+            <li class="program__item program__item-more">
+              <div class="program__item-info">
+                <p class="program__item-text">Технологичный дизайн для ванной комнаты.<br> Презентация Новой коллекции
+                  санкерамики<br> KERAMA MARAZZI»</p>
+                <h3 class="program__item-title">Массимо Санти</h3>
+              </div>
+              <span class="program__item-time">13:30-14:30</span>
+            </li>
+            <li class="program__item">
+              <div class="program__item-info">
+                <p class="program__item-text">Перерыв</p>
+                <h3 class="program__item-title">All community</h3>
+              </div>
+              <span class="program__item-time">14:30-15:45</span>
+            </li>
+            <li class="program__item">
+              <div class="program__item-info">
+                <p class="program__item-text">Сессия «Практические инструменты»</p>
+                <h3 class="program__item-title">Директор Design Conference<span>pro</span></h3>
+              </div>
+              <span class="program__item-time">16:00-16:50</span>
+            </li>
+            <li class="program__item program__item-more">
+              <div class="program__item-info">
+                <p class="program__item-text">«Синдром цветоголика: как влюбить<br>заказчика в яркие решения.
+                  Палитра<br>практических инструментов работы с цветом»</p>
+                <h3 class="program__item-title">Ксения Измайлова</h3>
+              </div>
+              <span class="program__item-time">17:00-18:10</span>
+            </li>
+            <li class="program__item program__item-more">
+              <div class="program__item-info">
+                <p class="program__item-text">«Как за 15 минут собрать концепцию<br>интерьера без компьютера.
+                  Пошаговая<br>инструкция в режиме реального времени»</p>
+                <h3 class="program__item-title">Юлия Шарапова</h3>
+              </div>
+              <span class="program__item-time">18:10-19:00</span>
+            </li>
+            <li class="program__item">
+              <div class="program__item-info">
+                <p class="program__item-text">Сессия «Сделано в России: технологии и инновации в дизайне. Новинки
+                  2021-2022».
+                  Спикеры: представители и технологи интерьерных компаний</p>
+                <h3 class="program__item-title">All community</h3>
+              </div>
+              <span class="program__item-time">19:00-20:00</span>
+            </li>
+            <li class="program__item program__item-more">
+              <div class="program__item-info">
+                <p class="program__item-text">«Новые возможности: ритейл-дизайн,<br>как новая ниша для дизайнеров: как
+                  войти<br>на рынок и привлечь клиентов. Технология<br>работы»</p>
+                <h3 class="program__item-title">Андрей Голуб</h3>
+              </div>
+              <span class="program__item-time">20:00-21:00</span>
+            </li>
+            <li class="program__item">
+              <div class="program__item-info">
+                <p class="program__item-text">Перерыв</p>
+                <h3 class="program__item-title">All community</h3>
+              </div>
+              <span class="program__item-time">21:00-21:30</span>
+            </li>
+            <li class="program__item">
+              <div class="program__item-info">
+                <p class="program__item-text">Конец первого дня, подведение итогов</p>
+                <h3 class="program__item-title">All community</h3>
+              </div>
+              <span class="program__item-time">21:30-22:00</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="gallery" id="gallery">
+        <div class="container">
+          <h2 class="gallery__title section__title">ФОТОГАЛЕРЕЯ</h2>
+          <ul class="gallery__list section__list">
+            <li class="gallery__item">
+              <img class="gallery__item-img section__item-img" src="./img/gallery-1.webp" alt="Photo">
+            </li>
+            <li class="gallery__item">
+              <img class="gallery__item-img section__item-img" src="./img/gallery-2.webp" alt="Photo">
+            </li>
+            <li class="gallery__item">
+              <img class="gallery__item-img section__item-img" src="./img/gallery-3.webp" alt="Photo">
+            </li>
+            <li class="gallery__item">
+              <img class="gallery__item-img section__item-img" src="./img/gallery-4.webp" alt="Photo">
+            </li>
+            <li class="gallery__item">
+              <img class="gallery__item-img section__item-img" src="./img/gallery-5.webp" alt="Photo">
+            </li>
+            <li class="gallery__item">
+              <img class="gallery__item-img section__item-img" src="./img/gallery-6.webp" alt="Photo">
+            </li>
+            <li class="gallery__item">
+              <img class="gallery__item-img section__item-img" src="./img/gallery-7.webp" alt="Photo">
+            </li>
+            <li class="gallery__item">
+              <img class="gallery__item-img section__item-img" src="./img/gallery-8.webp" alt="Photo">
+            </li>
+          </ul>
+          <button class="gallery__button button">Зарегистрироваться</button>
+        </div>
+      </section>
+      <section class="tickets" id="tickets">
+        <div class="container">
+          <h2 class="tickets__title section__title">БИЛЕТЫ</h2>
+          <div class="tickets__wrapper">
+            <div class="tickets__box">
+              <h3 class="tickets__box-title">Билет BASIC</h3>
+              <ul class="tickets__list">
+                <li class="tickets__item">спикеры</li>
+                <li class="tickets__item">лекции</li>
+                <li class="tickets__item">ЧАТ С УЧАСТНИКАМИ</li>
+                <li class="tickets__item">НЕТВОРКИНГ</li>
+              </ul>
+              <span class="tickets__price">4 490₽</span>
+              <button class="tickets__button button-move">купить билет</button>
+            </div>
+            <div class="tickets__box">
+              <h3 class="tickets__box-title">Билет <span>UP</span></h3>
+              <ul class="tickets__list">
+                <li class="tickets__item">спикеры UP</li>
+                <li class="tickets__item">лекции В ЗАПИСИ</li>
+                <li class="tickets__item">ЧАТ С участниками</li>
+                <li class="tickets__item">лекции по маркетингу</li>
+                <li class="tickets__item">НЕТВОРКИНГ</li>
+              </ul>
+              <span class="tickets__price">9 390₽</span>
+              <button class="tickets__button button-move">купить билет</button>
+            </div>
+            <div class="tickets__box">
+              <h3 class="tickets__box-title">Билет <span>UP+</span></h3>
+              <ul class="tickets__list">
+                <li class="tickets__item">спикеры UP+</li>
+                <li class="tickets__item">лекции + поверка ДЗ</li>
+                <li class="tickets__item">личный наставник</li>
+                <li class="tickets__item">лекции по маркетингу</li>
+                <li class="tickets__item">НЕТВОРКИНГ</li>
+              </ul>
+              <span class="tickets__price">19 790₽</span>
+              <button class="tickets__button button-move">купить билет</button>
+            </div>
+            <div class="tickets__box">
+              <h3 class="tickets__box-title">Билет <span>PRO</span></h3>
+              <ul class="tickets__list">
+                <li class="tickets__item"><span>PRO</span> спикеры + звезды</li>
+                <li class="tickets__item">лекции vip</li>
+                <li class="tickets__item">личный наставник</li>
+                <li class="tickets__item">вечеринка <span>PRO</span></li>
+                <li class="tickets__item">нетворкинг + реклама</li>
+                <li class="tickets__item">розыгрыш 5 млн рублей</li>
+              </ul>
+              <span class="tickets__price">39 990₽</span>
+              <button class="tickets__button button-move">купить билет</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="newsletter">
+        <div class="container">
+          <div class="newsletter__wrapper">
+            <div class="newsletter__box">
+              <h1 class="newsletter__title">Дизайн<br><span>конференция</span></h1>
+              <span class="newsletter__subtitle"><span>7-9 апреля</span>Культурный центр “ЗИЛ”</span>
+              <span class="newsletter__form-title">будьте в курсе наших новостей</span>
+              <form class="newsletter__form" action="Email">
+                <input class="newsletter__input input" type="email" placeholder="Email">
+                <button class="newsletter__button button" type="submit">Подписаться на рассылку</button>
+              </form>
+              <span class="newsletter__form-text">
+                нажимая на кноку вы даете согласие на <a href="#">обработку персональных данных</a>
+              </span>
+              <a class="newsletter__button-move button-move" href="#header">
+                <svg width="15" height="24" viewBox="0 0 15 24">
+                  <path
+                    d="M13.7394 13.329L8.39132 18.7163L8.39131 5.23071L6.60857 5.23071L6.60857 18.7162L1.26057 13.329L8.06573e-07 14.5988L7.5 22.1538L15 14.5988L13.7394 13.329Z"
+                    fill="white" />
+                </svg>
+              </a>
+            </div>
+            <img class="newsletter__img" src="./img/superlogo.webp" alt="superlogo">
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <a class="footer__phone phone" href="tel:+79933261030">+7 993 326 - 10 - 30</a>
+          <ul class="footer-menu__list">
+            <li class="menu__item">
+              <a class="footer__item-link menu__item-link" href="#how-it-was">о конференции</a>
+            </li>
+            <li class="menu__item">
+              <a class="footer__item-link menu__item-link" href="#speakers">спикеры</a>
+            </li>
+            <li class="menu__item">
+              <a class="footer__item-link menu__item-link" href="#program">программа</a>
+            </li>
+            <li class="menu__item">
+              <a class="footer__item-link menu__item-link" href="#gallery">фотогалерея</a>
+            </li>
+            <li class="menu__item">
+              <a class="footer__item-link menu__item-link" href="#tickets">билеты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__copy">
+          <span class="copy">@2022 DesignConference</span>
+          <ul class="social__list">
+            <li class="social__item">
+              <a href="#" class="social__item-link">
+                <svg width="20" height="21" viewBox="0 0 20 21">
+                  <path
+                    d="M18 0.969238H2C0.89543 0.969238 0 1.86467 0 2.96924V18.9692C0 20.0738 0.89543 20.9692 2 20.9692H10V13.4398H7V10.6163H10V9.10006C10 6.22947 11.4897 4.96924 13.925 4.96924C15.0684 4.96924 15.6836 5.05066 15.9825 5.09021L16 5.09253V7.79277H14.339C13.3053 7.79277 13 8.32736 13 9.40971V10.6163H15.9741L15.5629 13.4398H13V20.9692H18C19.1046 20.9692 20 20.0738 20 18.9692V2.96924C20 1.86467 19.1046 0.969238 18 0.969238Z"
+                    fill="#7D7D7D" />
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__item-link">
+                <svg width="20" height="21" viewBox="0 0 20 21">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M18 0.969238H2C0.89543 0.969238 0 1.86467 0 2.96924V18.9692C0 20.0738 0.89543 20.9692 2 20.9692H18C19.1046 20.9692 20 20.0738 20 18.9692V2.96924C20 1.86467 19.1046 0.969238 18 0.969238ZM4 5.53328C4 6.39673 4.70032 7.09823 5.56637 7.09823C6.4297 7.09823 7.13184 6.39673 7.13184 5.53328C7.13184 4.67074 6.4297 3.96924 5.56637 3.96924C4.70123 3.96924 4 4.66983 4 5.53328ZM4.25044 16.9692H6.93695V8.3329H4.25044V16.9692ZM17 16.9692H14.3153V12.7694C14.3153 11.7676 14.2971 10.4792 12.9192 10.4792C11.5213 10.4792 11.3064 11.5702 11.3064 12.6966V16.9692H8.62172V8.3329H11.1989V9.51298H11.2354C11.5942 8.83423 12.4703 8.11817 13.7771 8.11817C16.4973 8.11817 17 9.90695 17 12.2325V16.9692Z"
+                    fill="#7D7D7D" />
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__item-link">
+                <svg width="20" height="21" viewBox="0 0 20 21">
+                  <path
+                    d="M2 0.969238C0.895431 0.969238 0 1.86467 0 2.96924V18.9692C0 20.0738 0.895431 20.9692 2 20.9692H7.68333C7.63881 20.8388 7.6102 20.6874 7.6102 20.4998V18.8485H6.41151C5.7589 18.8485 5.17863 18.5642 4.89724 18.0361C4.80259 17.8582 4.73165 17.6518 4.65721 17.4353C4.48598 16.9371 4.29621 16.385 3.75658 16.0022C3.52686 15.8195 3.70173 15.6109 3.96643 15.6391C4.45529 15.7792 4.86068 16.119 5.24223 16.623C5.62218 17.1279 5.80103 17.2422 6.51087 17.2422C6.85505 17.2422 7.37014 17.2221 7.85502 17.1448C8.11575 16.4741 8.56645 15.8565 9.11731 15.5651C5.94093 15.2341 4.42508 13.6335 4.42508 11.4604C4.42508 10.5248 4.81855 9.6198 5.48705 8.85732C5.26766 8.10048 4.99184 6.557 5.57131 5.96924C7.00052 5.96924 7.86456 6.90805 8.07203 7.16167C8.78425 6.91449 9.56642 6.77439 10.3883 6.77439C11.2118 6.77439 11.9972 6.91449 12.711 7.16328C12.9161 6.91127 13.7809 5.96924 15.2133 5.96924C15.7952 6.55781 15.5162 8.10772 15.2944 8.86296C15.9589 9.62383 16.35 10.5264 16.35 11.4604C16.35 13.6319 14.8365 15.2317 11.6649 15.5642C12.5377 16.0256 13.1744 17.3219 13.1744 18.2985V20.4998C13.1744 20.5836 13.1561 20.8976 13.1466 20.9692H18C19.1046 20.9692 20 20.0738 20 18.9692V2.96924C20 1.86467 19.1046 0.969238 18 0.969238H2Z"
+                    fill="#7D7D7D" />
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__item-link">
+                <svg width="20" height="21" viewBox="0 0 20 21">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M18 0.969238H2C0.89543 0.969238 0 1.86467 0 2.96924V18.9692C0 20.0738 0.89543 20.9692 2 20.9692H18C19.1046 20.9692 20 20.0738 20 18.9692V2.96924C20 1.86467 19.1046 0.969238 18 0.969238ZM15.3502 7.2086C15.9312 7.14144 16.4847 6.99255 17 6.77129C16.615 7.32782 16.1277 7.81668 15.5661 8.2087C15.5715 8.32792 15.5742 8.44766 15.5742 8.56792C15.5742 12.2377 12.686 16.4692 7.40283 16.4692C5.78051 16.4692 4.27126 16.0095 3 15.2219C3.22507 15.2479 3.45391 15.2609 3.68544 15.2609C5.03154 15.2609 6.26995 14.8168 7.25261 14.0718C5.99588 14.0494 4.93516 13.2461 4.56956 12.143C4.74455 12.1747 4.92493 12.1924 5.10961 12.1924C5.37183 12.1924 5.62598 12.1586 5.86666 12.0951C4.55232 11.8405 3.56267 10.718 3.56267 9.37226V9.33738C3.94981 9.5451 4.39295 9.67005 4.86354 9.68463C4.09303 9.18692 3.58636 8.33677 3.58636 7.37364C3.58636 6.86396 3.72797 6.38708 3.97458 5.97683C5.39175 7.65737 7.50783 8.76315 9.89474 8.87872C9.84628 8.67621 9.82043 8.4638 9.82043 8.24618C9.82043 6.71298 11.1062 5.46924 12.6925 5.46924C13.5184 5.46924 14.2647 5.80659 14.7886 6.34647C15.4434 6.22152 16.0583 5.99037 16.6129 5.67228C16.3986 6.32096 15.9436 6.865 15.3502 7.2086Z"
+                    fill="#7D7D7D" />
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__item-link">
+                <svg width="20" height="21" viewBox="0 0 20 21">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M6 0.969238H14C17.3137 0.969238 20 3.65553 20 6.96924V14.9692C20 18.2829 17.3137 20.9692 14 20.9692H6C2.68629 20.9692 0 18.2829 0 14.9692V6.96924C0 3.65553 2.68629 0.969238 6 0.969238ZM16 3.96924C16.5 3.96924 17 4.46924 17 4.96924C17 5.46924 16.5 5.96924 16 5.96924C15.5 5.96924 15 5.46924 15 4.96924C15 4.46924 15.5 3.96924 16 3.96924ZM15 10.9692C15 8.21174 12.7575 5.96924 10 5.96924C7.2425 5.96924 5 8.21174 5 10.9692C5 13.7267 7.2425 15.9692 10 15.9692C12.7575 15.9692 15 13.7267 15 10.9692ZM10 7.96924C8.34315 7.96924 7 9.31238 7 10.9692C7 12.6261 8.34315 13.9692 10 13.9692C11.6569 13.9692 13 12.6261 13 10.9692C13 9.31238 11.6569 7.96924 10 7.96924Z"
+                    fill="#7D7D7D" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="./js/main.min.js"></script>
+</body>
+
+</html>

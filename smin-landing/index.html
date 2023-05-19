@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Poppins:wght@700&family=Sora:wght@600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/style.min.css">
+  <title>Smin house</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <a href="#" class="header__logo">
+            <img class="header__logo-img" src="./images/logo/logo.svg" alt="logo">
+          </a>
+          <div class="header__mobile">
+            <a href="tel:+79615820202" class="header__mobile-menu-telephone">
+              <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M3.78705 9.14183C6.17014 14.331 10.4108 18.4566 15.6825 20.692L15.6991 20.6991L16.7175 21.153C18.0144 21.7308 19.5387 21.3205 20.3701 20.1697L22.0693 17.818C22.1731 17.6744 22.1463 17.4746 22.0084 17.3634L19.0421 14.9703C18.8946 14.8513 18.6778 14.879 18.565 15.0313L17.4105 16.5891C17.1301 16.9675 16.6238 17.0989 16.1948 16.9048C12.2529 15.1209 9.0853 11.9532 7.30139 8.01136C7.10724 7.58235 7.2387 7.07601 7.61704 6.79564L9.17487 5.64116C9.32709 5.52835 9.3548 5.31151 9.23584 5.16405L6.84245 2.19733C6.73121 2.05944 6.53155 2.03266 6.38791 2.13636L4.02352 3.84323C2.86513 4.67949 2.45719 6.21661 3.04847 7.51722L3.78626 9.1401C3.78652 9.14067 3.78679 9.14125 3.78705 9.14183ZM14.8933 22.5298C9.16523 20.0983 4.55808 15.6143 1.96868 9.97462L1.96712 9.97122L1.22779 8.34493C0.242321 6.17727 0.922225 3.61539 2.85287 2.22164L5.21726 0.514758C6.22275 -0.211117 7.62039 -0.0236445 8.39905 0.941547L10.7924 3.90827C11.6252 4.9405 11.4312 6.45836 10.3657 7.24801L9.47301 7.90955C10.9809 10.8354 13.3707 13.2253 16.2966 14.7331L16.9581 13.8405C17.7478 12.7749 19.2657 12.581 20.2979 13.4137L23.2642 15.8068C24.2297 16.5857 24.4169 17.9838 23.6904 18.9893L21.9913 21.341C20.6055 23.2589 18.065 23.9429 15.9036 22.9799L14.8933 22.5298Z"
+                  fill="#A0AEC0" />
+              </svg>
+            </a>
+            <button class="burger-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+          <nav class="header__mobile-menu">
+            <ul class="header__mobile-menu-list">
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link --nofocus">Продукты</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link">Решения</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link">Стать партнером</a>
+              </li>
+            </ul>
+            <ul class="header__mobile-menu-list">
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-button --button">Установить приложение</a>
+              </li>
+            </ul>
+          </nav>
+          <nav class="header__menu">
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link">Продукты</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link">Решения</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link">Стать партнером</a>
+              </li>
+            </ul>
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a href="tel:+79615820202" class="header__menu-telephone">+7 (961) 582-02- 02</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-button --button">Установить приложение</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="top">
+        <div class="decor-top"></div>
+        <div class="container">
+          <h1 class="top__title section__big-title">Среда модульной интеграции недвижимости</h1>
+          <span class="top__subtitl section__big-subtitle">
+            Наша цель - повысить безопасность и комфорт
+            <br>на территории жилых комплексов
+          </span>
+          <div class="top__wrapper">
+            <div class="top__box">
+              <span class="top__box-subtitle section__subtitle">О проекте</span>
+              <h2 class="top__box-title section__title"></h2>
+              <p class="top__box-text text">
+                Удобный интерфейс, безопасность помещения
+                и возможность ведения бизнеса в сфере аренды - лишь немногие преимущества Sminhouse.
+              </p>
+              <div class="top__box-buttons">
+                <a href="#" class="top__box-button --button"></a>
+                <a href="#" class="top__box-button --button-more">Узнать больше</a>
+              </div>
+            </div>
+            <img src="./images/top/top.svg" alt="" class="top__img">
+          </div>
+        </div>
+      </section>
+      <section class="advantages">
+        <div class="container">
+          <div class="advantages__wrapper">
+            <div class="advantages__item">
+              <div class="advantages__div"></div>
+              <div class="advantages__points-box">
+                <span class="advantages__points"></span>
+                <span class="advantages__points"></span>
+                <span class="advantages__points"></span>
+              </div>
+              <h3 class="advantages__item-big-title">Управляйте жильем в приложении</h3>
+              <img src="./images/advantages/advantages-1.svg" alt="" class="advantages__item-img">
+              <h2 class="advantages__item-title">Больше никаких квитанций</h2>
+              <p class="advantages__item-text">
+                Вся информация о вашем помещении
+                теперь в Sminhouse.
+              </p>
+              <a href="#" class="advantages__item-button --button-more"></a>
+              <a href="#" class="advantages__item-button advantages__item-button--hover --button-more"></a>
+            </div>
+            <div class="advantages__item">
+              <div class="advantages__div"></div>
+              <div class="advantages__points-box">
+                <span class="advantages__points"></span>
+                <span class="advantages__points"></span>
+                <span class="advantages__points"></span>
+              </div>
+              <h3 class="advantages__item-big-title">Управляйте жильем в приложении</h3>
+              <img src="./images/advantages/advantages-2.svg" alt="" class="advantages__item-img">
+              <h2 class="advantages__item-title">Экономьте время на оплате услуг ЖКХ</h2>
+              <p class="advantages__item-text">
+                Привяжите свое помещение в приложении Sminhouse и платите за помещение в один клик.
+              </p>
+              <a href="#" class="advantages__item-button --button-more"></a>
+              <a href="#" class="advantages__item-button advantages__item-button--hover --button-more"></a>
+            </div>
+            <div class="advantages__item">
+              <div class="advantages__div"></div>
+              <div class="advantages__points-box">
+                <span class="advantages__points"></span>
+                <span class="advantages__points"></span>
+                <span class="advantages__points"></span>
+              </div>
+              <h3 class="advantages__item-big-title">Подойдет каждому</h3>
+              <img src="./images/advantages/advantages-3.svg" alt="" class="advantages__item-img">
+              <h2 class="advantages__item-title">Универсальное решение</h2>
+              <p class="advantages__item-text">
+                Sminhouse предназначет для каждой группы пользователей на территории ЖК. Мы объединили все в один
+                интерфейс.
+              </p>
+              <a href="#" class="advantages__item-button --button-more"></a>
+              <a href="#" class="advantages__item-button advantages__item-button--hover --button-more"></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="advantages-slider">
+        <div class="container">
+          <div class="advantages-slider__wrapper">
+            <div class="swiper swiper-advantages-slider product-slider product-thumbs">
+              <div class="swiper-wrapper swiper-wrapper-advantages-slider">
+                <div class="swiper-slide swiper-slide-advantages-slider">
+                  <img src="./images/advantages-slider/advantages-slider.svg" alt="" class="advantages-slider__img">
+                  <div class="advantages-slider__box">
+                    <span class="advantages-slider__section-title section__subtitle">модульная интеграция</span>
+                    <h2 class="advantages-slider__title section__title">
+                      Масштабируйте систему самостоятельно
+                    </h2>
+                    <p class="advantages-slider__text text">
+                      Мы внедряем в эксплуатацию систему контроля и управления доступом в зависимости от ваших целей.
+                      Заказчик сам масштабирует и выбирает необходимые для него сервисы. Наше предложение:
+                    </p>
+                    <ul class="advantages-slider__list">
+                      <li class="advantages-slider__item">
+                        <img src="./images/advantages-slider/advantages-slider-1.svg" alt=""
+                          class="advantages-slider__item-img">
+                        <h4 class="advantages-slider__item-title">Знакомство </h4>
+                        <span class="advantages-slider__item-text">Мы изучаем проект</span>
+                      </li>
+                      <li class="advantages-slider__item">
+                        <img src="./images/advantages-slider/advantages-slider-2.svg" alt=""
+                          class="advantages-slider__item-img">
+                        <h4 class="advantages-slider__item-title">Аналитика</h4>
+                        <span class="advantages-slider__item-text">Производим расчеты</span>
+                      </li>
+                      <li class="advantages-slider__item">
+                        <img src="./images/advantages-slider/advantages-slider-3.svg" alt=""
+                          class="advantages-slider__item-img">
+                        <h4 class="advantages-slider__item-title">Внедрение</h4>
+                        <span class="advantages-slider__item-text">Устанавливаем систему</span>
+                      </li>
+                    </ul>
+                    <div class="advantages-slider__buttons">
+                      <a href="#" class="advantages-slider__button advantages-slider__button--content --button"></a>
+                      <a href="#" class="advantages-slider__button --button-more">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide-advantages-slider">
+                  <img src="./images/advantages-slider/advantages-slider.svg" alt="" class="advantages-slider__img">
+                  <div class="advantages-slider__box">
+                    <span class="section__subtitle">модульная интеграция</span>
+                    <h2 class="advantages-slider__title section__title">
+                      Масштабируйте систему самостоятельно
+                    </h2>
+                    <p class="advantages-slider__text text">
+                      Мы внедряем в эксплуатацию систему контроля и управления доступом в зависимости от ваших целей.
+                      Заказчик сам масштабирует и выбирает необходимые для него сервисы. Наше предложение:
+                    </p>
+                    <ul class="advantages-slider__list">
+                      <li class="advantages-slider__item">
+                        <img src="./images/advantages-slider/advantages-slider-1.svg" alt=""
+                          class="advantages-slider__item-img">
+                        <h4 class="advantages-slider__item-title">Знакомство </h4>
+                        <span class="advantages-slider__item-text">Мы изучаем проект</span>
+                      </li>
+                      <li class="advantages-slider__item">
+                        <img src="./images/advantages-slider/advantages-slider-2.svg" alt=""
+                          class="advantages-slider__item-img">
+                        <h4 class="advantages-slider__item-title">Аналитика</h4>
+                        <span class="advantages-slider__item-text">Производим расчеты</span>
+                      </li>
+                      <li class="advantages-slider__item">
+                        <img src="./images/advantages-slider/advantages-slider-3.svg" alt=""
+                          class="advantages-slider__item-img">
+                        <h4 class="advantages-slider__item-title">Внедрение</h4>
+                        <span class="advantages-slider__item-text">Устанавливаем систему</span>
+                      </li>
+                    </ul>
+                    <div class="advantages-slider__buttons">
+                      <a href="#" class="advantages-slider__button advantages-slider__button--content --button"></a>
+                      <a href="#" class="advantages-slider__button --button-more">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide-advantages-slider">
+                  <img src="./images/advantages-slider/advantages-slider.svg" alt="" class="advantages-slider__img">
+                  <div class="advantages-slider__box">
+                    <span class="section__subtitle">модульная интеграция</span>
+                    <h2 class="advantages-slider__title section__title">
+                      Масштабируйте систему самостоятельно
+                    </h2>
+                    <p class="advantages-slider__text text">
+                      Мы внедряем в эксплуатацию систему контроля и управления доступом в зависимости от ваших целей.
+                      Заказчик сам масштабирует и выбирает необходимые для него сервисы. Наше предложение:
+                    </p>
+                    <ul class="advantages-slider__list">
+                      <li class="advantages-slider__item">
+                        <img src="./images/advantages-slider/advantages-slider-1.svg" alt=""
+                          class="advantages-slider__item-img">
+                        <h4 class="advantages-slider__item-title">Знакомство </h4>
+                        <span class="advantages-slider__item-text">Мы изучаем проект</span>
+                      </li>
+                      <li class="advantages-slider__item">
+                        <img src="./images/advantages-slider/advantages-slider-2.svg" alt=""
+                          class="advantages-slider__item-img">
+                        <h4 class="advantages-slider__item-title">Аналитика</h4>
+                        <span class="advantages-slider__item-text">Производим расчеты</span>
+                      </li>
+                      <li class="advantages-slider__item">
+                        <img src="./images/advantages-slider/advantages-slider-3.svg" alt=""
+                          class="advantages-slider__item-img">
+                        <h4 class="advantages-slider__item-title">Внедрение</h4>
+                        <span class="advantages-slider__item-text">Устанавливаем систему</span>
+                      </li>
+                    </ul>
+                    <div class="advantages-slider__buttons">
+                      <a href="#" class="advantages-slider__button advantages-slider__button--content --button"></a>
+                      <a href="#" class="advantages-slider__button --button-more">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev swiper-button-prev-advantages-slider"></div>
+            <div class="swiper-button-next swiper-button-next-advantages-slider"></div>
+          </div>
+        </div>
+      </section>
+      <section class="possibilities">
+        <div class="container">
+          <div class="possibilities__wrapper">
+            <div class="possibilities__box">
+              <h2 class="possibilities__title section__title">Возможности</h2>
+              <ul class="possibilities__list">
+                <li class="possibilities__item">
+                  <img src="./images/possibilities/possibilities-1.svg" alt="" class="possibilities__item-img">
+                  <p class="possibilities__item-text">
+                    ограничение/контроль доступа в
+                    служебные помещения
+                  </p>
+                </li>
+                <li class="possibilities__item">
+                  <img src="./images/possibilities/possibilities-2.svg" alt="" class="possibilities__item-img">
+                  <p class="possibilities__item-text">
+                    учет рабочего времени персонала УК
+                  </p>
+                </li>
+                <li class="possibilities__item">
+                  <img src="./images/possibilities/possibilities-3.svg" alt="" class="possibilities__item-img">
+                  <p class="possibilities__item-text">
+                    управление ключами доступа
+                  </p>
+                </li>
+                <li class="possibilities__item">
+                  <img src="./images/possibilities/possibilities-4.svg" alt="" class="possibilities__item-img">
+                  <p class="possibilities__item-text">
+                    фото и видеоверификация транспорта и людей
+                  </p>
+                </li>
+                <li class="possibilities__item">
+                  <img src="./images/possibilities/possibilities-5.svg" alt="" class="possibilities__item-img">
+                  <p class="possibilities__item-text">
+                    автоматическое управление СКУД в
+                    случае пожар
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <img src="./images/possibilities/possibilities-main.svg" alt="" class="possibilities__img">
+          </div>
+        </div>
+      </section>
+      <section class="system-works">
+        <div class="container">
+          <h2 class="system-works__title section__title">Как работает система</h2>
+          <ol class="system-works__list">
+            <li class="system-works__item">
+              <span class="system-works__item-stage">1</span>
+              <h3 class="system-works__item-title">Выбор устройств</h3>
+              <p class="system-works__item-text text">
+                Менеджер проконсультирует вас, составит коммерческое предложение и подберет для вас специалиста, который
+                установит и будет обслуживать оборудование.
+              </p>
+            </li>
+            <li class="system-works__item">
+              <span class="system-works__item-stage">2</span>
+              <h3 class="system-works__item-title">Монтаж системы</h3>
+              <p class="system-works__item-text text">
+                В удобное вам время мастер установит оборудование, проинструктирует, как его использовать, и вы
+                подпишете договор.
+              </p>
+            </li>
+            <li class="system-works__item">
+              <span class="system-works__item-stage">3</span>
+              <h3 class="system-works__item-title">Мониторинг 24/7</h3>
+              <p class="system-works__item-text text">
+                24 часа в сутки наше приложение будет обеспечивать для вас удобный контроль всех систем умного дома и
+                возможность быстрой <br>оплаты ЖКУ.
+              </p>
+            </li>
+            <li class="system-works__item">
+              <span class="system-works__item-stage">4</span>
+              <h3 class="system-works__item-title">Выезд специалиста</h3>
+              <p class="system-works__item-text text">
+                Через наше приложение можно оставить заявку на решение любой задачи:
+                <br>от подключения интернета
+                до починки крана. С нами жизнь станет проще.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section class="can-app">
+        <div class="container">
+          <h2 class="can-app__title section__big-title">Гибкое и легкое управление<br> через приложение</h2>
+          <span class="can-app__subtitle section__big-subtitle">Контролируй помещение из любой точки мира</span>
+          <div class="can-app__box">
+            <img src="./images/can-app/iPhone-13.webp" alt="" class="can-app__img">
+            <ul class="can-app__main-list">
+              <ul class="can-app__list">
+                <li class="can-app__item">
+                  <img src="./images/can-app/can-app-1.svg" alt="" class="can-app__item-img">
+                  <h3 class="can-app__item-title">Используйте аналитиу</h3>
+                  <p class="can-app__item-text">
+                    Контролируйте работу оборудования
+                    и оценивайте энергопотребление
+                  </p>
+                </li>
+                <li class="can-app__item">
+                  <img src="./images/can-app/can-app-2.svg" alt="" class="can-app__item-img">
+                  <h3 class="can-app__item-title">Подключайте близких</h3>
+                  <p class="can-app__item-text">
+                    Добавляйте пользователей,
+                    чтобы каждый мог адаптировать устройства под свои нужды.
+                  </p>
+                </li>
+                <li class="can-app__item">
+                  <img src="./images/can-app/can-app-3.svg" alt="" class="can-app__item-img">
+                  <h3 class="can-app__item-title">Управляйте устройствами</h3>
+                  <p class="can-app__item-text">
+                    Настраивайте работу домашних устройств по расписанию или по событию.
+                  </p>
+                </li>
+              </ul>
+              <ul class="can-app__list --two">
+                <li class="can-app__item">
+                  <img src="./images/can-app/can-app-4.svg" alt="" class="can-app__item-img">
+                  <h3 class="can-app__item-title">Будьте в курсе</h3>
+                  <p class="can-app__item-text">
+                    Получайте моментальные оповещения о всех важных событиях ЖКУ и состоянии вашего оборудования.
+                  </p>
+                </li>
+                <li class="can-app__item">
+                  <img src="./images/can-app/can-app-5.svg" alt="" class="can-app__item-img">
+                  <h3 class="can-app__item-title">Используйте сценарии</h3>
+                  <p class="can-app__item-text">
+                    Управляйте устройствами и оплачивайте услуги с помощью голосового помощника.
+                  </p>
+                </li>
+                <li class="can-app__item">
+                  <img src="./images/can-app/can-app-6.svg" alt="" class="can-app__item-img">
+                  <h3 class="can-app__item-title">Безопасность</h3>
+                  <p class="can-app__item-text">
+                    Добавляйте пользователей,чтобы каждый мог адаптировать устройства под свои нужды.
+                  </p>
+                </li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="container">
+          <h2 class="section__title">Отзывы пользователей</h2>
+          <div class="swiper reviews-swiper product-slider product-thumbs">
+            <div class="reviews__gradient"></div>
+            <div class="swiper-wrapper reviews-swiper-wrapper">
+              <div class="swiper-slide reviews-swiper-slide">
+                <span class="reviews__name">Андрей Белов</span>
+                <span class="reviews__settings">Видеокамеры и умная подсветка Sminhouse</span>
+                <p class="reviews__text">
+                  Месяц назад установили бета - версию приложения Sminhouse.<br>
+                  Мне понравилась возможность оплаты ЖКУ онлайн, это довольно удобно.<br>
+                  Также понравилось, что теперь все мои гаджеты в одном приложении,<br>
+                  я могу удобно с ними взаимодействовать.
+                </p>
+              </div>
+              <div class="swiper-slide reviews-swiper-slide">
+                <span class="reviews__name">Андрей Белов</span>
+                <span class="reviews__settings">Видеокамеры и умная подсветка Sminhouse</span>
+                <p class="reviews__text">
+                  Месяц назад установили бета - версию приложения Sminhouse.<br>
+                  Мне понравилась возможность оплаты ЖКУ онлайн, это довольно удобно.<br>
+                  Также понравилось, что теперь все мои гаджеты в одном приложении,<br>
+                  я могу удобно с ними взаимодействовать.
+                </p>
+              </div>
+              <div class="swiper-slide reviews-swiper-slide">
+                <span class="reviews__name">Андрей Белов</span>
+                <span class="reviews__settings">Видеокамеры и умная подсветка Sminhouse</span>
+                <p class="reviews__text">
+                  Месяц назад установили бета - версию приложения Sminhouse.<br>
+                  Мне понравилась возможность оплаты ЖКУ онлайн, это довольно удобно.<br>
+                  Также понравилось, что теперь все мои гаджеты в одном приложении,<br>
+                  я могу удобно с ними взаимодействовать.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-pagination reviews-pagination"></div>
+            <div class="swiper-button-prev reviews-swiper-button-prev"></div>
+            <div class="swiper-button-next reviews-swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
+      <section class="calculate-cost">
+        <div class="container">
+          <div class="calculate-cost__wrapper">
+            <div class="calculate-cost__box">
+              <h2 class="calculate-cost__title">Расчитайте стоимость внедрения Sminhouse</h2>
+              <p class="calculate-cost__text">
+                Укажите интересующие вас функции, чтобы мы произвели индивидуальный расчет
+              </p>
+              <form action="" class="calculate-cost__form">
+                <label class="calculate-cost__label">
+                  <input class="calculate-cost__checkbox" type="checkbox">
+                  <span class="check-style"></span>
+                  Проектирование и монтаж слаботочных сетей и систем
+                  <br>(СКУД, ВН, ОПС, СКС, Домофония)
+                </label>
+                <label class="calculate-cost__label">
+                  <input class="calculate-cost__checkbox" type="checkbox">
+                  <span class="check-style"></span>
+                  АДО - аварийно - диспетчерское обслуживание (прием и обработка заявок)
+                </label>
+                <label class="calculate-cost__label">
+                  <input class="calculate-cost__checkbox" type="checkbox">
+                  <span class="check-style"></span>
+                  Система приема и обработки показаний приборов учета
+                </label>
+                <label class="calculate-cost__label">
+                  <input class="calculate-cost__checkbox" type="checkbox">
+                  <span class="check-style"></span>
+                  Мобильное приложение для собтвенников, гостей и УК
+                </label>
+                <label class="calculate-cost__label">
+                  <input class="calculate-cost__checkbox" type="checkbox">
+                  <span class="check-style"></span>
+                  Интеграция систем умного дома (апартаментные замки, камеры и тд)
+                </label>
+              </form>
+              <a href="#" class="calculate-cost__button --button">Расчитать стоимость</a>
+            </div>
+            <img src="./images/calculate-cost/calculate-cost.svg" alt="" class="calculate-cost__img">
+          </div>
+        </div>
+      </section>
+      <section class="equipment">
+        <div class="container">
+          <h2 class="equipment__title section__title">Оборудование Sminhouse</h2>
+          <span class="equipment__subtitle">Мы используем только передовые технологии</span>
+          <ul class="equipment__list">
+            <li class="equipment__item">
+              <img src="./images/equipment/equipment-1.webp" alt="" class="equipment__item-img">
+              <h3 class="equipment__itemt-title">Ajax system</h3>
+              <p class="equipment__item-text">Беспроводная система безопасности</p>
+            </li>
+            <li class="equipment__item">
+              <img src="./images/equipment/equipment-2.webp" alt="" class="equipment__item-img">
+              <h3 class="equipment__itemt-title">Imou</h3>
+              <p class="equipment__item-text">Интеллектуальные системы видеонаблюдения</p>
+            </li>
+            <li class="equipment__item">
+              <img src="./images/equipment/equipment-3.webp" alt="" class="equipment__item-img">
+              <h3 class="equipment__itemt-title">Macroscop</h3>
+              <p class="equipment__item-text">
+                Инновационные решения на рынке
+                IP-видеонаблюдения
+              </p>
+            </li>
+          </ul>
+          <a href="#" class="equipment__button --button-more">Смотреть больше</a>
+        </div>
+      </section>
+      <section class="partners">
+        <div class="container">
+          <h2 class="partners__title section__title">Наши партнеры</h2>
+          <ul class="partners__list">
+            <li class="partners__item">
+              <img src="./images/partners/partners-1.svg" alt="" class="partners__item-img">
+            </li>
+            <li class="partners__item">
+              <img src="./images/partners/partners-2.svg" alt="" class="partners__item-img">
+            </li>
+            <li class="partners__item">
+              <img src="./images/partners/partners-3.svg" alt="" class="partners__item-img">
+            </li>
+            <li class="partners__item">
+              <img src="./images/partners/partners-4.svg" alt="" class="partners__item-img">
+            </li>
+            <li class="partners__item">
+              <img src="./images/partners/partners-5.svg" alt="" class="partners__item-img">
+            </li>
+            <li class="partners__item">
+              <img src="./images/partners/partners-6.svg" alt="" class="partners__item-img">
+            </li>
+          </ul>
+          <a href="#" class="partners__button --button-more">Смотреть больше</a>
+        </div>
+      </section>
+      <section class="сontacts">
+        <div class="container">
+          <div class="сontacts__wrapper">
+            <div class="contacts__box">
+              <h2 class="сontacts__title section__title">Контакты</h2>
+              <div class="contacts__information">
+                <div class="contacts__information-item">
+                  <img src="./images/icons/Icon-telephone.svg" alt="telephone" class="contacts__information-img">
+                  <address class="contacts__information-data">+7 961 582 02 02</address>
+                </div>
+                <div class="contacts__information-item">
+                  <img src="./images/icons/Icon-email.svg" alt="email" class="contacts__information-img">
+                  <address class="contacts__information-data">sminhouse@gmail.com</address>
+                </div>
+                <div class="contacts__information-item">
+                  <img src="./images/icons/Icon-label.svg" alt="label" class="contacts__information-img">
+                  <address class="contacts__information-data">
+                    г. Сочи, микрорайон Дагомыс,<br>
+                    ул. Старошоссейная 5, к. 4
+                  </address>
+                </div>
+              </div>
+              <button class="contacts__information-button --button">Связаться с нами</button>
+            </div>
+            <img src="./images/сontacts/сontacts.svg" alt="" class="contacts__img">
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__item">
+            <a href="#" class="footer__logo">
+              <img class="footer__logo-img" src="./images/logo/logo-v2.svg" alt="logo">
+            </a>
+            <ul class="footer__box-list">
+              <li class="footer__box-item">
+                <a href="#" class="footer__item-link">Поддержка</a>
+              </li>
+              <li class="footer__box-item">
+                <a href="#" class="footer__item-link">Пользовательское соглашение</a>
+              </li>
+              <li class="footer__box-item">
+                <a href="#" class="footer__item-link">Политика обработки персональных данных</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <ul class="footer__box-list">
+              <li class="footer__box-item">
+                <a href="#" class="footer__item-link footer__item-link--white">Оборудование</a>
+              </li>
+              <li class="footer__box-item">
+                <a href="#" class="footer__item-link footer__item-link--white">Вакансии</a>
+              </li>
+              <li class="footer__box-item">
+                <a href="#" class="footer__item-link footer__item-link--white">Инвесторам</a>
+              </li>
+              <li class="footer__box-item">
+                <a href="#" class="footer__item-link footer__item-link--white">Контакты</a>
+              </li>
+            </ul>
+            <ul class="footer__box-social-list">
+              <li class="footer__box-item">
+                <a href="#" class="footer__item-link">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M18 0H2C0.89543 0 0 0.89543 0 2V18C0 19.1046 0.89543 20 2 20H10V12.4706H7V9.64706H10V8.13082C10 5.26024 11.4897 4 13.925 4C15.0684 4 15.6836 4.08142 15.9825 4.12097L16 4.12329V6.82353H14.339C13.3053 6.82353 13 7.35812 13 8.44047V9.64706H15.9741L15.5629 12.4706H13V20H18C19.1046 20 20 19.1046 20 18V2C20 0.89543 19.1046 0 18 0Z"
+                      fill="#7780A1" />
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__box-item">
+                <a href="#" class="footer__item-link">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M18 0H2C0.89543 0 0 0.89543 0 2V18C0 19.1046 0.89543 20 2 20H18C19.1046 20 20 19.1046 20 18V2C20 0.89543 19.1046 0 18 0ZM4 4.56404C4 5.42749 4.70032 6.12899 5.56637 6.12899C6.4297 6.12899 7.13184 5.42749 7.13184 4.56404C7.13184 3.7015 6.4297 3 5.56637 3C4.70123 3 4 3.70059 4 4.56404ZM4.25044 16H6.93695V7.36366H4.25044V16ZM17 16H14.3153V11.8001C14.3153 10.7984 14.2971 9.51001 12.9192 9.51001C11.5213 9.51001 11.3064 10.6009 11.3064 11.7273V16H8.62172V7.36366H11.1989V8.54374H11.2354C11.5942 7.86499 12.4703 7.14894 13.7771 7.14894C16.4973 7.14894 17 8.93771 17 11.2633V16Z"
+                      fill="#7780A1" />
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__box-item">
+                <a href="#" class="footer__item-link">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M2 0C0.895431 0 0 0.895431 0 2V18C0 19.1046 0.895431 20 2 20H7.68333C7.63881 19.8696 7.6102 19.7182 7.6102 19.5306V17.8792H6.41151C5.7589 17.8792 5.17863 17.595 4.89724 17.0668C4.80259 16.889 4.73165 16.6826 4.65721 16.466C4.48598 15.9678 4.29621 15.4157 3.75658 15.033C3.52686 14.8502 3.70173 14.6417 3.96643 14.6699C4.45529 14.81 4.86068 15.1498 5.24223 15.6538C5.62218 16.1586 5.80103 16.2729 6.51087 16.2729C6.85505 16.2729 7.37014 16.2528 7.85502 16.1755C8.11575 15.5048 8.56645 14.8873 9.11731 14.5958C5.94093 14.2649 4.42508 12.6643 4.42508 10.4911C4.42508 9.55556 4.81855 8.65056 5.48705 7.88808C5.26766 7.13124 4.99184 5.58776 5.57131 5C7.00052 5 7.86456 5.93881 8.07203 6.19243C8.78425 5.94525 9.56642 5.80515 10.3883 5.80515C11.2118 5.80515 11.9972 5.94525 12.711 6.19404C12.9161 5.94203 13.7809 5 15.2133 5C15.7952 5.58857 15.5162 7.13849 15.2944 7.89372C15.9589 8.65459 16.35 9.55717 16.35 10.4911C16.35 12.6626 14.8365 14.2625 11.6649 14.595C12.5377 15.0564 13.1744 16.3527 13.1744 17.3293V19.5306C13.1744 19.6143 13.1561 19.9283 13.1466 20H18C19.1046 20 20 19.1046 20 18V2C20 0.895431 19.1046 0 18 0H2Z"
+                      fill="#7780A1" />
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__box-item">
+                <a href="#" class="footer__item-link">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M18 0H2C0.89543 0 0 0.89543 0 2V18C0 19.1046 0.89543 20 2 20H18C19.1046 20 20 19.1046 20 18V2C20 0.89543 19.1046 0 18 0ZM15.3502 6.23936C15.9312 6.1722 16.4847 6.02331 17 5.80205C16.615 6.35858 16.1277 6.84744 15.5661 7.23946C15.5715 7.35868 15.5742 7.47842 15.5742 7.59868C15.5742 11.2685 12.686 15.5 7.40283 15.5C5.78051 15.5 4.27126 15.0403 3 14.2526C3.22507 14.2786 3.45391 14.2917 3.68544 14.2917C5.03154 14.2917 6.26995 13.8476 7.25261 13.1026C5.99588 13.0802 4.93516 12.2769 4.56956 11.1737C4.74455 11.2055 4.92493 11.2232 5.10961 11.2232C5.37183 11.2232 5.62598 11.1893 5.86666 11.1258C4.55232 10.8712 3.56267 9.74881 3.56267 8.40302V8.36814C3.94981 8.57587 4.39295 8.70081 4.86354 8.71539C4.09303 8.21769 3.58636 7.36753 3.58636 6.4044C3.58636 5.89472 3.72797 5.41784 3.97458 5.0076C5.39175 6.68813 7.50783 7.79391 9.89474 7.90948C9.84628 7.70697 9.82043 7.49456 9.82043 7.27694C9.82043 5.74374 11.1062 4.5 12.6925 4.5C13.5184 4.5 14.2647 4.83736 14.7886 5.37723C15.4434 5.25228 16.0583 5.02113 16.6129 4.70304C16.3986 5.35172 15.9436 5.89576 15.3502 6.23936Z"
+                      fill="#7780A1" />
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__box-item">
+                <a href="#" class="footer__item-link">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M6 0H14C17.3137 0 20 2.68629 20 6V14C20 17.3137 17.3137 20 14 20H6C2.68629 20 0 17.3137 0 14V6C0 2.68629 2.68629 0 6 0ZM16 3C16.5 3 17 3.5 17 4C17 4.5 16.5 5 16 5C15.5 5 15 4.5 15 4C15 3.5 15.5 3 16 3ZM15 10C15 7.2425 12.7575 5 10 5C7.2425 5 5 7.2425 5 10C5 12.7575 7.2425 15 10 15C12.7575 15 15 12.7575 15 10ZM10 7C8.34315 7 7 8.34315 7 10C7 11.6569 8.34315 13 10 13C11.6569 13 13 11.6569 13 10C13 8.34315 11.6569 7 10 7Z"
+                      fill="#7780A1" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <p class="footer__item-copyright">
+              Sminhouse - система модульной интеграции недвижимости.
+              Все правда защищены @Integrosystems, LTD 2022
+            </p>
+            <div class="footer__item-subnews">
+              <span class="footer__item-subnews-text">Новости Sminhouse</span>
+              <button class="footer__item-subnews-button">Подписаться</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <footer class="footer__mobile">
+      <ul class="footer__box-social-list footer__mobile-box-social-list">
+        <li class="footer__box-item">
+          <a href="#" class="footer__item-link">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M18 0H2C0.89543 0 0 0.89543 0 2V18C0 19.1046 0.89543 20 2 20H10V12.4706H7V9.64706H10V8.13082C10 5.26024 11.4897 4 13.925 4C15.0684 4 15.6836 4.08142 15.9825 4.12097L16 4.12329V6.82353H14.339C13.3053 6.82353 13 7.35812 13 8.44047V9.64706H15.9741L15.5629 12.4706H13V20H18C19.1046 20 20 19.1046 20 18V2C20 0.89543 19.1046 0 18 0Z"
+                fill="#7780A1" />
+            </svg>
+          </a>
+        </li>
+        <li class="footer__box-item">
+          <a href="#" class="footer__item-link">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M18 0H2C0.89543 0 0 0.89543 0 2V18C0 19.1046 0.89543 20 2 20H18C19.1046 20 20 19.1046 20 18V2C20 0.89543 19.1046 0 18 0ZM4 4.56404C4 5.42749 4.70032 6.12899 5.56637 6.12899C6.4297 6.12899 7.13184 5.42749 7.13184 4.56404C7.13184 3.7015 6.4297 3 5.56637 3C4.70123 3 4 3.70059 4 4.56404ZM4.25044 16H6.93695V7.36366H4.25044V16ZM17 16H14.3153V11.8001C14.3153 10.7984 14.2971 9.51001 12.9192 9.51001C11.5213 9.51001 11.3064 10.6009 11.3064 11.7273V16H8.62172V7.36366H11.1989V8.54374H11.2354C11.5942 7.86499 12.4703 7.14894 13.7771 7.14894C16.4973 7.14894 17 8.93771 17 11.2633V16Z"
+                fill="#7780A1" />
+            </svg>
+          </a>
+        </li>
+        <li class="footer__box-item">
+          <a href="#" class="footer__item-link">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2 0C0.895431 0 0 0.895431 0 2V18C0 19.1046 0.895431 20 2 20H7.68333C7.63881 19.8696 7.6102 19.7182 7.6102 19.5306V17.8792H6.41151C5.7589 17.8792 5.17863 17.595 4.89724 17.0668C4.80259 16.889 4.73165 16.6826 4.65721 16.466C4.48598 15.9678 4.29621 15.4157 3.75658 15.033C3.52686 14.8502 3.70173 14.6417 3.96643 14.6699C4.45529 14.81 4.86068 15.1498 5.24223 15.6538C5.62218 16.1586 5.80103 16.2729 6.51087 16.2729C6.85505 16.2729 7.37014 16.2528 7.85502 16.1755C8.11575 15.5048 8.56645 14.8873 9.11731 14.5958C5.94093 14.2649 4.42508 12.6643 4.42508 10.4911C4.42508 9.55556 4.81855 8.65056 5.48705 7.88808C5.26766 7.13124 4.99184 5.58776 5.57131 5C7.00052 5 7.86456 5.93881 8.07203 6.19243C8.78425 5.94525 9.56642 5.80515 10.3883 5.80515C11.2118 5.80515 11.9972 5.94525 12.711 6.19404C12.9161 5.94203 13.7809 5 15.2133 5C15.7952 5.58857 15.5162 7.13849 15.2944 7.89372C15.9589 8.65459 16.35 9.55717 16.35 10.4911C16.35 12.6626 14.8365 14.2625 11.6649 14.595C12.5377 15.0564 13.1744 16.3527 13.1744 17.3293V19.5306C13.1744 19.6143 13.1561 19.9283 13.1466 20H18C19.1046 20 20 19.1046 20 18V2C20 0.895431 19.1046 0 18 0H2Z"
+                fill="#7780A1" />
+            </svg>
+          </a>
+        </li>
+        <li class="footer__box-item">
+          <a href="#" class="footer__item-link">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M18 0H2C0.89543 0 0 0.89543 0 2V18C0 19.1046 0.89543 20 2 20H18C19.1046 20 20 19.1046 20 18V2C20 0.89543 19.1046 0 18 0ZM15.3502 6.23936C15.9312 6.1722 16.4847 6.02331 17 5.80205C16.615 6.35858 16.1277 6.84744 15.5661 7.23946C15.5715 7.35868 15.5742 7.47842 15.5742 7.59868C15.5742 11.2685 12.686 15.5 7.40283 15.5C5.78051 15.5 4.27126 15.0403 3 14.2526C3.22507 14.2786 3.45391 14.2917 3.68544 14.2917C5.03154 14.2917 6.26995 13.8476 7.25261 13.1026C5.99588 13.0802 4.93516 12.2769 4.56956 11.1737C4.74455 11.2055 4.92493 11.2232 5.10961 11.2232C5.37183 11.2232 5.62598 11.1893 5.86666 11.1258C4.55232 10.8712 3.56267 9.74881 3.56267 8.40302V8.36814C3.94981 8.57587 4.39295 8.70081 4.86354 8.71539C4.09303 8.21769 3.58636 7.36753 3.58636 6.4044C3.58636 5.89472 3.72797 5.41784 3.97458 5.0076C5.39175 6.68813 7.50783 7.79391 9.89474 7.90948C9.84628 7.70697 9.82043 7.49456 9.82043 7.27694C9.82043 5.74374 11.1062 4.5 12.6925 4.5C13.5184 4.5 14.2647 4.83736 14.7886 5.37723C15.4434 5.25228 16.0583 5.02113 16.6129 4.70304C16.3986 5.35172 15.9436 5.89576 15.3502 6.23936Z"
+                fill="#7780A1" />
+            </svg>
+          </a>
+        </li>
+        <li class="footer__box-item">
+          <a href="#" class="footer__item-link">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M6 0H14C17.3137 0 20 2.68629 20 6V14C20 17.3137 17.3137 20 14 20H6C2.68629 20 0 17.3137 0 14V6C0 2.68629 2.68629 0 6 0ZM16 3C16.5 3 17 3.5 17 4C17 4.5 16.5 5 16 5C15.5 5 15 4.5 15 4C15 3.5 15.5 3 16 3ZM15 10C15 7.2425 12.7575 5 10 5C7.2425 5 5 7.2425 5 10C5 12.7575 7.2425 15 10 15C12.7575 15 15 12.7575 15 10ZM10 7C8.34315 7 7 8.34315 7 10C7 11.6569 8.34315 13 10 13C11.6569 13 13 11.6569 13 10C13 8.34315 11.6569 7 10 7Z"
+                fill="#7780A1" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <p class="footer__mobile-copyright">
+        © 2021 Sminhouse LTD. Все права защищены
+      </p>
+    </footer>
+  </div>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/swiper.js"></script>
+  <script src="js\burger.js"></script>
+</body>
+
+</html>

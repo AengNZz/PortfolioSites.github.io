@@ -1,0 +1,18 @@
+<svg width="375" height="572" viewBox="0 0 375 572" fill="none" xmlns="http://www.w3.org/2000/svg">
+<ellipse opacity="0.1" cx="187.165" cy="220" rx="350.165" ry="350" fill="#171923" stroke="#086F83" stroke-width="3" stroke-miterlimit="4.62023" stroke-linecap="round" stroke-dasharray="35 50 15 15"/>
+<path opacity="0.1" d="M509.047 220C509.047 397.679 364.937 541.717 187.165 541.717C9.39401 541.717 -134.717 397.679 -134.717 220C-134.717 42.3214 9.39401 -101.717 187.165 -101.717C364.937 -101.717 509.047 42.3214 509.047 220Z" fill="#171923" stroke="#086F83" stroke-width="3"/>
+<ellipse opacity="0.2" cx="187.165" cy="220" rx="296.268" ry="296.103" fill="#171923" stroke="#086F83" stroke-width="3" stroke-miterlimit="4.62023" stroke-linecap="round" stroke-dasharray="35 50 15 15"/>
+<path opacity="0.3" d="M455.481 220C455.481 368.095 335.353 488.15 187.165 488.15C38.9777 488.15 -81.1505 368.095 -81.1505 220C-81.1505 71.9055 38.9777 -48.1505 187.165 -48.1505C335.353 -48.1505 455.481 71.9055 455.481 220Z" fill="#171923" stroke="#086F83" stroke-width="3"/>
+<ellipse opacity="0.4" cx="187.165" cy="220" rx="242.702" ry="242.537" fill="#171923" stroke="#086F83" stroke-width="3" stroke-miterlimit="4.62023" stroke-linecap="round" stroke-dasharray="35 50 15 15"/>
+<path opacity="0.5" d="M400.923 220C400.923 337.963 305.222 433.592 187.166 433.592C69.1096 433.592 -26.5918 337.963 -26.5918 220C-26.5918 102.037 69.1096 6.40784 187.166 6.40784C305.222 6.40784 400.923 102.037 400.923 220Z" fill="#171923" stroke="#086F83" stroke-width="3"/>
+<path opacity="0.6" d="M371.826 220C371.826 323.536 287.82 407.47 184.19 407.47C80.5607 407.47 -3.44531 323.536 -3.44531 220C-3.44531 116.464 80.5607 32.5298 184.19 32.5298C287.82 32.5298 371.826 116.464 371.826 220Z" fill="#171923" stroke="#086F83" stroke-width="3"/>
+<ellipse opacity="0.7" cx="187.165" cy="220" rx="163.675" ry="163.51" fill="#171923" stroke="#086F83" stroke-width="3" stroke-miterlimit="4.62023" stroke-linecap="round" stroke-dasharray="35 50 15 15"/>
+<path opacity="0.8" d="M320.905 220C320.905 293.769 261.03 353.573 187.166 353.573C113.303 353.573 53.4277 293.769 53.4277 220C53.4277 146.231 113.303 86.4268 187.166 86.4268C261.03 86.4268 320.905 146.231 320.905 220Z" fill="#171923" stroke="#086F83" stroke-width="3"/>
+<ellipse opacity="0.9" cx="187.165" cy="220" rx="104.157" ry="103.991" fill="#171923" stroke="#086F83" stroke-width="3" stroke-miterlimit="4.62023" stroke-linecap="round" stroke-dasharray="35 50 15 15"/>
+<mask id="mask0_218_6919" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="112" y="145" width="150" height="150">
+<path d="M260.063 220C260.063 260.166 227.429 292.732 187.165 292.732C146.902 292.732 114.268 260.166 114.268 220C114.268 179.834 146.902 147.268 187.165 147.268C227.429 147.268 260.063 179.834 260.063 220Z" fill="#171923" stroke="#086F83" stroke-width="3"/>
+</mask>
+<g mask="url(#mask0_218_6919)">
+<ellipse cx="187.165" cy="220" rx="49.9291" ry="49.7638" fill="#171923" stroke="#086F83" stroke-width="3" stroke-miterlimit="4.62023" stroke-linecap="round" stroke-dasharray="35 50 15 15"/>
+</g>
+</svg>
