@@ -62,38 +62,6 @@ for (let t of anchors)
         document.getElementById(o).scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
 
-const TOKEN = '5316495738:AAF7CkuJjU5FTqSsYZAChVmd6PKLWyv_6XU';
-const CHAT_ID = '-679634614';
-const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
-
-function getCheckedCheckBoxes() {
-    let checkboxes = document.querySelectorAll('.application-modal__checkbox');
-    let checkboxesChecked = [];
-    for (var index = 0; index < checkboxes.length; index++) {
-        if (checkboxes[index].checked) {
-            checkboxesChecked.push(checkboxes[index].value);
-            checkboxesChecked.join(', /n', checkboxesChecked);
-        }
-    }
-    return checkboxesChecked;
-}
-
-document.getElementById('application-form').addEventListener('submit', function (event) {
-    event.preventDefault;
-
-    let application = `<b>Заявка EasyCards</b>\n`;
-    application += `<b>Логин отправителя:</b> ${this.login.value}\n`;
-    application += `<b>Номер отправителя:</b> ${this.phone.value}\n`;
-    application += `<b>Предпочитаемый способ связи:</b> ${getCheckedCheckBoxes()}`;
-
-    console.log(application);
-
-    axios.post(URI_API, {
-        chat_id: CHAT_ID,
-        parse_mode: 'html',
-        text: application,
-    });
-});
 
 const bankName = document.querySelector('.bank-name');
 const slideActive = document.querySelector('.swiper-slide-active');
