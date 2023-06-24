@@ -1,0 +1,228 @@
+.application-modal {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 150%;
+    top: -10000px;
+    z-index: 10;
+    background-color: rgba($color: #000, $alpha: 0);
+    transition: background-color 0.3s ease-out;
+
+    &__open {
+        top: -100px;
+        background-color: rgba($color: #000, $alpha: 0.5);
+    }
+
+    &__box {
+        position: relative;
+        left: 50%;
+        padding: 32px 32px;
+        transform: translate(-50%, -1000px);
+        transition: 0.7s ease-out;
+        max-width: 438px;
+        min-height: 469px;
+        background-color: $primary-color-bg;
+        border-radius: 12px;
+        z-index: 11;
+    }
+
+    &__title {
+        font-size: 32px;
+        line-height: $primary-title-line-height;
+    }
+
+    &__subtitle {
+        display: block;
+        margin-top: 5px;
+        line-height: $secondary-line-height;
+        color: $secondary-color;
+    }
+
+    &__form {
+        margin-top: 32px;
+    }
+
+    &__input {
+        display: block;
+        margin-top: 10px;
+        padding: 0 16px;
+        padding-left: 75px;
+        padding-right: 20px;
+        width: 100%;
+        max-width: 368px;
+        min-height: 52px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: $primary-font-size;
+        border: none;
+        border-radius: 8px;
+        background-color: $secondary-color-bg;
+        color: $primary-color;
+
+        &::placeholder {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: $secondary-line-height;
+            color: $secondary-color;
+        }
+
+        &:focus {
+            outline-color: $secondary-color;
+        }
+    }
+
+    &__input--login {
+        position: relative;
+        &::before {
+            position: absolute;
+            top: 15px;
+            left: 20px;
+            display: block;
+            width: 24px;
+            height: 24px;
+            content: '';
+            background-image: url('../img/login-input.svg');
+        }
+        &::after {
+            position: absolute;
+            top: 18px;
+            left: 57px;
+            display: block;
+            content: '';
+            width: 2px;
+            height: 16px;
+            background-color: rgba(97, 117, 139, 0.2);
+        }
+    }
+
+    &__input--tel {
+        position: relative;
+        &::before {
+            position: absolute;
+            top: 15px;
+            left: 20px;
+            display: block;
+            width: 24px;
+            height: 24px;
+            content: '';
+            background-image: url('../img/tel-input.svg');
+        }
+        &::after {
+            position: absolute;
+            top: 18px;
+            left: 57px;
+            display: block;
+            content: '';
+            width: 2px;
+            height: 16px;
+            background-color: rgba(97, 117, 139, 0.2);
+        }
+    }
+
+    &__connection {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+    &__connection-title {
+        max-width: 160px;
+        line-height: $secondary-line-height;
+        color: $secondary-color;
+    }
+
+    &__connection-list {
+        display: flex;
+        gap: 11px;
+    }
+
+    &__checkbox {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+
+        &:checked ~ .application-modal__checkbox-style-phone rect {
+            opacity: 1;
+            fill: $primary-color-main;
+        }
+
+        &:checked ~ .application-modal__checkbox-style-tg rect {
+            opacity: 1;
+            fill: #65a6e7;
+        }
+
+        &:checked ~ .application-modal__checkbox-style-whatsapp rect {
+            opacity: 1;
+            fill: #50c941;
+        }
+
+        &:checked ~ .application-modal__checkbox-style-viber rect {
+            opacity: 1;
+            fill: #665cac;
+        }
+
+        & ~ svg .application-modal__checkbox-style-scale {
+            transform-origin: center;
+            transition: 0.3s ease-out;
+        }
+
+        &:hover ~ svg .application-modal__checkbox-style-scale {
+            transform: scale(120%);
+        }
+
+        &:hover:checked ~ svg .application-modal__checkbox-style-scale {
+            transform: scale(100%);
+        }
+
+        &:hover ~ .application-modal__checkbox-style-phone rect,
+        &:hover ~ .application-modal__checkbox-style-tg rect,
+        &:hover ~ .application-modal__checkbox-style-whatsapp rect,
+        &:hover ~ .application-modal__checkbox-style-viber rect {
+            opacity: 1;
+        }
+    }
+
+    &__checkbox-style-phone,
+    &__checkbox-style-tg,
+    &__checkbox-style-whatsapp,
+    &__checkbox-style-viber {
+        cursor: pointer;
+    }
+
+    &__checkbox-style-phone rect,
+    &__checkbox-style-tg rect,
+    &__checkbox-style-whatsapp rect,
+    &__checkbox-style-viber rect {
+        transition: 0.3s ease-out;
+        cursor: pointer;
+    }
+
+    &__button {
+        margin-top: 36px;
+        min-width: 202px;
+    }
+}
+.close-modal {
+    position: absolute;
+    top: 38px;
+    right: 30px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    &::after {
+        display: block;
+        width: 24px;
+        height: 24px;
+        content: '';
+        background-image: url('../img/close.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}

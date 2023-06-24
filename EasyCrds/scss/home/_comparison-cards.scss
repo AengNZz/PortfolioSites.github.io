@@ -1,0 +1,351 @@
+.comparison-cards {
+    margin-top: 40px;
+
+    &__wrapper {
+        position: relative;
+        padding: 60px 0 45px 0;
+        border: 1px solid rgba(168, 184, 197, 0.2);
+        border-radius: 12px;
+        overflow: hidden;
+
+        &::before {
+            position: absolute;
+            top: -1010px;
+            left: -190px;
+            content: '';
+            width: 1600px;
+            height: 1600px;
+            background-image: url('../img/waves-2.webp');
+            background-repeat: no-repeat;
+            z-index: -1;
+        }
+        &::after {
+            position: absolute;
+            top: 42px;
+            left: 503px;
+            content: '';
+            width: 1082px;
+            height: 166px;
+            background-image: url('../img/stars-2.webp');
+            background-repeat: no-repeat;
+            z-index: -2;
+        }
+    }
+
+    &__wrapper-v2 {
+        margin-top: 100px;
+
+        &::after {
+            top: 49px;
+            left: 503px;
+        }
+    }
+
+    &__wrapper-optima {
+        text-align: center;
+        margin-top: 40px;
+        padding-top: 49px;
+
+        &::before {
+            top: 0;
+            left: -2px;
+            position: absolute;
+            width: 1684px;
+            height: 1870px;
+            background-image: url('../img/waves-10.webp');
+        }
+
+        &::after {
+            display: none;
+        }
+    }
+
+    &__title {
+        margin: 0 32px;
+    }
+
+    &__subtitle {
+        margin: 0 32px;
+        margin-top: 11px;
+    }
+
+    &__explanation {
+        margin: 0 39px;
+        background: linear-gradient(93.85deg, #f4f7ff 50.7%, rgba(244, 247, 255, 0) 75.59%);
+        border-radius: 4px;
+    }
+
+    &__explanation-optima {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    &__explanation-dark-blue {
+        color: $primary-color-bg;
+    }
+
+    &__explanation-text {
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        padding: 19px 22px;
+        gap: 18px;
+        line-height: $secondary-line-height;
+        color: #a8b8c5;
+
+        &::before {
+            content: '';
+            width: 25px;
+            height: 25px;
+            background-image: url('../img/explanation.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+
+    &__explanation-text-optima {
+        text-align: start;
+        margin-top: 0;
+        width: 831px;
+
+        &::before {
+            display: none;
+        }
+    }
+
+    &__explanation-button {
+        margin-top: 0;
+        padding: 5px 22px;
+        width: 249px;
+        height: 52px;
+        border: none;
+        border-radius: 4px;
+        font-size: $primary-font-size;
+        font-family: 'Montserrat';
+        font-weight: 600;
+        transition: 0.3s ease-out;
+        cursor: pointer;
+    }
+
+    &__table {
+        margin-top: 25px;
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    &__table-optima {
+        margin-top: 34px;
+    }
+
+    &__table-item {
+        text-align: center;
+        height: 80px;
+        background-color: $secondary-color-bg;
+        &:nth-child(odd) {
+            background-color: $primary-color-bg;
+        }
+    }
+
+    &__table-item-optima {
+        height: 120px;
+    }
+
+    &__table-bank {
+        line-height: $secondary-line-height;
+    }
+
+    &__table-possibilities {
+        padding: 10px 10px;
+        padding-left: 40px;
+        width: 220px;
+        text-align: start;
+    }
+
+    &__table-text {
+        vertical-align: middle;
+        text-align: center;
+        padding: 10px 18px;
+        gap: 10px;
+        width: 218px;
+        line-height: $secondary-line-height;
+        color: $secondary-color;
+    }
+
+    &__table-move {
+        padding-left: 0;
+        padding-right: 40px;
+    }
+
+    &__table-text span {
+        display: none;
+        color: $primary-color;
+    }
+
+    .title-tablet-mobile {
+        display: none;
+        color: $primary-color;
+    }
+
+    &__table-price {
+        display: block;
+        font-weight: 500;
+        font-size: $secondary-title-font-size;
+        line-height: $secondary-title-line-height;
+        color: $primary-color-main;
+    }
+
+    &__table-price-orange {
+        color: $primary-color-kr;
+    }
+
+    &__table-price-optima {
+        position: relative;
+        right: -21px;
+        font-weight: 600;
+        width: 190px;
+        font-size: $primary-title-font-size;
+        line-height: $primary-title-line-height;
+        color: $primary-color-kr;
+    }
+
+    &__table-price-dark-blue {
+        position: relative;
+        right: -21px;
+        font-weight: 600;
+        width: 190px;
+        font-size: $primary-title-font-size;
+        line-height: $primary-title-line-height;
+        color: #1e4165;
+    }
+
+    &__table-price-green {
+        position: relative;
+        right: -21px;
+        font-weight: 600;
+        width: 190px;
+        font-size: $primary-title-font-size;
+        line-height: $primary-title-line-height;
+        color: $primary-color-freedom;
+    }
+
+    &__signature {
+        gap: 8px;
+        font-weight: 500;
+        line-height: $primary-line-height;
+        background-color: transparent;
+        color: $secondary-color;
+    }
+
+    &__mark {
+        width: 16px;
+        height: 16px;
+        display: inline;
+        margin: 0 auto;
+    }
+
+    &__delimiter {
+        display: inline;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    &__swiper {
+        min-height: 700px;
+    }
+
+    &__table-item-optima-remove {
+        display: none;
+    }
+
+    &__table-item-optima {
+        height: 80px;
+    }
+
+    &__table-item-optima-v2 {
+        height: 120px;
+    }
+
+    &__explanation-button-optima-v2 {
+        display: none;
+    }
+
+    &__table-possibilities-v2 {
+        display: none;
+    }
+
+    &__table-possibilities-v2 {
+        display: none;
+    }
+}
+
+.bank-name {
+    display: none;
+    justify-content: center;
+    font-weight: 500;
+    line-height: $primary-line-height;
+}
+
+.buttons-swiper {
+    position: relative;
+    top: -851px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.comparison-cards-optima {
+    margin-top: 0;
+}
+
+.swiper {
+    display: none;
+}
+
+.swiper,
+swiper-container {
+    overflow: visible;
+    margin-top: 17px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    width: 6px;
+    height: 12px;
+    color: $primary-color;
+}
+
+.swiper-button-next {
+    left: 352px;
+    top: 4px;
+}
+
+.swiper-button-prev {
+    top: 4px;
+    left: 87px;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-family: swiper-icons;
+    font-size: 15px !important;
+    text-transform: none !important;
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 827px;
+    left: 0;
+    width: 100%;
+}
+.swiper-pagination-bullet {
+    background: rgba(168, 184, 197, 0.8);
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: $primary-color-main;
+}
+
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin-right: 7px;
+}

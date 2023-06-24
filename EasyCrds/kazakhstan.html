@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/aos.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>EasyCrds</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="burger__menu">
+      <nav class="menu-burger">
+        <ul class="menu__list menu__list-burger">
+          <li class="menu__item menu__item-burger">
+            <a class="menu__item-link" href="#cards">Карты</a>
+          </li>
+          <li class="menu__item menu__item-burger">
+            <a class="menu__item-link" href="#">Сравнение карт</a>
+          </li>
+          <li class="menu__item menu__item-burger">
+            <a class="menu__item-link" href="#what-can">Возможности</a>
+          </li>
+          <li class="menu__item menu__item-burger">
+            <a class="menu__item-link" href="#opening-steps">Шаги открытия</a>
+          </li>
+          <li class="menu__item menu__item-burger">
+            <a class="menu__item -link" href="#faq">FAQ</a>
+          </li>
+          <li class="menu__item menu__item-burger">
+            <a class="menu__item-link" href="#reviews">Отзывы</a>
+          </li>
+        </ul>
+        <div class="social social-burger">
+          <a class="social__item" href="#">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <rect width="40" height="40" rx="20" fill="#65A6E7" />
+              <path class="social__scale" fill-rule="evenodd" clip-rule="evenodd"
+                d="M11.164 19.6068C15.7264 17.778 18.7637 16.5628 20.2889 15.9732C24.6298 14.3008 25.5422 14.012 26.1289 14C26.2592 14 26.546 14.0241 26.7415 14.1684C26.898 14.2888 26.9371 14.4452 26.9631 14.5655C26.9892 14.6858 27.0153 14.9385 26.9892 15.131C26.7546 17.417 25.7378 22.9636 25.2164 25.5144C24.9948 26.5972 24.5646 26.9582 24.1474 26.9943C23.2349 27.0665 22.5441 26.4408 21.6707 25.9114C20.2889 25.0812 19.5198 24.5639 18.1771 23.7457C16.6259 22.8072 17.6296 22.2899 18.5161 21.4477C18.7507 21.2311 22.7526 17.8622 22.8308 17.5614C22.8439 17.5253 22.8439 17.3809 22.7526 17.3087C22.6614 17.2365 22.531 17.2606 22.4267 17.2847C22.2833 17.3087 20.0934 18.6563 15.8307 21.3153C15.205 21.7123 14.6445 21.9049 14.1361 21.8928C13.5756 21.8808 12.5066 21.6041 11.6984 21.3634C10.7208 21.0747 9.93862 20.9183 10.0038 20.4129C10.0429 20.1482 10.434 19.8835 11.164 19.6068Z"
+                fill="white" />
+            </svg>
+          </a>
+          <a class="social__item" href="#">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <g clip-path="url(#clip0_2290_93)">
+                <path
+                  d="M20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40Z"
+                  fill="#51C941" />
+                <path class="social__scale"
+                  d="M27.4513 12.9454C25.7731 11.2623 23.5434 10.2297 21.1647 10.034C18.7861 9.83827 16.4153 10.4923 14.4803 11.8781C12.5453 13.2639 11.1737 15.2901 10.6131 17.5909C10.0525 19.8916 10.3399 22.3153 11.4233 24.4244L10.3618 29.5349C10.3505 29.586 10.35 29.6388 10.3605 29.69C10.371 29.7412 10.3923 29.7897 10.4229 29.8323C10.4666 29.8967 10.5292 29.9464 10.6023 29.9746C10.6753 30.0028 10.7553 30.0083 10.8315 29.9902L15.8734 28.8033C17.9944 29.8496 20.4208 30.1155 22.721 29.5539C25.0211 28.9922 27.0456 27.6394 28.4342 25.7361C29.8228 23.8329 30.4853 21.5028 30.3038 19.1606C30.1224 16.8184 29.1087 14.616 27.4433 12.9454H27.4513ZM25.875 25.4112C24.7144 26.5602 23.2198 27.3195 21.6014 27.5824C19.983 27.8453 18.3223 27.5986 16.8526 26.877L16.1468 26.5296L13.05 27.256V27.2165L13.7028 24.1191L13.3578 23.4454C12.6063 21.984 12.341 20.3241 12.5999 18.7039C12.8587 17.0837 13.6285 15.5865 14.7987 14.427C16.268 12.9714 18.26 12.1538 20.3369 12.1538C22.4137 12.1538 24.4057 12.9714 25.875 14.427L25.9095 14.4744C27.3597 15.9346 28.1693 17.904 28.1619 19.9536C28.1544 22.0031 27.3305 23.9667 25.8697 25.4165L25.875 25.4112Z"
+                  fill="white" />
+                <path class="social__scale"
+                  d="M25.6017 23.1586C25.2223 23.7507 24.6199 24.4744 23.8689 24.656C22.5421 24.9718 20.5227 24.656 17.9938 22.3375L17.9619 22.3086C15.762 20.2718 15.1782 18.5744 15.3083 17.2296C15.3852 16.4639 16.0274 15.7744 16.5688 15.3218C16.6548 15.2498 16.7567 15.1988 16.8662 15.1728C16.9757 15.1468 17.0898 15.1466 17.1994 15.1722C17.3089 15.1978 17.411 15.2484 17.4973 15.3201C17.5836 15.3917 17.6519 15.4824 17.6966 15.5849L18.5112 17.4112C18.5644 17.5288 18.5843 17.6585 18.5689 17.7864C18.5535 17.9144 18.5033 18.0357 18.4236 18.1375L18.0097 18.6639C17.9236 18.7731 17.8724 18.9053 17.8625 19.0436C17.8525 19.1819 17.8844 19.3199 17.954 19.4402C18.3472 20.0149 18.8177 20.5337 19.3524 20.9823C19.9278 21.5314 20.5803 21.995 21.2896 22.3586C21.419 22.4103 21.5611 22.4227 21.6977 22.3941C21.8342 22.3655 21.9592 22.2973 22.0565 22.1981L22.5315 21.7191C22.6219 21.6227 22.7374 21.553 22.8652 21.5177C22.9931 21.4824 23.1283 21.4829 23.2559 21.5191L25.1931 22.0691C25.3029 22.1001 25.4037 22.1563 25.4875 22.2331C25.5714 22.3099 25.6358 22.4052 25.6756 22.5113C25.7153 22.6173 25.7294 22.7312 25.7166 22.8437C25.7038 22.9561 25.6644 23.064 25.6017 23.1586Z"
+                  fill="white" />
+              </g>
+              <defs>
+                <clipPath id="clip0_2290_93">
+                  <rect width="40" height="40" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+        </div>
+      </nav>
+    </div>
+    <header class="header">
+      <div class="header__inner">
+        <a class="logo-link" href="./index.html">
+          <img class="logo-header logo-header-tablet logo" src="./img/logo.svg" alt="logo">
+          <img class="logo-headerV2 logo-header-tablet logo" src="./img/logov2.svg" alt="logo">
+        </a>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__item-link" href="#cards">Карты</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#">Сравнение карт</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#what-can">Возможности</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#opening-steps">Шаги открытия</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#faq">FAQ</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#reviews">Отзывы</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="contacts">
+          <div class="phone">
+            <div class="phone__rigth">
+              <a class="phone__number" href="tel:88002505296">8 800 250-52-96</a>
+              <span class="phone__number-subtext requisites__number-subtext-blue">Бесплатная консультация</span>
+            </div>
+          </div>
+          <div class="social social-tablet">
+            <a class="social__item" href="#">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <rect width="40" height="40" rx="20" fill="#65A6E7" />
+                <path class="social__scale" fill-rule="evenodd" clip-rule="evenodd"
+                  d="M11.164 19.6068C15.7264 17.778 18.7637 16.5628 20.2889 15.9732C24.6298 14.3008 25.5422 14.012 26.1289 14C26.2592 14 26.546 14.0241 26.7415 14.1684C26.898 14.2888 26.9371 14.4452 26.9631 14.5655C26.9892 14.6858 27.0153 14.9385 26.9892 15.131C26.7546 17.417 25.7378 22.9636 25.2164 25.5144C24.9948 26.5972 24.5646 26.9582 24.1474 26.9943C23.2349 27.0665 22.5441 26.4408 21.6707 25.9114C20.2889 25.0812 19.5198 24.5639 18.1771 23.7457C16.6259 22.8072 17.6296 22.2899 18.5161 21.4477C18.7507 21.2311 22.7526 17.8622 22.8308 17.5614C22.8439 17.5253 22.8439 17.3809 22.7526 17.3087C22.6614 17.2365 22.531 17.2606 22.4267 17.2847C22.2833 17.3087 20.0934 18.6563 15.8307 21.3153C15.205 21.7123 14.6445 21.9049 14.1361 21.8928C13.5756 21.8808 12.5066 21.6041 11.6984 21.3634C10.7208 21.0747 9.93862 20.9183 10.0038 20.4129C10.0429 20.1482 10.434 19.8835 11.164 19.6068Z"
+                  fill="white" />
+              </svg>
+            </a>
+            <a class="social__item" href="#">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <g clip-path="url(#clip0_2290_93)">
+                  <path
+                    d="M20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40Z"
+                    fill="#51C941" />
+                  <path class="social__scale"
+                    d="M27.4513 12.9454C25.7731 11.2623 23.5434 10.2297 21.1647 10.034C18.7861 9.83827 16.4153 10.4923 14.4803 11.8781C12.5453 13.2639 11.1737 15.2901 10.6131 17.5909C10.0525 19.8916 10.3399 22.3153 11.4233 24.4244L10.3618 29.5349C10.3505 29.586 10.35 29.6388 10.3605 29.69C10.371 29.7412 10.3923 29.7897 10.4229 29.8323C10.4666 29.8967 10.5292 29.9464 10.6023 29.9746C10.6753 30.0028 10.7553 30.0083 10.8315 29.9902L15.8734 28.8033C17.9944 29.8496 20.4208 30.1155 22.721 29.5539C25.0211 28.9922 27.0456 27.6394 28.4342 25.7361C29.8228 23.8329 30.4853 21.5028 30.3038 19.1606C30.1224 16.8184 29.1087 14.616 27.4433 12.9454H27.4513ZM25.875 25.4112C24.7144 26.5602 23.2198 27.3195 21.6014 27.5824C19.983 27.8453 18.3223 27.5986 16.8526 26.877L16.1468 26.5296L13.05 27.256V27.2165L13.7028 24.1191L13.3578 23.4454C12.6063 21.984 12.341 20.3241 12.5999 18.7039C12.8587 17.0837 13.6285 15.5865 14.7987 14.427C16.268 12.9714 18.26 12.1538 20.3369 12.1538C22.4137 12.1538 24.4057 12.9714 25.875 14.427L25.9095 14.4744C27.3597 15.9346 28.1693 17.904 28.1619 19.9536C28.1544 22.0031 27.3305 23.9667 25.8697 25.4165L25.875 25.4112Z"
+                    fill="white" />
+                  <path class="social__scale"
+                    d="M25.6017 23.1586C25.2223 23.7507 24.6199 24.4744 23.8689 24.656C22.5421 24.9718 20.5227 24.656 17.9938 22.3375L17.9619 22.3086C15.762 20.2718 15.1782 18.5744 15.3083 17.2296C15.3852 16.4639 16.0274 15.7744 16.5688 15.3218C16.6548 15.2498 16.7567 15.1988 16.8662 15.1728C16.9757 15.1468 17.0898 15.1466 17.1994 15.1722C17.3089 15.1978 17.411 15.2484 17.4973 15.3201C17.5836 15.3917 17.6519 15.4824 17.6966 15.5849L18.5112 17.4112C18.5644 17.5288 18.5843 17.6585 18.5689 17.7864C18.5535 17.9144 18.5033 18.0357 18.4236 18.1375L18.0097 18.6639C17.9236 18.7731 17.8724 18.9053 17.8625 19.0436C17.8525 19.1819 17.8844 19.3199 17.954 19.4402C18.3472 20.0149 18.8177 20.5337 19.3524 20.9823C19.9278 21.5314 20.5803 21.995 21.2896 22.3586C21.419 22.4103 21.5611 22.4227 21.6977 22.3941C21.8342 22.3655 21.9592 22.2973 22.0565 22.1981L22.5315 21.7191C22.6219 21.6227 22.7374 21.553 22.8652 21.5177C22.9931 21.4824 23.1283 21.4829 23.2559 21.5191L25.1931 22.0691C25.3029 22.1001 25.4037 22.1563 25.4875 22.2331C25.5714 22.3099 25.6358 22.4052 25.6756 22.5113C25.7153 22.6173 25.7294 22.7312 25.7166 22.8437C25.7038 22.9561 25.6644 23.064 25.6017 23.1586Z"
+                    fill="white" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_2290_93">
+                    <rect width="40" height="40" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <button class="burger-button"></button>
+      </div>
+      <nav class="menu-tablet">
+        <ul class="menu__list menu__list-tablet">
+          <li class="menu__item menu__item-tablet">
+            <a class="menu__item-link" href="#cards">Карты</a>
+          </li>
+          <li class="menu__item menu__item-tablet">
+            <a class="menu__item-link" href="#">Сравнение карт</a>
+          </li>
+          <li class="menu__item menu__item-tablet">
+            <a class="menu__item-link" href="#what-can">Возможности</a>
+          </li>
+          <li class="menu__item menu__item-tablet">
+            <a class="menu__item-link" href="#opening-steps">Шаги открытия</a>
+          </li>
+          <li class="menu__item menu__item-tablet">
+            <a class="menu__item -link" href="#faq">FAQ</a>
+          </li>
+          <li class="menu__item menu__item-tablet">
+            <a class="menu__item-link" href="#reviews">Отзывы</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="intro">
+        <div class="container">
+          <div class="intro__wrapper intro__wrappe-blue">
+            <div class="intro__content intro__content-blue">
+              <span class="intro__title-signature-blue title-signature title-signature-blue" data-aos="zoom"
+                data-aos-duration="1000">
+                <img class="intro__country-img-blue country-img" src="./img/kazakhstan.svg" alt="kyrgyzstan">
+                Казахстан
+              </span>
+              <h1 class="intro__title intro__title-blue" data-aos="zoom" data-aos-duration="1500">
+                Оформление банковской карты Казахстана и ИНН<br> для граждан России
+              </h1>
+              <p class="intro__text intro__text-blue" data-aos="zoom" data-aos-duration="2000">
+                Расширьте свои финансовые горизонты с оформлением карты Казахстана или ИИН и наслаждайтесь удобством
+                и преимуществами, которые они предоставляют.
+              </p>
+              <div class="button-aos" data-aos="zoom" data-aos-duration="2500">
+                <a class="intro__button intro__button-blue button button-blue" href="#cards">Выбрать
+                  карту</a>
+              </div>
+            </div>
+            <div class="intro__decor-img intro__decor-img-blue">
+              <img class="intro__decor-cards intro__decor-cards-blue" src="./img/cards-blue-2.webp" alt=""
+                data-aos="flip-right" data-aos-duration="2000">
+              <img class="intro__decor intro__decor-blue" src="./img/kazakhstan-g.webp" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="advantages">
+          <div class="container">
+            <ul class="advantages__list">
+              <li class="advantages__item" data-aos="zoom" data-aos-duration="1000">
+                <img class="advantages__item-img" src="./img/advantages-blue-1.svg" alt="">
+                <div class="advantages__item-content">
+                  <h3 class="advantages__item-title">
+                    Оформление карты <span class="advantages__title-signature advantages__title-signature-blue"><br>
+                      без доверенности</span>
+                  </h3>
+                  <p class="advantages__item-text">
+                    Весь процесс без лишних хлопот с документами
+                  </p>
+                </div>
+              </li>
+              <li class="advantages__item" data-aos="zoom" data-aos-duration="1500">
+                <img class="advantages__item-img" src="./img/advantages-blue-2.svg" alt="">
+                <div class="advantages__item-content">
+                  <h3 class="advantages__item-title">
+                    Гарантируем <span class="advantages__title-signature advantages__title-signature-blue">
+                      конфиденциальность</span></h3>
+                  <p class="advantages__item-text">
+                    Мы гарантируем полную безопасность ваших данных
+                  </p>
+                </div>
+              </li>
+              <li class="advantages__item" data-aos="zoom" data-aos-duration="2000">
+                <img class="advantages__item-img" src="./img/advantages-blue-3.svg" alt="">
+                <div class="advantages__item-content">
+                  <h3 class="advantages__item-title">
+                    Доставка карты <span class="advantages__title-signature advantages__title-signature-blue"><br> до
+                      двери</span>
+                  </h3>
+                  <p class="advantages__item-text">
+                    Максимально удобно, вам не нужно никуда ходить
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="cards" id="cards">
+        <div class="container">
+          <div class="cards__wrapper ards__wrapper-blue">
+            <span class="cards__title-signature title-signature title-signature-blue" data-aos="zoom"
+              data-aos-duration="1000">Доступные карты</span>
+            <h2 class="cards__title section-title" data-aos="zoom" data-aos-duration="1500">
+              Выбор карт банков Казахстана
+            </h2>
+            <p class="cards__subtitle section-subtitle" data-aos="zoom" data-aos-duration="2000">
+              Выбери свою идеальную карту, чтобы удовлетворить различные финансовые потребности
+            </p>
+            <ul class="cards__list cards__list-two-colum-two">
+              <li class="cards__item cards__item-two-colum cards__item-two-colum-blue" data-aos="zoom"
+                data-aos-duration="1500">
+                <div class="cards__content cards__content-two-colum">
+                  <img class="cards__item-img cards__item-img-two-colum" src="./img/freedom-bank.webp" alt="bakai-card">
+                  <div class="cards__item-info">
+                    <h3 class="cards__item-title cards__item-title-two-colum">Карта от Freedom Bank</h3>
+                    <img src="./img/freedom-bank-mobile.webp" alt=""
+                      class="cards__item-img-mobail cards__item-img-mobailV2">
+                    <p class="cards__item-text">
+                      Freedom Card — это мультивалютная банковская карта, которая позволяет своему владельцу
+                      наслаждаться широким спектром возможностей и эксклюзивных предложений в любой точке мира.
+                    </p>
+                    <ul class="cards__possibilities-list cards__possibilities-list-two-colum-twoV2">
+                      <li class="cards__possibilities-item">
+                        <img class="cards__mark cards__mark-two-colum mark" src="./img/mark-blue-active.svg" alt="yes">
+                        <div class="cards__possibilities-content">
+                          <span class="cards__possibilities-title">Доступные валюты,</span>
+                          <span class="cards__possibilities-subtitle">USD, EUR, RUB, KZT</span>
+                        </div>
+                      </li>
+                      <li class="cards__possibilities-item cards__possibilities-item-none-line">
+                        <img class="cards__mark cards__mark-two-colum mark" src="./img/mark-blue-active.svg" alt="yes">
+                        <div class="cards__possibilities-content">
+                          <span class="cards__possibilities-title">Привязка к
+                            РФ номеру</span>
+                        </div>
+                      </li>
+                      <li class="cards__possibilities-item">
+                        <img class="cards__mark cards__mark-two-colum mark" src="./img/mark-blue-active.svg" alt="yes">
+                        <div class="cards__possibilities-content">
+                          <span class="cards__possibilities-title">Оформление
+                            без доверенности</span>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="cards__box cards__boxv2">
+                      <ul
+                        class="cards__possibilities-list cards__possibilities-list-kz  cards__possibilities-list-two-colum">
+                        <li class="cards__possibilities-item">
+                          <img class="cards__mark cards__mark-two-colum mark" src="./img/mark-blue-active.svg"
+                            alt="yes">
+                          <div class="cards__possibilities-content">
+                            <span class="cards__possibilities-title">Доступные валюты,<br></span>
+                            <span class="cards__possibilities-subtitle">USD, EUR, RUB, KZT</span>
+                          </div>
+                        </li>
+                        <li class="cards__possibilities-item cards__possibilities-item-none-line">
+                          <img class="cards__mark cards__mark-two-colum mark" src="./img/mark-blue-active.svg"
+                            alt="yes">
+                          <div class="cards__possibilities-content">
+                            <span class="cards__possibilities-title">Привязка к<br>
+                              РФ номеру</span>
+                          </div>
+                        </li>
+                        <li class="cards__possibilities-item">
+                          <img class="cards__mark cards__mark-two-colum mark" src="./img/mark-blue-active.svg"
+                            alt="yes">
+                          <div class="cards__possibilities-content">
+                            <span class="cards__possibilities-title">Оформление<br>
+                              без доверенности</span>
+                          </div>
+                        </li>
+                      </ul>
+                      <div
+                        class="cards__botton-right  cards__botton-right-two-colum cards__botton-right-two-colum-two cards_botton-right-tablet-768 cards__botton-right-two-colum-three">
+                        <span class="cards__price cards__price-blue">15 000 ₽</span>
+                        <button class="cards__botton-buttonV2 cards__botton-buttonV2-two cards__botton-buttonV2-two  buttonV2 buttonV2-blue">Тарифы</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cards__botton cards__botton-two-colum">
+                  <div class="cards__botton-left cards__botton-left-blue">
+                    <button
+                      class="cards__botton-button button button-bluev2 cards-button-orangev2 button-orangev2 open-modal">Оформить
+                      сейчас</button>
+                    <a class="cards__botton-buttonV2  buttonV2 buttonV2-blue cards-buttonV2-blue cards__botton-buttonV2-tow"
+                      href="./bakai-bank.html">Подробнее</a>
+                  </div>
+                </div>
+              </li>
+              <li class="cards__item cards__item-two-colum cards__item-two-colum-blue" data-aos="zoom"
+                data-aos-duration="1500">
+                <div class="cards__content cards__content-two-colum">
+                  <img class="cards__item-img cards__item-img-two-colum" src="./img/iin.webp" alt="optima-bank">
+                  <div class="cards__item-info">
+                    <h3 class="cards__item-title cards__item-title-two-colum">Оформление ИИН</h3>
+                    <img src="./img/iin-moblie.webp" alt="" class="cards__item-img-mobail cards__item-img-mobailV2">
+                    <p class="cards__item-text">
+                      Помощь в удаленном получении ИИН Казахстана для граждан России. Быстро, просто и надежно!
+                    </p>
+                    <ul class="cards__possibilities-list  cards__possibilities-list-two-colum-twoV2">
+                      <li class="cards__possibilities-item cards__possibilities-item-iin">
+                        <img class="cards__mark cards__mark-two-colum mark" src="./img/mark-blue-active.svg" alt="yes">
+                        <div class="cards__possibilities-content">
+                          <span class="cards__possibilities-title">Минимальные
+                            сроки выпуска</span>
+                        </div>
+                      </li>
+                      <li class="cards__possibilities-item cards__possibilities-item-iin cards__possibilities-item-none-line">
+                        <img class="cards__mark cards__mark-two-colum mark" src="./img/mark-blue-active.svg" alt="yes">
+                        <div class="cards__possibilities-content">
+                          <span class="cards__possibilities-title">Получение в
+                            электронном виде</span>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="cards__box cards__boxv2">
+                      <ul
+                        class="cards__possibilities-list cards__possibilities-list-kz cards__possibilities-list-two-colum">
+                        <li class="cards__possibilities-item cards__possibilities-item-iin">
+                          <img class="cards__mark cards__mark-two-colum mark" src="./img/mark-blue-active.svg"
+                            alt="yes">
+                          <div class="cards__possibilities-content">
+                            <span class="cards__possibilities-title">Минимальные<br>
+                              сроки выпуска</span>
+                          </div>
+                        </li>
+                        <li class="cards__possibilities-item cards__possibilities-item-iin cards__possibilities-item-none-line">
+                          <img class="cards__mark cards__mark-two-colum mark" src="./img/mark-blue-active.svg"
+                            alt="yes">
+                          <div class="cards__possibilities-content">
+                            <span class="cards__possibilities-title">Получение в<br>
+                              электронном виде</span>
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="cards__botton-right cards__botton-right-two-colum cards__botton-right-two-colum-two cards__botton-right-two-colum-three">
+                        <span class="cards__price cards__price-blue">6 500 ₽</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cards__botton cards__botton-two-colum">
+                  <div class="cards__botton-left cards__botton-left-blue">
+                    <button
+                      class="cards__botton-button button button-bluev2 button-orangev2-two button-orangev2 open-modal">Оформить
+                      сейчас</button>
+                    <a class="cards__botton-buttonV2 buttonV2 buttonV2-blue cards-buttonV2-blue cards__botton-buttonV2-tow"
+                      href="./optima-bank.html">Подробнее</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="detailed-cards">
+        <div class="container">
+          <div class="detailed-cards-overflow">
+            <div class="detailed-cards__wrapper detailed-cards__wrapper-orange detailed-cards__wrapper-orange-kr">
+              <div class="detailed-cards__left detailed-cards__left-blue">
+                <h2 class="detailed-cards__title detailed-cards__title-orange" data-aos="zoom"
+                  data-aos-duration="1000">Карты Киргизии</h2>
+                <p class="detailed-cards__text detailed-cards__text-orange" data-aos="zoom"
+                  data-aos-duration="1500">
+                  Мы предлагаем вам широкий выбор карт от банков Киргизии, чтобы вы могли найти идеальный вариант,
+                  соответствующий вашим финансовым потребностям.
+                </p>
+                <div class="detailed-cards__button-box detailed-cards__button-box-orange" data-aos="zoom"
+                  data-aos-duration="2000">
+                  <a class="detailed-cards__button detailed-cards__button-orange button-country button-country-orange"
+                    href="./kyrgyzstan.html">
+                    <img class="detailed-cards__country-img country-img" src="./img/kyrgyzstan.svg" alt="kyrgyzstan">
+                    Выбрать карту
+                  </a>
+                </div>
+              </div>
+              <img class="detailed-cards__img detailed-cards__img-orange" src="./img/cards-orange-2.webp" alt=""
+                data-aos="zoom" data-aos-duration="1000">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="what-can" id="what-can">
+        <div class="container">
+          <div class="what-can__wrapper">
+            <span class="what-can__title-signature title-signature title-signature-blue" data-aos="zoom"
+              data-aos-duration="1000">Возможности</span>
+            <h2 class="what-can__title section-title" data-aos="zoom" data-aos-duration="1500">
+              Что можно делать с иностранными<br> картами Visa и MasterCard?
+            </h2>
+            <p class="what-can__subtitle section-subtitle" data-aos="zoom" data-aos-duration="2000">
+              Откройте для себя все возможности с использования карт, которые мы предлагаем
+            </p>
+            <ul class="what-can__list">
+              <li class="what-can__item what-can__item-wide" data-aos="zoom" data-aos-duration="1000">
+                <img class="what-can__item-img" src="./img/what-can-blue-1.svg" alt="">
+                <h3 class="what-can__item-title">Шопинг и наличные<br> за рубежом</h3>
+                <p class="what-can__item-text">
+                  Используйте свою виртуальную или пластиковую карту для оплаты в оффлайн магазинах, а также для снятия
+                  наличных в банкоматах,<br> находясь в отпуске или командировке.
+                </p>
+              </li>
+              <li class="what-can__item" data-aos="zoom" data-aos-duration="1000">
+                <img class="what-can__item-img" src="./img/what-can-blue-2.svg" alt="">
+                <h3 class="what-can__item-title">Оплата в зарубежных<br> онлайн магазинах</h3>
+                <p class="what-can__item-text">
+                  Совершайте покупки в зарубежных онлайн магазинах.
+                </p>
+              </li>
+              <li class="what-can__item" data-aos="zoom" data-aos-duration="1000">
+                <img class="what-can__item-img" src="./img/what-can-blue-3.svg" alt="">
+                <h3 class="what-can__item-title">Оплата подписок, игр<br> иностранных сервисов</h3>
+                <p class="what-can__item-text">
+                  Оплачивайте цифровые товары в магазинах Steam, PS Store, Figma, Envato Elements и других
+                </p>
+              </li>
+              <li class="what-can__item what-can__item-wide" data-aos="zoom" data-aos-duration="1000">
+                <img class="what-can__item-img" src="./img/what-can-blue-4.svg" alt="">
+                <h3 class="what-can__item-title">
+                  Привязка<br> к платежным сервисам
+                </h3>
+                <p class="what-can__item-text">
+                  Карты Visa и Mastercard зарубежных банков привязываются к Apple/<br>Samsung/Google/Garmin Pay/PayPal и
+                  другим платежным системам.
+                </p>
+              </li>
+              <li class="what-can__item what-can__item-wide" data-aos="zoom" data-aos-duration="1000">
+                <img class="what-can__item-img" src="./img/what-can-blue-5.svg" alt="">
+                <h3 class="what-can__item-title">Получение оплат<br> из-за границы</h3>
+                <p class="what-can__item-text">
+                  Принимайте платежи от иностранных клиентов / бирж фриланса прямо<br> на карту.
+                </p>
+              </li>
+              <li class="what-can__item" data-aos="zoom" data-aos-duration="1000">
+                <img class="what-can__item-img" src="./img/what-can-blue-6.svg" alt="">
+                <h3 class="what-can__item-title">Хранение сбережений<br> в валюте</h3>
+                <p class="what-can__item-text">
+                  Храните свои сбережения в валюте на собственном именном счете без<br> конвертации в рубли.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="opening-steps" id="opening-steps">
+        <div class="container">
+          <div class="opening-steps__wrapper">
+            <div class="opening-steps__top">
+              <div class="opening-steps__left">
+                <span class="opening-steps__title-signature title-signature title-signature-blue" data-aos="zoom"
+                  data-aos-duration="1000">Шаги открытия</span>
+                <h2 class="opening-steps__title section-title" data-aos="zoom" data-aos-duration="1500">6 простых
+                  шагов до открытия<br> карты банка Казахстана
+                </h2>
+              </div>
+              <p class="opening-steps__subtitle section-subtitle" data-aos="zoom" data-aos-duration="1500">
+                Пользуйся картой сразу после получения. Осуществляй быстрые переводы, покупки, оплату коммунальных услуг
+                и многое другое
+              </p>
+            </div>
+            <ol class="opening-steps__list opening-steps__list-blue">
+              <li class="opening-steps__item" data-aos="zoom" data-aos-duration="1000">
+                <span class="opening-steps__item-num">01</span>
+                <h3 class="opening-steps__item-title">Оставьте заявку</h3>
+                <p class="opening-steps__item-text opening-steps__item-text-blue">
+                  Ознакомьтесь с основной информацией и заполните форму, оставив свои данные, чтобы мы могли связаться с
+                  Вами для обсуждения всех подробностей и дальнейших шагов.
+                </p>
+              </li>
+              <li class="opening-steps__item" data-aos="zoom" data-aos-duration="1000">
+                <span class="opening-steps__item-num">02</span>
+                <h3 class="opening-steps__item-title">Пришлите необходимые документы</h3>
+                <p class="opening-steps__item-text opening-steps__item-text-blue">
+                  Нам понадобятся сканы разворотов главной страницы и прописки паспорта РФ, а также скан разворота
+                  главной страницы загранпаспорта. Их можно сделать в приложении PhotoScanner или подобных.
+                </p>
+              </li>
+              <li class="opening-steps__item" data-aos="zoom" data-aos-duration="1000">
+                <span class="opening-steps__item-num">03</span>
+                <h3 class="opening-steps__item-title">Внесите предоплату</h3>
+                <p class="opening-steps__item-text opening-steps__item-text-blue">
+                  Оплатите половину комиссии нашего сервиса.
+                </p>
+              </li>
+              <li class="opening-steps__item" data-aos="zoom" data-aos-duration="1000">
+                <span class="opening-steps__item-num">04</span>
+                <h3 class="opening-steps__item-title">Ожидайте смс от банка</h3>
+                <p class="opening-steps__item-text opening-steps__item-text-blue">
+                  На этом шаге вам остается лишь ожидать, пока оформится ИИН и банк обработает заявление. После этого
+                  вам придет смс со ссылкой для верикации и назначения даты и времени доставки карты курьером банка.
+                </p>
+              </li>
+              <li class="opening-steps__item" data-aos="zoom" data-aos-duration="1000">
+                <span class="opening-steps__item-num">05</span>
+                <h3 class="opening-steps__item-title">Внесите остаточный платеж</h3>
+                <p class="opening-steps__item-text opening-steps__item-text-blue">
+                  После получения карты на руки, вам необходимо оплатить остаток по нашему договору. После этого карта
+                  активируется в течение 1-2 дней.
+                </p>
+              </li>
+              <li class="opening-steps__item" data-aos="zoom" data-aos-duration="1000">
+                <span class="opening-steps__item-num">06</span>
+                <h3 class="opening-steps__item-title">Готово!</h3>
+                <p class="opening-steps__item-text opening-steps__item-text-blue">
+                  Вы можете использовать свою карту зарубежного банка для международных транзакций и покупок в
+                  интернете.
+                </p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+      <section class="faq" id="faq">
+        <div class="container">
+          <div class="faq__wrapper faq__wrapper-blue">
+            <span class="faq__title-signature title-signature title-signature-blue" data-aos="zoom"
+              data-aos-duration="1000">FAQ</span>
+            <h2 class="faq__title section-title" data-aos="zoom" data-aos-duration="1500">
+              Всё, что вы хотели знать
+            </h2>
+            <p class="faq__subtitle section-subtitle" data-aos="zoom" data-aos-duration="2000">
+              Полезные ответы на самые важные вопросы о наших услугах
+            </p>
+            <div class="faq__box">
+              <ul class="faq__accordeons">
+                <li class="faq__accordeons-item" data-aos="zoom" data-aos-duration="2000">
+                  <button class="faq__accordeons-button">
+                    <span class="faq__accordeons-title">Что означает "срочный выпуск"?</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path class="faq__accordeons-line1" d="M12 5V19" stroke="#4497B3" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M5 12H19" stroke="#4497B3" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                  <p class="faq__accordeons-text">
+                    Сроки выпуска карты в самих банках Киргизии обычно варьируются от 7 до 14 дней. Воспользовавшись
+                    услугой срочного выпуска, это время уменьшается до 2-3 дней. Уточняйте подробности в подержке на
+                    сайте.
+                  </p>
+                </li>
+                <li class="faq__accordeons-item" data-aos="zoom" data-aos-duration="2000">
+                  <button class="faq__accordeons-button">
+                    <span class="faq__accordeons-title">Что такое суточный лимит?</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path class="faq__accordeons-line1" d="M12 5V19" stroke="#4497B3" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M5 12H19" stroke="#4497B3" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                  <p class="faq__accordeons-text">
+                    Сроки выпуска карты в самих банках Киргизии обычно варьируются от 7 до 14 дней. Воспользовавшись
+                    услугой срочного выпуска, это время уменьшается до 2-3 дней. Уточняйте подробности в подержке на
+                    сайте.
+                  </p>
+                </li>
+                <li class="faq__accordeons-item" data-aos="zoom" data-aos-duration="2000">
+                  <button class="faq__accordeons-button">
+                    <span class="faq__accordeons-title">Какие гарантии вы даете?</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path class="faq__accordeons-line1" d="M12 5V19" stroke="#4497B3" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M5 12H19" stroke="#4497B3" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                    </svg>
+                  </button>
+                  <p class="faq__accordeons-text">
+                    Сроки выпуска карты в самих банках Киргизии обычно варьируются от 7 до 14 дней. Воспользовавшись
+                    услугой срочного выпуска, это время уменьшается до 2-3 дней. Уточняйте подробности в подержке на
+                    сайте.
+                  </p>
+                </li>
+                <li class="faq__accordeons-item" data-aos="zoom" data-aos-duration="2000">
+                  <button class="faq__accordeons-button">
+                    <span class="faq__accordeons-title">Счёт будет оформлен на меня?</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path class="faq__accordeons-line1" d="M12 5V19" stroke="#4497B3" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M5 12H19" stroke="#4497B3" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                    </svg>
+                  </button>
+                  <p class="faq__accordeons-text">
+                    Сроки выпуска карты в самих банках Киргизии обычно варьируются от 7 до 14 дней. Воспользовавшись
+                    услугой срочного выпуска, это время уменьшается до 2-3 дней. Уточняйте подробности в подержке на
+                    сайте.
+                  </p>
+                </li>
+                <li class="faq__accordeons-item" data-aos="zoom" data-aos-duration="2000">
+                  <button class="faq__accordeons-button">
+                    <span class="faq__accordeons-title">Можно ли сделать это удалённо из России?</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path class="faq__accordeons-line1" d="M12 5V19" stroke="#4497B3" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M5 12H19" stroke="#4497B3" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                  <p class="faq__accordeons-text">
+                    Сроки выпуска карты в самих банках Киргизии обычно варьируются от 7 до 14 дней. Воспользовавшись
+                    услугой срочного выпуска, это время уменьшается до 2-3 дней. Уточняйте подробности в подержке на
+                    сайте.
+                  </p>
+                </li>
+              </ul>
+              <ul class="faq__accordeons">
+                <li class="faq__accordeons-item" data-aos="zoom" data-aos-duration="2000">
+                  <button class="faq__accordeons-button">
+                    <span class="faq__accordeons-title">Чем виртуальная карта отличается от пластиковой?</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path class="faq__accordeons-line1" d="M12 5V19" stroke="#4497B3" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M5 12H19" stroke="#4497B3" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                  <p class="faq__accordeons-text">
+                    Сроки выпуска карты в самих банках Киргизии обычно варьируются от 7 до 14 дней. Воспользовавшись
+                    услугой срочного выпуска, это время уменьшается до 2-3 дней. Уточняйте подробности в подержке на
+                    сайте.
+                  </p>
+                </li>
+                <li class="faq__accordeons-item" data-aos="zoom" data-aos-duration="2000">
+                  <button class="faq__accordeons-button">
+                    <span class="faq__accordeons-title">Как долго открывается счет?</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path class="faq__accordeons-line1" d="M12 5V19" stroke="#4497B3" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M5 12H19" stroke="#4497B3" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                  <p class="faq__accordeons-text">
+                    Сроки выпуска карты в самих банках Киргизии обычно варьируются от 7 до 14 дней. Воспользовавшись
+                    услугой срочного выпуска, это время уменьшается до 2-3 дней. Уточняйте подробности в подержке на
+                    сайте.
+                  </p>
+                </li>
+                <li class="faq__accordeons-item" data-aos="zoom" data-aos-duration="2000">
+                  <button class="faq__accordeons-button">
+                    <span class="faq__accordeons-title">
+                      Могу ли я пополнять свою Киргизскую, Казахстанскую или Белорусскую
+                      карту из России?
+                    </span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path class="faq__accordeons-line1" d="M12 5V19" stroke="#4497B3" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M5 12H19" stroke="#4497B3" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                  <p class="faq__accordeons-text">
+                    Сроки выпуска карты в самих банках Киргизии обычно варьируются от 7 до 14 дней. Воспользовавшись
+                    услугой срочного выпуска, это время уменьшается до 2-3 дней. Уточняйте подробности в подержке на
+                    сайте.
+                  </p>
+                </li>
+                <li class="faq__accordeons-item" data-aos="zoom" data-aos-duration="2000">
+                  <button class="faq__accordeons-button">
+                    <span class="faq__accordeons-title">У Вас будет доступ к моему счету?</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path class="faq__accordeons-line1" d="M12 5V19" stroke="#4497B3" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M5 12H19" stroke="#4497B3" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                  <p class="faq__accordeons-text">
+                    Сроки выпуска карты в самих банках Киргизии обычно варьируются от 7 до 14 дней. Воспользовавшись
+                    услугой срочного выпуска, это время уменьшается до 2-3 дней. Уточняйте подробности в подержке на
+                    сайте.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reviews" id="reviews">
+        <div class="container">
+          <div class="reviews__wrapper reviews__wrapper-blue">
+            <div class="reviews__left">
+              <h2 class="reviews__title" data-aos="zoom" data-aos-duration="1000">Что о нас говорят</h2>
+              <p class="reviews__text" data-aos="zoom" data-aos-duration="1500">
+                Наша команда всегда заботится о каждом клиенте и старается предоставлять высококачественный сервис и
+                максимально удобные условия сотрудничества.
+              </p>
+            </div>
+            <div class="reviews__right">
+              <div class="reviews__statistics" data-aos="zoom" data-aos-duration="1500">
+                <div class="reviews__statistics-box">
+                  <span class="reviews__statistics-num">135</span>
+                  <span class="reviews__statistics-text">Карт оформлено<br> нашей компанией</span>
+                </div>
+                <div class="reviews__statistics-box">
+                  <span class="reviews__statistics-num reviews__statistics-interest">69</span>
+                  <span class="reviews__statistics-text">Клиентов нас<br> рекомендуют</span>
+                </div>
+              </div>
+              <div class="reviews__more" data-aos="zoom" data-aos-duration="1500">
+                <span class="reviews__more-title">Подробнее на</span>
+                <img class="reviews__more-img" src="./img/otzovik.svg" alt="">
+              </div>
+              <span class="reviews__more-date" data-aos="zoom" data-aos-duration="2000">
+                На Отзовике с июня 2022 года
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="blog">
+        <div class="container">
+          <div class="blog__wrapper">
+            <span class="blog__title-signature title-signature title-signature-blue" data-aos="zoom"
+              data-aos-duration="1000">Наш блог</span>
+            <h2 class="blog__title section-title" data-aos="zoom" data-aos-duration="1500">Полезные статьи</h2>
+            <p class="blog__subtitle section-subtitle" data-aos="zoom" data-aos-duration="2000">
+              Пишем о иностранных картах и международных платежных системах
+            </p>
+            <ul class="articles__list articles__list-blue">
+              <li class="articles__item" data-aos="zoom" data-aos-duration="1000">
+                <article class="article">
+                  <img class="articles__item-img" src="./img/article-1.webp" alt="">
+                  <div class="articles__item-box">
+                    <h3 class="articles__item-title">Почему стоит получить иностранную карту?</h3>
+                    <p class="articles__item-text">
+                      Откройте для себя новые возможности путешествий с помощью иностранных карт, которые позволяют
+                      покупать валюту, оплачивать услуги и бронировать отели без скрытых комиссий и ограничений
+                    </p>
+                    <a class="articles__item-button button" href="#">Читать на Яндекс Дзен</a>
+                  </div>
+                </article>
+              </li>
+              <li class="articles__item" data-aos="zoom" data-aos-duration="1500">
+                <article class="article">
+                  <img class="articles__item-img" src="./img/article-2.webp" alt="">
+                  <div class="articles__item-box">
+                    <h3 class="articles__item-title">Как оформить зарубежную карту Visa и Mastercard?</h3>
+                    <p class="articles__item-text">
+                      Эта статья будет полезна не только для россиян, которые хотят получить карточку в Кыргызстане, но
+                      и для тех, кто хочет сделать это в других...
+                    </p>
+                    <a class="articles__item-button button" href="#">Читать на Яндекс Дзен</a>
+                  </div>
+                </article>
+              </li>
+              <li class="articles__item" data-aos="zoom" data-aos-duration="2000">
+                <article class="article">
+                  <img class="articles__item-img" src="./img/article-3.webp" alt="">
+                  <div class="articles__item-box">
+                    <h3 class="articles__item-title">Мы расширили границы</h3>
+                    <p class="articles__item-text">
+                      Мы рады сообщить, что наша компания начала оказывать услуги по оформлению карт банка в Казахстане.
+                      Это означает, что наши клиенты из России теперь могут получить карты этого банка и использовать их
+                      для оплаты товаров и услуг в Казахстане.
+                    </p>
+                    <a class="articles__item-button button" href="#">Читать на Яндекс Дзен</a>
+                  </div>
+                </article>
+              </li>
+            </ul>
+            <img class="blog__yandex-img" src="./img/yandex-zen.svg" alt="yandex-zen" data-aos="zoom"
+              data-aos-duration="1000">
+            <p class="blog__text" data-aos="zoom" data-aos-duration="1500">
+              Еще больше интересных статей ждут вас в
+              нашем блоге Яндекс Дзен.
+            </p>
+            <p class="blog__text" data-aos="zoom" data-aos-duration="1500">
+              Мы постоянно пишем о новых возможностях получить иностранные карты или необходимые документы. А также
+              просто рассказываем <br>о различных банковских услугах и финансовых инструментах.
+            </p>
+            <p class="blog__text" data-aos="zoom" data-aos-duration="1500">
+              Продолжайте исследовать и расширять
+              свои знания вместе с нами!
+            </p>
+            <div class="button-aos" data-aos="zoom" data-aos-duration="1700">
+              <button class="blog__button button button-bluev2">Читать больше</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="requisites">
+        <div class="container">
+          <div class="requisites__relative">
+            <div class="requisites__wrapper requisites__wrapper-blue">
+              <h2 class="requisites__title section-title" data-aos="zoom" data-aos-duration="1000">Реквизиты</h2>
+              <div class="requisites__list">
+                <div class="requisites__box">
+                  <div class="requisites__item" data-aos="zoom" data-aos-duration="1500">
+                    <span class="requisites__item-title requisites__item-title-blue">
+                      Индивидуальные предприниматель
+                    </span>
+                    <span class="requisites__item-info requisites__item-info-orange">
+                      Ряжских Максим Андреевич
+                    </span>
+                  </div>
+                  <div class="requisites__item" data-aos="zoom" data-aos-duration="1500">
+                    <span class="requisites__item-title requisites__item-title-blue">ИНН</span>
+                    <span class="requisites__item-info requisites__item-info-orange">366233013419</span>
+                  </div>
+                </div>
+                <div class="requisites__box">
+                  <div class="requisites__item" data-aos="zoom" data-aos-duration="1500">
+                    <span class="requisites__item-title requisites__item-title-blue">Банк</span>
+                    <span class="requisites__item-info requisites__item-info-orange">АО «Тинькофф Банк»</span>
+                  </div>
+                  <div class="requisites__item" data-aos="zoom" data-aos-duration="1500">
+                    <span class="requisites__item-title requisites__item-title-blue">БИК</span>
+                    <span class="requisites__item-info requisites__item-info-orange">044525974</span>
+                  </div>
+                  <div class="requisites__item" data-aos="zoom" data-aos-duration="1500">
+                    <span class="requisites__item-title requisites__item-title-blue">Кор. счёт</span>
+                    <span class="requisites__item-info requisites__item-info-orange">30101810145250000974</span>
+                  </div>
+                  <div class="requisites__item" data-aos="zoom" data-aos-duration="1500">
+                    <span class="requisites__item-title requisites__item-title-blue">Юридический адрес компании</span>
+                    <span class="requisites__item-info requisites__item-info-orange">г. Воронеж, ул. Мордасовой
+                      11А</span>
+                  </div>
+                </div>
+              </div>
+              <div class="button-aos" data-aos="zoom" data-aos-duration="1500">
+                <button class="requisites__button button-download-blue button-download">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15"
+                      stroke="#76A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M7 10L12 15L17 10" stroke="#76A0B7" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path d="M12 15V3" stroke="#76A0B7" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  Скачать договор
+                </button>
+              </div>
+              <div class="requisites__contacts">
+                <div class="requisites__contacts-left contacts" data-aos="zoom" data-aos-duration="1500">
+                  <div class="requisites__phone phone">
+                    <div class="phone__rigth">
+                      <a class="requisites__number phone__number" href="tel:88002505296">8 800 250-52-96</a>
+                      <span class="requisites__number-subtext phone__number-subtext ">Бесплатная консультация</span>
+                    </div>
+                  </div>
+                  <div class="social">
+                    <a class="requisites__social-item social__item" href="#">
+                      <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <path class="social__scale" fill-rule="evenodd" clip-rule="evenodd"
+                          d="M11.164 19.6068C15.7264 17.778 18.7637 16.5628 20.2889 15.9732C24.6298 14.3008 25.5422 14.012 26.1289 14C26.2592 14 26.546 14.0241 26.7415 14.1684C26.898 14.2888 26.9371 14.4452 26.9631 14.5655C26.9892 14.6858 27.0153 14.9385 26.9892 15.131C26.7546 17.417 25.7378 22.9636 25.2164 25.5144C24.9948 26.5972 24.5646 26.9582 24.1474 26.9943C23.2349 27.0665 22.5441 26.4408 21.6707 25.9114C20.2889 25.0812 19.5198 24.5639 18.1771 23.7457C16.6259 22.8072 17.6296 22.2899 18.5161 21.4477C18.7507 21.2311 22.7526 17.8622 22.8308 17.5614C22.8439 17.5253 22.8439 17.3809 22.7526 17.3087C22.6614 17.2365 22.531 17.2606 22.4267 17.2847C22.2833 17.3087 20.0934 18.6563 15.8307 21.3153C15.205 21.7123 14.6445 21.9049 14.1361 21.8928C13.5756 21.8808 12.5066 21.6041 11.6984 21.3634C10.7208 21.0747 9.93862 20.9183 10.0038 20.4129C10.0429 20.1482 10.434 19.8835 11.164 19.6068Z"
+                          fill="white" />
+                        <rect class="social__opacity" x="0.75" y="0.75" width="38.5" height="38.5" rx="19.25"
+                          stroke="white" stroke-opacity="0.2" stroke-width="1.5" />
+                      </svg>
+                    </a>
+                    <a class="requisites__social-item social__item" href="#">
+                      <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <path class="social__scale"
+                          d="M27.4513 12.9454C25.7731 11.2623 23.5434 10.2297 21.1647 10.034C18.7861 9.83827 16.4153 10.4923 14.4803 11.8781C12.5453 13.2639 11.1737 15.2901 10.6131 17.5909C10.0525 19.8916 10.3399 22.3153 11.4233 24.4244L10.3618 29.5349C10.3505 29.586 10.35 29.6388 10.3605 29.69C10.371 29.7412 10.3923 29.7897 10.4229 29.8323C10.4666 29.8967 10.5292 29.9464 10.6023 29.9746C10.6753 30.0028 10.7553 30.0083 10.8315 29.9902L15.8734 28.8033C17.9944 29.8496 20.4208 30.1155 22.721 29.5539C25.0211 28.9922 27.0456 27.6394 28.4342 25.7361C29.8228 23.8329 30.4853 21.5028 30.3038 19.1606C30.1224 16.8184 29.1087 14.616 27.4433 12.9454H27.4513ZM25.875 25.4112C24.7144 26.5602 23.2198 27.3195 21.6014 27.5824C19.983 27.8453 18.3223 27.5986 16.8526 26.877L16.1468 26.5296L13.05 27.256V27.2165L13.7028 24.1191L13.3578 23.4454C12.6063 21.984 12.341 20.3241 12.5999 18.7039C12.8587 17.0837 13.6285 15.5865 14.7987 14.427C16.268 12.9714 18.26 12.1538 20.3369 12.1538C22.4137 12.1538 24.4057 12.9714 25.875 14.427L25.9095 14.4744C27.3597 15.9346 28.1693 17.904 28.1619 19.9536C28.1544 22.0031 27.3305 23.9667 25.8697 25.4165L25.875 25.4112Z"
+                          fill="white" />
+                        <path class="social__scale"
+                          d="M25.6017 23.1587C25.2223 23.7508 24.6199 24.4745 23.8689 24.6561C22.5421 24.9719 20.5227 24.6561 17.9938 22.3377L17.9619 22.3087C15.762 20.2719 15.1782 18.5745 15.3083 17.2298C15.3852 16.464 16.0274 15.7745 16.5688 15.3219C16.6548 15.2499 16.7567 15.1989 16.8662 15.1729C16.9757 15.147 17.0898 15.1468 17.1994 15.1723C17.3089 15.1979 17.411 15.2486 17.4973 15.3202C17.5836 15.3919 17.6519 15.4826 17.6966 15.585L18.5112 17.4114C18.5644 17.5289 18.5843 17.6586 18.5689 17.7866C18.5535 17.9145 18.5033 18.0359 18.4236 18.1377L18.0097 18.664C17.9236 18.7732 17.8724 18.9054 17.8625 19.0437C17.8525 19.182 17.8844 19.3201 17.954 19.4403C18.3472 20.0151 18.8177 20.5339 19.3524 20.9824C19.9278 21.5315 20.5803 21.9951 21.2896 22.3587C21.419 22.4105 21.5611 22.4228 21.6977 22.3942C21.8342 22.3657 21.9592 22.2974 22.0565 22.1982L22.5315 21.7193C22.6219 21.6229 22.7374 21.5532 22.8652 21.5179C22.9931 21.4826 23.1283 21.483 23.2559 21.5193L25.1931 22.0693C25.3029 22.1002 25.4037 22.1564 25.4875 22.2332C25.5714 22.31 25.6358 22.4053 25.6756 22.5114C25.7153 22.6175 25.7294 22.7313 25.7166 22.8438C25.7038 22.9563 25.6644 23.0641 25.6017 23.1587Z"
+                          fill="white" />
+                        <rect class="social__opacity" x="0.75" y="0.75" width="38.5" height="38.5" rx="19.25"
+                          stroke="white" stroke-opacity="0.2" stroke-width="1.5" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="newsletter">
+              <div class="newsletter__top">
+                <img class="newsletter__img" src="./img/newsletter-telegram.svg" alt="">
+                <div class="newsletter__box">
+                  <h4 class="newsletter__title">EasyCrds.ru - Новости, Акции, специальные предложения!</h4>
+                  <span class="newsletter__telegram">@easycrds</span>
+                </div>
+              </div>
+              <p class="newsletter__text">
+                Подписывайтесь на наш Telegram-канал, чтобы первым быть в курсе всех актуальных новостей нашей
+                компании.
+              </p>
+              <a class="newsletter__button button">Подписаться</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <a class="logo-link" href="#">
+            <img class="logo logo-footer" src="./img/logo.svg" alt="logo">
+          </a>
+          <div class="footer__botton">
+            <p class="footer__text">
+              ИП Ряжских Максим Андреевич <span class="footer__text--dedicated">не является</span>
+              официальным партнером указанных на сайте банков или лицом, аффилированным с ними.
+            </p>
+            <span class="footer__copy">Все права защищены. © 2023 EasyCrds.ru</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="application-modal" id="application-modal">
+      <div class="application-modal__box">
+        <button class="close-modal"></button>
+        <h2 class="application-modal__title">Оставить заявку</h2>
+        <span class="application-modal__subtitle">Мы постараемся ответить вам в кратчайшие сроки</span>
+        <form class="application-modal__form" id="application-form">
+          <div class="application-modal__input--login">
+            <input class="application-modal__input" type="text" name="login" required placeholder="Ваш логин">
+          </div>
+          <div class="application-modal__input--tel">
+            <input class="application-modal__input" type="tel" name="phone" required placeholder="Номер телефона">
+          </div>
+          <div class="application-modal__connection">
+            <span class="application-modal__connection-title">Предпочитаемый способ связи:</span>
+            <div class="application-modal__connection-list">
+              <label>
+                <input class="application-modal__checkbox" id="" type="checkbox" name="communication_method"
+                  value="phone" checked>
+                <svg class="application-modal__checkbox-style-phone" width="40" height="40" viewBox="0 0 40 40"
+                  fill="none">
+                  <rect width="40" height="40" rx="20" fill="#A8B8C5" opacity="0.5" />
+                  <path class="application-modal__checkbox-style-scale"
+                    d="M15.8594 19.5585C16.6214 21.1321 17.8938 22.4012 19.4693 23.1591C19.5855 23.2141 19.714 23.238 19.8422 23.2282C19.9704 23.2185 20.0939 23.1755 20.2005 23.1036L22.5145 21.5578C22.6167 21.4885 22.7349 21.4462 22.8579 21.4348C22.9809 21.4235 23.1048 21.4435 23.2179 21.493L27.5498 23.3535C27.6978 23.4151 27.8215 23.5237 27.9018 23.6625C27.982 23.8013 28.0145 23.9627 27.994 24.1217C27.8567 25.1933 27.3337 26.1782 26.5227 26.892C25.7118 27.6059 24.6685 27.9998 23.5882 28C20.2496 28 17.0477 26.6737 14.687 24.313C12.3263 21.9523 11 18.7504 11 15.4118C11.0002 14.3315 11.3941 13.2882 12.108 12.4773C12.8218 11.6663 13.8067 11.1433 14.8783 11.006C15.0373 10.9855 15.1987 11.018 15.3375 11.0982C15.4763 11.1785 15.5849 11.3022 15.6465 11.4502L17.507 15.7913C17.5554 15.9027 17.5756 16.0243 17.5659 16.1454C17.5562 16.2664 17.5169 16.3832 17.4514 16.4855L15.9057 18.8365C15.8369 18.9429 15.7965 19.0651 15.7884 19.1915C15.7803 19.3179 15.8047 19.4443 15.8594 19.5585Z"
+                    fill="white" />
+                </svg>
+              </label>
+              <label>
+                <input class="application-modal__checkbox" id="" type="checkbox" name="communication_method" value="tg">
+                <svg class="application-modal__checkbox-style-tg" width="40" height="40" viewBox="0 0 40 40"
+                  fill="none">
+                  <g>
+                    <rect width="40" height="40" rx="20" fill="#A8B8C5" opacity="0.5" />
+                    <path class="application-modal__checkbox-style-scale" fill-rule="evenodd" clip-rule="evenodd"
+                      width="40" height="40"
+                      d="M11.164 19.6068C15.7264 17.778 18.7637 16.5628 20.2889 15.9732C24.6298 14.3008 25.5422 14.012 26.1289 14C26.2592 14 26.546 14.0241 26.7415 14.1684C26.898 14.2888 26.9371 14.4452 26.9631 14.5655C26.9892 14.6858 27.0153 14.9385 26.9892 15.131C26.7546 17.417 25.7378 22.9636 25.2164 25.5144C24.9948 26.5972 24.5646 26.9582 24.1474 26.9943C23.2349 27.0665 22.5441 26.4408 21.6707 25.9114C20.2889 25.0812 19.5198 24.5639 18.1771 23.7457C16.6259 22.8072 17.6296 22.2899 18.5161 21.4477C18.7507 21.2311 22.7526 17.8622 22.8308 17.5614C22.8439 17.5253 22.8439 17.3809 22.7526 17.3087C22.6614 17.2365 22.531 17.2606 22.4267 17.2847C22.2833 17.3087 20.0934 18.6563 15.8307 21.3153C15.205 21.7123 14.6445 21.9049 14.1361 21.8928C13.5756 21.8808 12.5066 21.6041 11.6984 21.3634C10.7208 21.0747 9.93862 20.9183 10.0038 20.4129C10.0429 20.1482 10.434 19.8835 11.164 19.6068Z"
+                      fill="white" />
+                  </g>
+                </svg>
+              </label>
+              <label>
+                <input class="application-modal__checkbox" id="" type="checkbox" name="communication_method"
+                  value="whatsapp">
+                <svg class="application-modal__checkbox-style-whatsapp" width="40" height="40" viewBox="0 0 40 40"
+                  fill="none">
+                  <g>
+                    <rect width="40" height="40" rx="20" fill="#A8B8C5" opacity="0.5" />
+                    <path class="application-modal__checkbox-style-scale"
+                      d="M27.4513 12.9454C25.7731 11.2623 23.5434 10.2297 21.1647 10.034C18.7861 9.83827 16.4153 10.4923 14.4803 11.8781C12.5453 13.2639 11.1737 15.2901 10.6131 17.5909C10.0525 19.8916 10.3399 22.3153 11.4233 24.4244L10.3618 29.5349C10.3505 29.586 10.35 29.6388 10.3605 29.69C10.371 29.7412 10.3923 29.7897 10.4229 29.8323C10.4666 29.8967 10.5292 29.9464 10.6023 29.9746C10.6753 30.0028 10.7553 30.0083 10.8315 29.9902L15.8734 28.8033C17.9944 29.8496 20.4208 30.1155 22.721 29.5539C25.0211 28.9922 27.0456 27.6394 28.4342 25.7361C29.8228 23.8329 30.4853 21.5028 30.3038 19.1606C30.1224 16.8184 29.1087 14.616 27.4433 12.9454H27.4513ZM25.875 25.4112C24.7144 26.5602 23.2198 27.3195 21.6014 27.5824C19.983 27.8453 18.3223 27.5986 16.8526 26.877L16.1468 26.5296L13.05 27.256V27.2165L13.7028 24.1191L13.3578 23.4454C12.6063 21.984 12.341 20.3241 12.5999 18.7039C12.8587 17.0837 13.6285 15.5865 14.7987 14.427C16.268 12.9714 18.26 12.1538 20.3369 12.1538C22.4137 12.1538 24.4057 12.9714 25.875 14.427L25.9095 14.4744C27.3597 15.9346 28.1693 17.904 28.1619 19.9536C28.1544 22.0031 27.3305 23.9667 25.8697 25.4165L25.875 25.4112Z"
+                      fill="white" />
+                    <path class="application-modal__checkbox-style-scale"
+                      d="M25.6017 23.1585C25.2222 23.7506 24.6199 24.4743 23.8689 24.6559C22.5421 24.9716 20.5226 24.6559 17.9937 22.3374L17.9619 22.3085C15.762 20.2716 15.1782 18.5743 15.3082 17.2295C15.3852 16.4637 16.0274 15.7743 16.5687 15.3216C16.6548 15.2497 16.7566 15.1987 16.8661 15.1727C16.9756 15.1467 17.0897 15.1465 17.1993 15.1721C17.3089 15.1977 17.4109 15.2483 17.4973 15.32C17.5836 15.3916 17.6518 15.4823 17.6965 15.5848L18.5112 17.4111C18.5644 17.5287 18.5843 17.6584 18.5689 17.7863C18.5535 17.9142 18.5033 18.0356 18.4236 18.1374L18.0096 18.6637C17.9236 18.773 17.8723 18.9052 17.8624 19.0435C17.8525 19.1818 17.8844 19.3198 17.9539 19.4401C18.3471 20.0148 18.8176 20.5336 19.3524 20.9822C19.9277 21.5313 20.5802 21.9948 21.2895 22.3585C21.419 22.4102 21.5611 22.4226 21.6976 22.394C21.8342 22.3654 21.9591 22.2972 22.0565 22.198L22.5315 21.719C22.6218 21.6226 22.7374 21.5529 22.8652 21.5176C22.9931 21.4823 23.1283 21.4828 23.2559 21.519L25.1931 22.069C25.3028 22.1 25.4037 22.1562 25.4875 22.233C25.5713 22.3098 25.6357 22.4051 25.6755 22.5111C25.7153 22.6172 25.7294 22.7311 25.7165 22.8436C25.7037 22.956 25.6644 23.0639 25.6017 23.1585Z"
+                      fill="white" />
+                  </g>
+                </svg>
+              </label>
+              <label>
+                <input class="application-modal__checkbox" id="" type="checkbox" name="communication_method"
+                  value="viber">
+                <svg class="application-modal__checkbox-style-viber" width="40" height="40" viewBox="0 0 40 40"
+                  fill="none">
+                  <g>
+                    <rect width="40" height="40" rx="20" fill="#A8B8C5" opacity="0.5" />
+                    <path class="application-modal__checkbox-style-scale"
+                      d="M22.2222 10H17.7778C13.4889 10 10 13.454 10 17.7001V21.0001C9.99971 22.4577 10.4172 23.8855 11.2039 25.1176C11.9906 26.3497 13.1143 27.3354 14.4444 27.9604V31.6372C14.4444 31.9562 14.8472 32.1212 15.075 31.8957L18.3028 28.7029H22.2222C26.5111 28.7029 30 25.2489 30 21.0001V17.7001C30 13.454 26.5111 10 22.2222 10ZM25.1333 24.4324L24.0083 25.5214C22.825 26.6682 19.7361 25.3592 17.0139 22.6064C14.2917 19.8509 13.0972 16.7653 14.2222 15.6186L15.3472 14.5296C15.7611 14.1281 16.4639 14.1363 16.9278 14.5461L18.55 16.1878C19.1278 16.7736 18.8833 17.7554 18.1194 17.9809C17.5917 18.1486 17.2333 18.7234 17.4028 19.2459C17.6833 20.4669 19.2472 21.9932 20.4139 22.2957C20.9389 22.4167 21.5278 22.1334 21.7111 21.6136C21.9528 20.8629 22.95 20.6401 23.5306 21.2286L25.15 22.8677C25.5556 23.2771 25.55 23.9732 25.1333 24.4324ZM21.0111 15.2251C20.9 15.2251 20.7889 15.2306 20.6806 15.2443C20.4778 15.2663 20.2944 15.1206 20.2722 14.9198C20.25 14.719 20.3972 14.5375 20.6 14.5155C20.7361 14.499 20.875 14.4935 21.0111 14.4935C23.0528 14.4935 24.7139 16.1381 24.7139 18.1593C24.7139 18.2941 24.7083 18.4316 24.6917 18.5663C24.6694 18.7643 24.4833 18.9128 24.2833 18.8908C24.0833 18.8688 23.9333 18.6846 23.9556 18.4866C23.9667 18.3793 23.975 18.2693 23.975 18.1593C23.975 16.5423 22.6444 15.2251 21.0111 15.2251ZM23.2333 18.1593C23.2333 18.3601 23.0639 18.5251 22.8611 18.5251C22.6611 18.5251 22.4917 18.3601 22.4917 18.1593C22.4917 17.3508 21.8278 16.6936 21.0111 16.6936C20.8056 16.6936 20.6389 16.5286 20.6389 16.3251C20.6389 16.1243 20.8056 15.9593 21.0111 15.9593C22.2361 15.9593 23.2333 16.9466 23.2333 18.1593ZM26.0583 19.3446C26.0111 19.5426 25.7972 19.6664 25.6 19.6141C25.4083 19.5619 25.2917 19.3638 25.3361 19.1741C25.4167 18.8441 25.4556 18.5031 25.4556 18.1593C25.4556 15.7338 23.4611 13.7593 21.0111 13.7593C20.8972 13.7593 20.7806 13.762 20.6667 13.773C20.4639 13.7868 20.2861 13.6355 20.2694 13.4348C20.2556 13.2313 20.4083 13.0553 20.6111 13.0415C20.7444 13.0305 20.8778 13.025 21.0111 13.025C23.8694 13.025 26.1972 15.3296 26.1972 18.1593C26.1972 18.5581 26.15 18.9568 26.0583 19.3446Z"
+                      fill="white" />
+                  </g>
+                </svg>
+              </label>
+            </div>
+          </div>
+          <button class="application-modal__button button" type="submit">Отправить заявку</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="./js/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+    });
+  </script>
+  <script src="./js/main.js"></script>
+  <script src="./js/axios.min.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+

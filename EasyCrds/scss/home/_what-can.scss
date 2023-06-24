@@ -1,0 +1,118 @@
+.what-can {
+    margin-top: 100px;
+    background-color: $secondary-color-bg;
+
+    &__wrapper {
+        position: relative;
+        padding: 99px 0;
+
+        &::after {
+            position: absolute;
+            top: 150px;
+            left: 864px;
+            content: '';
+            width: 328px;
+            height: 146px;
+            background-image: url('../img/stars-4.webp');
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__wrapper-optima {
+        text-align: center;
+
+        &::after {
+            top: 150px;
+            left: 164px;
+            width: 1028px;
+            height: 146px;
+            background-image: url('../img/stars-10.webp');
+        }
+    }
+
+    &__title {
+        margin: 0 32px;
+        margin-top: 30px;
+        margin-left: 0;
+        margin-right: 0 ;
+        font-size: 34px;
+    }
+
+    &__title-optima {
+        margin-left: 60px;
+    }
+
+    &__title-signature {
+        margin: 0 32px;
+    }
+
+    &__title-signature-optima {
+        margin-left: 60px;
+    }
+
+    &__subtitle {
+        margin: 0 38px;
+        margin-top: 10px;
+    }
+
+    &__subtitle-optima {
+        margin-left: 60px;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 80px;
+        gap: 25px 20px;
+        height: 100%;
+    }
+
+    &__list-optima {
+        flex-wrap: nowrap;
+        padding-bottom: 14px;
+        gap: 20px;
+    }
+
+    &__item {
+        padding: 25px 31px;
+        padding-right: 39px;
+        width: 488px;
+        border: 1px solid rgba(168, 184, 197, 0.2);
+        border-radius: 12px;
+    }
+
+    &__item-optima {
+        text-align: start;
+        padding: 32px;
+        padding-top: 25px;
+        padding-bottom: 28px;
+        padding-right: 30px;
+        width: 299px;
+    }
+
+    &__item-wide {
+        width: 740px;
+    }
+
+    &__item-img {
+        width: 64px;
+        height: 64px;
+    }
+
+    &__item-title {
+        margin-top: 23px;
+        font-size: $secondary-title-font-size;
+        font-weight: 500;
+        line-height: $secondary-title-line-height;
+    }
+
+    &__item-text {
+        margin-top: 14px;
+        line-height: $secondary-line-height;
+        color: $secondary-color;
+    }
+}
+
+.what-can-optima {
+    margin-top: 91px;
+}

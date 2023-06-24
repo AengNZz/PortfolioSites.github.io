@@ -1,0 +1,128 @@
+.faq {
+    margin-top: 200px;
+
+    &__wrapper {
+        position: relative;
+        text-align: center;
+        &::after {
+            position: absolute;
+            top: -200px;
+            left: -342px;
+            content: '';
+            width: 1000px;
+            height: 1849px;
+            background-image: url('../img/waves-4.webp');
+            background-repeat: no-repeat;
+            z-index: -1;
+        }
+        &::before {
+            position: absolute;
+            top: 40px;
+            left: 235px;
+            content: '';
+            width: 746px;
+            height: 116px;
+            background-image: url('../img/stars-5.webp');
+            background-repeat: no-repeat;
+            z-index: -1;
+        }
+    }
+
+    &__wrapper-orange {
+        &::before {
+            top: 41px;
+            left: 242px;
+        }
+    }
+
+    &__wrapper-blue {
+        &::before {
+            top: 39px;
+            left: 242px;
+        }
+    }
+
+    &__wrapper-dark-blue {
+        &::before {
+            top: 41px;
+            left: 240px;
+        }
+    }
+
+    &__wrapper-green {
+        &::before {
+            top: 40px;
+            left: 240px;
+        }
+    }
+
+    &__subtitle {
+        margin-top: 10px;
+    }
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        margin-top: 70px;
+    }
+
+    &__accordeons-item {
+        max-width: 614px;
+        border-bottom: 1px solid rgba(168, 184, 197, 0.2);
+    }
+
+    & svg {
+        position: absolute;
+        right: 40px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &__accordeons-button {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 36px 40px;
+        width: 614px;
+        min-height: 104px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    &__accordeons-title {
+        text-align: start;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: $secondary-title-font-size;
+        line-height: $secondary-title-line-height;
+    }
+
+    &__accordeons-line1 {
+        transition: transform 0.3s ease-out;
+        transform: rotate(0);
+        transform-origin: center;
+    }
+
+    &__accordeons-button-active svg &__accordeons-line1 {
+        transform: rotate(-90deg);
+    }
+
+    &__accordeons-text {
+        height: 0;
+        overflow-y: hidden;
+        padding: 45px;
+        padding-top: 0;
+        padding-bottom: 0;
+        text-align: start;
+        font-weight: 500;
+        font-size: $primary-font-size;
+        line-height: $primary-line-height;
+        color: $secondary-color;
+        transition: 0.3s ease-out;
+        opacity: 0;
+    }
+}

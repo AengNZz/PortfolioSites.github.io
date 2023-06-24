@@ -1,0 +1,228 @@
+.intro {
+    &__wrapper {
+        display: flex;
+        position: relative;
+        left: -62px;
+        min-width: 1646px;
+        height: 696px;
+        background: linear-gradient(100.25deg, #f4f7ff 0%, #ebeff9 100%);
+        border-radius: 12px;
+        
+    }
+
+    &__wrappe-orange {
+        position: relative;
+        min-width: 1372px;
+        background: linear-gradient(97.51deg, #f5a357 0%, #db392f 100%);
+    }
+
+    &__wrappe-blue {
+        min-width: 1372px;
+        background: linear-gradient(264.89deg, #7bd5eb 0%, #57a4d0 100%);
+    }
+
+    &__wrappe-optima {
+        min-width: 1372px;
+        height: 600px;
+        background: linear-gradient(100.25deg, #f4f7ff 0%, #ebeff9 100%);
+        border-radius: 12px;
+    }
+
+    &__wrappe-bank {
+        min-width: 1372px;
+        height: 593px;
+    }
+
+    &__content {
+        margin-top: 132px;
+        margin-left: 80px;
+    }
+
+    &__content-orange {
+        margin-top: 120px;
+        margin-left: 80px;
+    }
+
+    &__content-blue {
+        margin-top: 125px;
+    }
+
+    &__content-optima {
+        margin-top: 82px;
+    }
+
+    &__content-green {
+        margin-top: 93px;
+    }
+
+    &__content-bank {
+        margin-top: 82px;
+        margin-left: 90px;
+        z-index: 1;
+    }
+
+    &__title-signature-orange {
+        padding: 7px;
+        width: 131px;
+        color: $primary-color-bg;
+    }
+
+    &__title-signature-blue {
+        padding: 8px;
+        width: 134px;
+        color: $primary-color-bg;
+    }
+
+    &__title-signature-optima {
+        padding: 7px;
+        width: 131px;
+        color: $primary-color-bg;
+    }
+
+    &__country-img-orange {
+        margin-right: 10px;
+    }
+
+    &__country-img-blue {
+        margin-right: 10px;
+    }
+
+    &__country-img-optima {
+        margin-right: 10px;
+    }
+
+    &__title {
+        margin-top: 30px;
+        max-width: 720px;
+        font-size: $primary-title-font-size;
+        font-weight: 600;
+        line-height: $primary-title-line-height;
+    }
+
+    &__title-orange {
+        color: $primary-color-bg;
+    }
+
+    &__title-blue {
+        color: $primary-color-bg;
+    }
+
+    &__title-optima {
+        max-width: 538px;
+    }
+
+    &__title-green {
+        max-width: 538px;
+    }
+
+    &__text {
+        margin-top: 25px;
+        max-width: 560px;
+        line-height: $secondary-line-height;
+        color: $secondary-color;
+    }
+
+    &__text-orange {
+        color: $secondary-color-kr;
+        max-width: 496px;
+    }
+
+    &__text-blue {
+        max-width: 525px;
+        font-weight: 500;
+        line-height: $primary-line-height;
+        color: #bae1ff;
+    }
+
+    &__text-bank {
+        max-width: 525px;
+    }
+
+    &__button {
+        margin-top: 74px;
+    }
+
+    &__button-optima {
+        margin-top: 72px;
+        min-width: 202px;
+    }
+
+    &__decor-cards {
+        position: absolute;
+        top: 10px;
+        right: 243px;
+        width: 830px;
+        height: 745px;
+        z-index: 1;
+    }
+
+    &__decor-cards-orange {
+        top: 74px;
+        right: 14px;
+        width: 780px;
+        height: 660px;
+    }
+
+    &__decor-cards-blue {
+        top: 58px;
+        right: -55px;
+        width: 855px;
+        height: 675px;
+    }
+
+    &__decor-cards-optima {
+        top: 0;
+        right: 0;
+        width: 444px;
+        height: 600px;
+        border-top-right-radius: 12px;
+        border-bottom-right-radius: 12px;
+        z-index: 0;
+    }
+
+    &__decor-cards-bank {
+    }
+
+    &__decor {
+        position: absolute;
+        top: 205px;
+        right: 0px;
+        width: 620px;
+        height: 400px;
+        z-index: 0;
+    }
+
+    &__decor-orange {
+        top: 0;
+        right: 0;
+        width: 685px;
+        height: 695px;
+        border-radius: 12px;
+    }
+
+    &__decor-blue {
+        top: -8px;
+        right: 1px;
+        width: 674px;
+        height: 694px;
+    }
+
+    &__decor-optima {
+        top: 129px;
+        right: 125px;
+        width: 650px;
+        height: 462px;
+    }
+
+    &__decor-green {
+        top: 167px;
+        right: 198px;
+        width: 547px;
+        height: 430px;
+    }
+
+    &__decor-bank {
+        top: 131px;
+        right: 117px;
+    }
+}

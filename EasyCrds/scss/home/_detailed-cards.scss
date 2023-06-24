@@ -1,0 +1,298 @@
+.detailed-cards {
+    &__wrapper {
+        position: relative;
+        display: flex;
+        margin-top: 112px;
+        padding: 51px 60px 60px 60px;
+        min-height: 300px;
+        background: linear-gradient(93.31deg, #51b6ff 0%, #007fe4 100%);
+        border-radius: 12px;
+
+        &::after {
+            position: absolute;
+            top: 40px;
+            left: 100px;
+            content: '';
+            width: 1118px;
+            height: 238px;
+            background-image: url('../img/stars-3.webp');
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__wrapper-blue {
+        background: linear-gradient(264.89deg, #7bd5eb 0%, #57a4d0 100%);
+
+        &::after {
+            width: 1118px;
+            height: 266px;
+            background-image: url('../img/stars-8.webp');
+        }
+    }
+
+    &__wrapper-orange {
+        margin-top: 159px;
+        background: linear-gradient(97.51deg, #f5a357 0%, #db392f 100%);
+
+        &::before {
+            position: absolute;
+            top: 0;
+            left: 0px;
+            content: '';
+            width: 1814px;
+            height: 1844px;
+            background-image: url('../img/waves-11.webp');
+            background-repeat: no-repeat;
+        }
+
+        &::after {
+            width: 1118px;
+            height: 266px;
+            background-image: url('../img/stars-8.webp');
+        }
+    }
+
+    &__wrapper-orange-kr {
+        &::before {
+            display: none;
+        }
+    }
+
+    &__wrapper-optima {
+        overflow: hidden;
+        margin-top: 121px;
+        padding-top: 60px;
+
+        &::after {
+            top: 0;
+            left: 0;
+            width: 1247px;
+            height: 469px;
+            background-image: url('../img/stars-11.webp');
+        }
+    }
+
+    &__wrapper-dark-blue {
+        margin-top: 121px;
+        padding-top: 60px;
+        overflow: hidden;
+        background: linear-gradient(148.13deg, #325579 0%, #073768 100%);
+
+        &::before {
+            position: absolute;
+            top: 0;
+            left: 0px;
+            content: '';
+            width: 1814px;
+            height: 1844px;
+            background-image: url('../img/waves-12.webp');
+            background-repeat: no-repeat;
+        }
+
+        &::after {
+            top: 0;
+            left: 0;
+            width: 1247px;
+            height: 469px;
+            background-image: url('../img/stars-11.webp');
+        }
+    }
+
+    &__wrapper-green {
+        margin-top: 129px;
+        padding-top: 60px;
+        overflow: hidden;
+        background: linear-gradient(148.13deg, #32a64d 0%, #297538 100%);
+
+        &::before {
+            position: absolute;
+            top: 0px;
+            left: 32px;
+            content: '';
+            width: 1876px;
+            height: 1877px;
+            background-image: url('../img/waves-13.webp');
+            background-repeat: no-repeat;
+        }
+
+        &::after {
+            position: absolute;
+            top: 40px;
+            left: 100px;
+            width: 1068px;
+            height: 429px;
+            background-image: url('../img/stars-12.webp');
+        }
+    }
+
+    &__left {
+        position: relative;
+        max-width: 500px;
+        z-index: 1;
+    }
+
+    &__left-blue {
+        max-width: 573px;
+    }
+
+    &__left-optima {
+        max-width: 578px;
+    }
+
+    &__logo {
+        width: 180px;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: $primary-title-font-size;
+        line-height: $primary-title-line-height;
+        color: $primary-color-bg;
+    }
+
+    &__text {
+        margin-top: 11px;
+        line-height: $secondary-line-height;
+        color: $secondary-color-bg;
+    }
+
+    &__text-blue {
+        color: #bae1ff;
+    }
+
+    &__text-orange {
+        color: $secondary-color-kr;
+    }
+
+    &__text-optima {
+        margin-top: 31px;
+    }
+
+    &__text-dark-blue {
+        color: $secondary-color-main;
+    }
+
+    &__text-green {
+        color: $secondary-color-freedom;
+    }
+
+    &__text-optima-tow {
+        margin-top: 20px;
+    }
+
+    &__button-box {
+        display: flex;
+        margin-top: 33px;
+        gap: 27px;
+    }
+
+    &__button {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        min-width: 224px;
+        border-radius: 4px;
+    }
+
+    &__button-blue {
+        padding: 15px;
+        min-width: 209px;
+    }
+
+    &__button-orange {
+        padding: 15px;
+        min-width: 209px;
+        color: $primary-color-kr;
+
+        &:hover {
+            color: $primary-color-bg;
+            background-color: #ffb571;
+        }
+
+        &:active {
+            background-color: $primary-color-kr;
+        }
+    }
+
+    &__button-optima {
+        padding: 16px;
+        min-width: 246px;
+        color: $primary-color-kr;
+        transition: 0.3s ease-out;
+
+        &:hover {
+            color: $primary-color-bg;
+            background-color: #ffb571;
+        }
+
+        &:active {
+            background-color: $primary-color-kr;
+        }
+    }
+
+    &__button-dark-blue {
+        padding: 16px;
+        min-width: 246px;
+        color: #1e4165;
+        transition: 0.3s ease-out;
+
+        &:hover {
+            color: $primary-color-bg;
+            background-color: $secondary-color-main;
+        }
+
+        &:active {
+            background-color: #0a2d51;
+        }
+    }
+
+    &__button-green {
+        padding: 16px;
+        min-width: 246px;
+        transition: 0.3s ease-out;
+    }
+
+    &__country-img {
+        width: 24px;
+        height: 18px;
+    }
+
+    &__img {
+        position: absolute;
+        right: 20px;
+        bottom: 0;
+        width: 528px;
+    }
+
+    &__img-blue {
+        right: 4px;
+        height: 394px;
+        width: 530px;
+    }
+
+    &__img-orange {
+        right: 23px;
+        width: 516px;
+        height: 393px;
+    }
+
+    &__img-optima {
+        top: -11px;
+        right: 21px;
+        width: 600px;
+        height: 489px;
+    }
+
+    &__img-dark-blue {
+        top: -13px;
+        right: 21px;
+        width: 600px;
+        height: 489px;
+    }
+
+    &__img-green {
+        width: 600px;
+        height: 505px;
+    }
+}

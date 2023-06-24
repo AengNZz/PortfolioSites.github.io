@@ -1,0 +1,31 @@
+.footer {
+    &__wrapper {
+        padding: 60px 20px;
+
+        padding-bottom: 50px;
+    }
+
+    &__botton {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        margin-top: 53px;
+    }
+
+    &__text {
+        max-width: 700px;
+        font-size: 14px;
+        line-height: $secondary-line-height;
+        color: $secondary-color;
+    }
+
+    &__text--dedicated {
+        color: $primary-color;
+    }
+
+    &__copy {
+        font-size: 14px;
+        line-height: $secondary-line-height;
+        color: $secondary-color;
+    }
+}

@@ -1,0 +1,138 @@
+.opening-steps {
+    margin-top: 120px;
+
+    &__wrapper {
+        position: relative;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 33px;
+    }
+
+    &__title {
+        margin-top: 29px;
+    }
+
+    &__subtitle {
+        margin-top: 70px;
+        max-width: 380px;
+    }
+
+    &__list {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 71px;
+        padding-right: 55px;
+        padding-left: 60px;
+        padding-top: 40px;
+        padding-bottom: 52px;
+        gap: 30px 40px;
+        background: linear-gradient(94deg, #8fb9d0 0%, #719bb2 100%);
+        border-radius: 12px;
+        overflow: hidden;
+        &::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: '';
+            width: 1814px;
+            height: 1844px;
+            background-image: url('../img/waves-3.webp');
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__list-orange {
+        margin-top: 51px;
+        background: linear-gradient(97.51deg, #f5a357 0%, #db392f 100%);
+
+        &::before {
+            background-image: url('../img/waves-6.webp');
+        }
+    }
+
+    &__list-blue {
+        margin-top: 51px;
+        background: linear-gradient(264.89deg, #7bd5eb 0%, #57a4d0 100%);
+
+        &::before {
+            background-image: url('../img/waves-7.webp');
+        }
+    }
+
+    &__list-dark-blue {
+        margin-top: 51px;
+        background: linear-gradient(148.13deg, #325579 0%, #073768 100%);
+
+        &::before {
+            background-image: url('../img/waves-12.webp');
+        }
+    }
+
+    &__list-green {
+        margin-top: 51px;
+        background: linear-gradient(148.13deg, #32a64d 0%, #297538 100%);
+
+        &::before {
+            background-image: url('../img/waves-13.webp');
+        }
+    }
+
+    &__item {
+        width: 349px;
+        z-index: 1;
+    }
+
+    &__item-num {
+        font-weight: 500;
+        font-size: 80px;
+        color: $primary-color-bg;
+        user-select: none;
+    }
+
+    &__item-title {
+        margin-top: 6px;
+        font-weight: 500;
+        font-size: $secondary-title-font-size;
+        line-height: $secondary-title-line-height;
+        color: $primary-color-bg;
+    }
+
+    &__item-text {
+        margin-top: 15px;
+        font-size: $primary-font-size;
+        line-height: $secondary-line-height;
+        color: #c6e5f7;
+    }
+
+    &__item-text-orange {
+        color: $secondary-color-kr;
+    }
+
+    &__item-text-blue {
+        color: #bae1ff;
+    }
+
+    &__item-text-dark-blue {
+        color: $secondary-color-main;
+    }
+
+    &__item-text-green {
+        color: $secondary-color-freedom;
+    }
+
+    &__item-img {
+        position: absolute;
+        top: 533px;
+        right: -102px;
+        width: 500px;
+        height: 500px;
+    }
+}
+
+.opening-stepsV2 {
+    margin-top: 108px;
+}

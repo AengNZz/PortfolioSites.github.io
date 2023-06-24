@@ -1,0 +1,510 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    padding-top: 104px;
+    font-size: $primary-font-size;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    background-color: $primary-color-bg;
+    color: $primary-color;
+}
+
+table {
+    table-layout: fixed;
+}
+
+th,
+td {
+    width: auto;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    overflow-x: hidden;
+
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1280px;
+    padding: 0 16px;
+}
+
+.title-signature {
+    padding: 7px 16px;
+    display: inline-flex;
+    font-weight: 500;
+    line-height: $secondary-line-height;
+    background: rgba(0, 137, 238, 0.1);
+    border-radius: 4px;
+    color: $primary-color-main;
+}
+
+.title-signature-orange {
+    background-color: rgba(255, 209, 136, 0.2);
+    color: $primary-color-kr;
+}
+
+.title-signature-blue {
+    background: rgba(186, 225, 255, 0.2);
+    color: $primary-color-kz;
+}
+
+.title-signature-optima {
+    padding: 8px;
+}
+
+.title-signature-dark-blue {
+    background: rgba(153, 192, 220, 0.2);
+    color: #1e4165;
+}
+
+.title-signature-green {
+    background: rgba(164, 238, 202, 0.2);
+    color: $primary-color-freedom;
+}
+
+.section-title {
+    font-weight: 600;
+    font-size: $primary-title-font-size;
+    line-height: $primary-title-line-height;
+}
+
+.section-subtitle {
+    line-height: $secondary-line-height;
+    color: $secondary-color;
+}
+
+.button {
+    display: inline-block;
+    text-align: center;
+    padding: 15px 25px;
+    min-width: 175px;
+    border: none;
+    font-size: $primary-font-size;
+    font-weight: 600;
+    line-height: $secondary-line-height;
+    border-radius: 4px;
+    background-color: $primary-color-main;
+    color: $primary-color-bg;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+
+    &:hover {
+        background-color: #1ea7ff;
+    }
+
+    &:active {
+        background-color: #0075da;
+    }
+}
+
+.button-orange {
+    background-color: $primary-color-bg;
+    color: $primary-color-kr;
+    transition: 0.3s ease-out;
+
+    &:hover {
+        background-color: $primary-color-kr;
+        color: $primary-color-bg;
+    }
+
+    &:active {
+        background-color: #cf622c;
+    }
+}
+
+.button-blue {
+    background-color: $primary-color-bg;
+    color: $primary-color-kz;
+
+    &:hover {
+        background-color: $primary-color-kz;
+        color: $primary-color-bg;
+    }
+
+    &:active {
+        background-color: #267995;
+    }
+}
+
+.button-dark-blue {
+    background-color: $primary-color-bg;
+    color: #1e4165;
+
+    &:hover {
+        background-color: #1e4165;
+        color: $primary-color-bg;
+    }
+
+    &:active {
+        background-color: #267995;
+    }
+}
+
+.button-green {
+    background-color: $primary-color-bg;
+    color: $primary-color-freedom;
+
+    &:hover {
+        background-color: $primary-color-freedom;
+        color: $primary-color-bg;
+    }
+
+    &:active {
+        background-color: #15772b;
+    }
+}
+
+.button-iin {
+    border: none;
+    background-color: $primary-color-bg;
+    color: #76a0b7;
+    transition: background-color 0.3s ease-out, color 0.3s ease-out;
+
+    &:hover {
+        background-color: $primary-color-main;
+        color: $primary-color-bg;
+    }
+
+    &:active {
+        background-color: #0075da;
+    }
+}
+
+.buttonV2 {
+    display: inline-block;
+    text-align: center;
+    padding: 13px 26px;
+    border: 2px solid rgba(168, 184, 197, 0.2);
+    border-radius: 4px;
+    font-size: $primary-font-size;
+    font-weight: 600;
+    line-height: $secondary-line-height;
+    background-color: transparent;
+    color: $secondary-color;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+
+    &:hover {
+        border-color: $primary-color-bg;
+        background-color: $primary-color-bg;
+        color: $primary-color-main;
+    }
+
+    &:active {
+        border-color: $primary-color-main;
+        background-color: $primary-color-main;
+        color: $primary-color-bg;
+    }
+}
+
+.buttonV2-orange {
+    transition: 0.3s ease-out;
+
+    &:hover {
+        color: $primary-color-kr;
+    }
+
+    &:active {
+        border-color: $primary-color-kr;
+        background-color: $primary-color-kr;
+        color: $primary-color-bg;
+    }
+}
+
+.buttonV2-blue {
+    &:hover {
+        color: $primary-color-kz;
+    }
+
+    &:active {
+        border-color: $primary-color-kz;
+        background-color: $primary-color-kz;
+        color: $primary-color-bg;
+    }
+}
+
+.button-dark-blueV2 {
+    background-color: #1e4165;
+
+    &:hover {
+        background-color: $primary-color-kz;
+    }
+
+    &:active {
+        border-color: #0a2d51;
+        background-color: #0a2d51;
+    }
+}
+
+.button-greenV2 {
+    margin-top: 80px;
+    background-color: $primary-color-freedom;
+    color: $primary-color-bg;
+
+    &:hover {
+        background-color: #47a95d;
+    }
+
+    &:active {
+        border-color: #15772b;
+        background-color: #15772b;
+    }
+}
+
+.buttonV2-iin {
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 4px;
+    border-color: rgba(255, 255, 255, 0.2);
+    color: $primary-color-bg;
+    transition: background-color 0.3s ease-out, border-color 0.3s ease-out, color 0.3s ease-out;
+
+    &:hover {
+        border-color: $primary-color-bg;
+        background-color: $primary-color-bg;
+        color: #76a0b7;
+    }
+
+    &:active {
+        border-color: $primary-color-main;
+        background-color: $primary-color-main;
+        color: $primary-color-bg;
+    }
+}
+
+.button-country {
+    display: inline-block;
+    text-align: center;
+    padding: 15px 24px;
+    min-width: 175px;
+    border: none;
+    font-size: $primary-font-size;
+    font-weight: 600;
+    line-height: $secondary-line-height;
+    border-radius: 4px;
+    background-color: $primary-color-bg;
+    color: $primary-color;
+    cursor: pointer;
+    transition: 0.3s ease-out, color 0.3s ease-out;
+
+    &:hover {
+        color: $primary-color-main;
+    }
+
+    &:active {
+        background-color: $primary-color-main;
+        color: $primary-color-bg;
+    }
+}
+
+.button-country-blue {
+    color: #4497b3;
+
+    &:hover {
+        color: $primary-color-bg;
+        background-color: #6ebce6;
+    }
+
+    &:active {
+        background-color: #5aa8d2;
+    }
+}
+
+.button-download {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 15px 30px;
+    gap: 12px;
+    min-width: 175px;
+    font-size: $primary-font-size;
+    font-weight: 600;
+    line-height: $secondary-line-height;
+    border: none;
+    border-radius: 4px;
+    background-color: $primary-color-bg;
+    color: #76a0b7;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+
+    & svg path {
+        transition: stroke 0.3s ease-out;
+    }
+
+    &:hover svg path {
+        stroke: $primary-color-bg;
+    }
+
+    &:hover {
+        background-color: $primary-color-main;
+        color: $primary-color-bg;
+    }
+
+    &:active {
+        background-color: #0075da;
+        color: $primary-color-bg;
+    }
+}
+
+.button-download-orange {
+    background-color: $primary-color-bg;
+    color: $primary-color-kr;
+
+    & svg path {
+        stroke: $primary-color-kr;
+        transition: stroke 0.3s ease-out;
+    }
+
+    &:hover svg path {
+        stroke: $primary-color-bg;
+    }
+
+    &:hover {
+        background-color: $primary-color-kr;
+        color: $primary-color-bg;
+    }
+
+    &:active {
+        background-color: #cf622c;
+        color: $primary-color-bg;
+    }
+}
+
+.button-download-blue {
+    color: $primary-color-kz;
+
+    & svg path {
+        stroke: $primary-color-kz;
+        transition: stroke 0.3s ease-out;
+    }
+
+    &:hover svg path {
+        stroke: $primary-color-bg;
+    }
+
+    &:hover {
+        background-color: $primary-color-kz;
+        color: $primary-color-bg;
+    }
+
+    &:active {
+        background-color: #267995;
+        color: $primary-color-bg;
+    }
+}
+
+.button-download-dark-blue {
+    background-color: $primary-color-bg;
+    color: #1e4165;
+
+    & svg path {
+        stroke: #1e4165;
+        transition: stroke 0.3s ease-out;
+    }
+
+    &:hover svg path {
+        stroke: $primary-color-bg;
+    }
+
+    &:hover {
+        background-color: #7ba5bc;
+        color: $primary-color-bg;
+    }
+
+    &:active {
+        background-color: #0a2d51;
+        color: $primary-color-bg;
+    }
+}
+
+.button-download-green {
+    background-color: $primary-color-bg;
+    color: $primary-color-freedom;
+
+    & svg path {
+        stroke: $primary-color-freedom;
+        transition: stroke 0.3s ease-out;
+    }
+
+    &:hover svg path {
+        stroke: $primary-color-bg;
+    }
+
+    &:hover {
+        background-color: #47a95d;
+        color: $primary-color-bg;
+    }
+
+    &:active {
+        background-color: #15772b;
+        color: $primary-color-bg;
+    }
+}
+
+.button-orangev2 {
+    background-color: $primary-color-kr;
+    color: $primary-color-bg;
+    transition: 0.3s ease-out;
+
+    &:hover {
+        color: $primary-color-bg;
+        background-color: #f78a54;
+    }
+
+    &:active {
+        background-color: #cf622c;
+    }
+}
+
+.button-bluev2 {
+    background-color: $primary-color-kz;
+    color: $primary-color-bg;
+
+    &:hover {
+        color: $primary-color-bg;
+        background-color: #58abc7;
+    }
+
+    &:active {
+        background-color: #267995;
+    }
+}
