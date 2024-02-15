@@ -1,0 +1,45 @@
+.accordion {
+
+  // .accordion__item
+  &__item {
+    /** Установить свои значения */
+    transition: var(--bs-transition);
+
+    &:not(:first-of-type) {
+      border-top: 0;
+    }
+
+    &.open {
+
+      .accordion__header {
+        /** Установить свои значения */
+
+        & .icon--arrow-footer {
+          transform: rotate(180deg);
+        }
+      }
+
+      .accordion__content {
+        height: max-content;
+
+        /** Установить свои значения */
+        padding-bottom: 24px;
+      }
+    }
+  }
+
+  // .accordion__header
+  &__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+
+  // .accordion__content
+  &__content {
+    height: 0;
+    overflow: hidden;
+  }
+}

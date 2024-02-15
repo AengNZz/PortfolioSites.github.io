@@ -1,0 +1,113 @@
+// $mainOffset: 24; // отступы безопасности для контейнера
+// $maxWidth: 1920; // максимальная ширина страницы
+// $minWidth: 320; // минимальная ширина телефона
+// $containerWidth: 1120; // ширина контейнера из макета
+// $maxWidthContainer: $containerWidth + ($mainOffset * 2); // ширина контейнера с учетом padding слева и справа
+
+$headerHeight: 144;
+$footerHeight: 368;
+
+//radius
+$-radius-tiny: 8px;
+$-radius-small: 16px;
+$-radius-medium: 24px;
+$-radius-very-medium: 32px;
+$-radius-min-big: 48px;
+$-radius-big: 64px;
+$-radius-min-huge: 80px;
+$-radius-huge: 90px;
+$-radius-very-huge: 100px;
+
+
+:root {
+  //font
+  --bs-font-family: 'Nunito', sans-serif; // Семейство шрифта по умолчанию
+  --bs-font-size: 16px; // Размер шрифта по умолчанию
+  --bs-font-weight: 600; // Жирность шрифта по умолчанию
+  --bs-line-height: 1; // Базовая высота шрифта
+  --bs-transition: .3s ease-in-out;
+  --bs-font-size-small: 14px;
+
+  //borders
+  --border-default: 1px solid rgba(255, 255, 255, 0.1);
+  --border-translucent: 1px solid rgba(255, 255, 255, 0.2);
+  --border-light-translucent: 1px solid rgba(255, 255, 255, 0.3);
+  --border-light-translucent-two: 2px solid rgba(255, 255, 255, 0.7);
+  --border-warning-notice: 1px solid rgba(255, 255, 255, 0.10);
+  --border-light-table: 1px solid rgba(119, 126, 144, 30%);
+  --border-translucent-btn: 2px solid #e6e8ec;
+  --border-explore: 2px solid #353945;
+  --border-table: 1px solid #23262f;
+  --border-gradient: 2px solid transparent;
+  --border-blue: 2px solid #4355bf;
+
+  //colors
+  --accent-color: #4355bf;
+  --accent-color-hover: #3347bd;
+  --accent-color-two: #45b26b;
+  --primary-color: rgba(255, 255, 255, 0.8);
+  --primary-hover-color: #2d2d2d;
+  --secondary-color: #fcfcfd;
+  --dark-color: rgba(255, 255, 255, 0.1);
+  --dark-color-two: rgba(255, 255, 255, 0.2);
+  --light-color: #fff;
+  --light-color-two: #f4f5f6;
+  --light-translucent: rgba(255, 255, 255, 0.05);
+  --light-translucent-two: rgba(255, 255, 255, 0.6);
+  --light-translucent-three: rgba(255, 255, 255, 0.7);
+  --light-no-translucent: #1c1f24;
+  --black-color: #101318;
+  --bright-gray: #777e91;
+  --bright-gray-two: #627293;
+  --blue-gray: #353945;
+  --blue-light-gray: #c8ceda;
+  --blue-dark-gray: #777e90;
+  --blue-light-color: #292e3d;
+  --blue-dark-color: #212434;
+  --blue-dark-color-two: #23262f;
+
+  //gradient 
+  --gradient-classic: linear-gradient(267.64deg, #FF35D3 -9.03%, #5E2EE6 46.12%, #26C3CD 104.74%);
+  --gradient-classic-translucent:
+    linear-gradient(267.64deg, rgba(255, 53, 211, 0.5) -9.03%, rgba(94, 46, 230, 0.5) 46.12%, rgba(38, 195, 205, 0.5) 104.74%);
+  --gradient-classic-bluish: linear-gradient(88deg, #394FCF -14.46%, rgba(123, 40, 245, 0.97) 103.35%);
+  --gradient-classic-colder: linear-gradient(268deg, #FF35D3 -200%, #5E2EE6 -100%, #26C3CD 100%);
+  --gradient-accent: linear-gradient(88.39deg, #394FCF -14.46%, rgba(123, 40, 245, 0.971354) 103.35%);
+
+}
+
+//shadow
+// --bs-shadow: 0px 2px 3px rgba(#000, 10%), 0px 8px 3px rgba(#000, 10%);
+// --hover-shadow: 0 0 5px 0 rgba(#000, 10%),
+//                 0 0 10px 0 rgba(#000, 10%),
+//                 0 0 15px 0 rgba(#000, 10%);
+
+/*
+
+/ header: 14 14 14 ; 600 600 600 ;
+/ уведомление: 14 14 ; 700 700 
+/ Intro: 16 / 64 / 16 16 16 / 14 / 16 ; 900 / 800 / 600 600 / 700 700 700 ;
+/ Chose: 40 / 16 16 / 13 / 14 / 16 ; 800 / 600 / 400 / 700 / 400 / 500 / 700 ; 
+/ Run-stroke: 40 ; 600 ;
+/ Trainers: 48 / 16 / 14 / 16 / 14 ; 800 / 600 600 / 700 700 / 400 ; 
+/ Plan: 64 / 24 / 16 ; 800 / 600 / 400 / 700 ;
+/ ChosePlan: 16 / 64 / 16 / 14 / 24 / 48 / 12 12 / 16 / 16 ; 600 / 700 / 400 400 / 700 / 600 / 700;
+/ Footer: 14 / 12 ; 700 / 400 / 600;
+
+*/
+
+//12: x3
+//13: x1
+//14: x14;
+//16: x16; -
+//24: x2
+//40: x2
+//48: x1
+//64: x2
+
+//400: x7
+//500: x1
+//600: x13 -
+//700: x14
+//800: x4
+//900: x1

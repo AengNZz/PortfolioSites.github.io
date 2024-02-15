@@ -1,0 +1,70 @@
+<section class="choose-training">
+  <div class="choose-training__container">
+    <div class="choose-training__img-wrapper">
+      <img class="choose-training__img" src="./images/choose-training.webp" alt="">
+    </div>
+    <div class="choose-training__box">
+      <h2 class="choose-training__title choose-training__title--font-big">
+        <span class="decor--text">Choose</span> training level
+      </h2>
+      <p class="choose-training__text">
+        Track your workouts, get better results, and be the best version of you.
+        Less thinking, more lifting.
+      </p>
+      <form action="choose-training-level" class="choose-training__form">
+        <div class="choose-training__cards">
+          <!-- plan-1 -->
+          <input class="choose-training__checkbox-input" id="plan-1" type="radio" name="plan" value="plan-1">
+          <label class="choose-training__checkbox" for="plan-1">
+            <span class="choose-training__checkbox-box"></span>
+            <span class="choose-training__checkbox-content">
+              <span class="choose-training__checkbox-title">Workout name</span>
+              <span class="choose-training__checkbox-text">I want to start training</span>
+            </span>
+          </label>
+          <!-- plan-2 -->
+          <input class="choose-training__checkbox-input" id="plan-2" type="radio" name="plan" value="plan-2" checked>
+          <label class="choose-training__checkbox" for="plan-2">
+            <span class="choose-training__checkbox-box"></span>
+            <span class="choose-training__checkbox-content">
+              <span class="choose-training__checkbox-title">Irregular training</span>
+              <span class="choose-training__checkbox-text">I train 1-2 times a week</span>
+            </span>
+          </label>
+          <!-- plan-3 -->
+          <input class="choose-training__checkbox-input" id="plan-3" type="radio" name="plan" value="plan-3">
+          <label class="choose-training__checkbox" for="plan-3">
+            <span class="choose-training__checkbox-box"></span>
+            <span class="choose-training__checkbox-content">
+              <span class="choose-training__checkbox-title">Workout name</span>
+              <span class="choose-training__checkbox-text">I train 3-5 times a week</span>
+            </span>
+          </label>
+          <!-- plan-4 -->
+          <input class="choose-training__checkbox-input" id="plan-4" type="radio" name="plan" value="plan-4">
+          <label class="choose-training__checkbox" for="plan-4">
+            <span class="choose-training__checkbox-box"></span>
+            <span class="choose-training__checkbox-content">
+              <span class="choose-training__checkbox-title">Workout name</span>
+              <span class="choose-training__checkbox-text">I train more than 5 times a week</span>
+            </span>
+          </label>
+        </div>
+        <div class="choose-training__wrapper">
+          <p class="choose-training__reminder">
+            <span class="selection-text--gradient">10% Discount</span> if you’re already
+            using the <span class="selection-text--light">Fitness Emotion</span> on App Store
+          </p>
+          <div class="choose-training__button-wrapper">
+            <button class="choose-training__button button--with-background">
+              Book a class
+              <svg class="icon--arrow-two">
+                <use xlink:href="#icon__arrow-two"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

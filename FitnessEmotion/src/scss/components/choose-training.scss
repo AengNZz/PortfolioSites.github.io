@@ -1,0 +1,451 @@
+.choose-training {
+  margin-top: 136px;
+
+  @include media-mx(1024) {
+    margin-top: 96px;
+  }
+
+  @include media-mx(420) {
+    margin-top: 82px;
+  }
+
+  @include media-mx(390) {
+    margin-top: 62px;
+  }
+
+  &__container {
+    position: relative;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+
+    @include media-mx(820) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__img-wrapper {
+    position: relative;
+    min-width: 544px;
+    min-height: 760px;
+
+    @include media-mx(1280) {
+      min-width: 400px;
+      min-height: 665px;
+    }
+
+    @include media-mx(1024) {
+      min-width: 295px;
+      min-height: 665px;
+    }
+
+    @include media-mx(820) {
+      min-width: 100%;
+      min-height: 555px;
+      order: 2;
+    }
+
+    @include media-mx(768) {
+      min-height: 500px;
+    }
+
+    @include media-mx(420) {
+      min-width: 100%;
+      min-height: 396px;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    top: -170px;
+    left: -160px;
+    width: 167%;
+    @include remove-selection;
+
+    @include media-mx(1280) {
+      top: -98px;
+      left: -92px;
+      width: 212%;
+    }
+
+    @include media-mx(1024) {
+      top: -66px;
+      left: -102px;
+      width: 230%;
+    }
+
+    @include media-mx(820) {
+      top: -12%;
+      left: 54%;
+      transform: translateX(-50%);
+      width: 90%;
+    }
+
+    @include media-mx(420) {
+      top: -14%;
+      left: 56%;
+      transform: translateX(-50%);
+      width: 133%;
+    }
+
+    @include media-mx(390) {
+      top: -10%;
+    }
+  }
+
+  &__box {
+    position: relative;
+    padding: 48px;
+    min-width: 544px;
+    background: var(--gradient-classic);
+    border: 0;
+    border-radius: $-radius-very-medium;
+    z-index: 1;
+    overflow: hidden;
+
+    @include media-mx(1280) {
+      padding: 42px 42px 48px 42px;
+      min-width: 490px;
+    }
+
+    @include media-mx(1024) {
+      padding: 32px 32px 48px 32px;
+      min-width: 320px;
+    }
+
+    @include media-mx(820) {
+      padding: 30px 30px 44px 30px;
+      min-width: 540px;
+    }
+
+    @include media-mx(768) {
+      min-width: 500px;
+    }
+
+    @include media-mx(420) {
+      min-width: 100%;
+      padding: 38px 28px;
+    }
+
+    @include media-mx(390) {
+      padding: 35px 24px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(28, 31, 36, 0.8);
+      z-index: -1;
+    }
+
+    &::after {
+      --border-width: 1px;
+
+      position: absolute;
+      top: var(--border-width);
+      left: var(--border-width);
+      content: "";
+      display: block;
+      width: calc(100% - calc(var(--border-width) * 2));
+      height: calc(100% - calc(var(--border-width) * 2));
+      background-color: var(--light-no-translucent);
+      border-radius: calc($-radius-very-medium - var(--border-width));
+      z-index: -1;
+
+      @include media-mx(1024) {
+        border-radius: calc($-radius-very-medium - var(--border-width));
+      }
+    }
+  }
+
+  &__title {
+    position: relative;
+    width: 100%;
+    line-height: 56px;
+
+    @include media-mx(1024) {
+      line-height: 54px;
+    }
+
+    @include media-mx(820) {
+      line-height: 37px;
+      max-width: 220px;
+    }
+
+    @include media-mx(420) {
+      line-height: 38px;
+      letter-spacing: -0.64px
+    }
+
+    @include media-mx(390) {
+      line-height: 38px;
+      letter-spacing: -0.64px
+    }
+
+
+    .decor--text {
+      &::after {
+        position: absolute;
+        content: "";
+        left: -2px;
+        top: 49%;
+        width: 105%;
+        height: 18px;
+
+        @include media-mx(1280) {
+          top: 47%;
+        }
+
+        @include media-mx(1024) {
+          top: 46%;
+        }
+
+        @include media-mx(820) {
+          top: 52%;
+          height: 14px;
+        }
+
+        @include media-mx(420) {
+          top: 55%;
+          height: 12px;
+        }
+
+        @include media-mx(390) {
+          top: 54%;
+          height: 12px;
+        }
+      }
+    }
+  }
+
+  &__text {
+    max-width: 448px;
+    margin-top: 12px;
+    font-weight: 400;
+    line-height: 22px;
+    color: var(--primary-color);
+
+    @include media-mx(1280) {
+      max-width: 435px;
+    }
+
+    @include media-mx(1024) {
+      margin-top: 10px;
+      max-width: 350px;
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    @include media-mx(820) {
+      max-width: 340px;
+    }
+
+    @include media-mx(420) {
+      margin-top: 13px;
+      font-size: 16px;
+    }
+
+    @include media-mx(390) {
+      line-height: 20px;
+      font-size: 14px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__wrapper {
+    margin-top: 20px;
+    border-top: var(--border-translucent);
+
+    @include media-mx(1024) {
+      margin-top: 16px;
+    }
+  }
+
+  &__reminder {
+    margin-top: 8px;
+    max-width: 380px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--bright-gray);
+
+    @include media-mx(1024) {
+      max-width: 355px;
+    }
+
+    @include media-mx(420) {
+      max-width: 300px;
+    }
+  }
+
+  &__button-wrapper {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+  }
+
+  &__button {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 20px;
+    gap: 12px;
+
+    @include media-mx(1024) {
+      margin-top: 19px;
+    }
+
+    @include media-mx(420) {
+      justify-content: center;
+      width: 100%;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+    gap: 8px;
+
+    @include media-mx(1024) {
+      margin-top: 24px;
+    }
+
+    @include media-mx(820) {
+      margin-top: 20px;
+    }
+
+    @include media-mx(420) {
+      margin-top: 24px;
+    }
+
+    @include media-mx(390) {
+      margin-top: 16px;
+    }
+  }
+
+  &__checkbox {
+    position: relative;
+    padding: 22px;
+    width: 100%;
+
+    background: var(--dark-color);
+    border: 0;
+
+    transition: background var(--bs-transition);
+
+
+    @include media-mx(1024) {
+      padding: 15px;
+    }
+
+    @include media-mx(420) {
+      padding: 16px;
+    }
+
+    @include media-mx(390) {
+      padding: 11px;
+    }
+
+    &::after {
+      --border-width: 1px;
+
+      position: absolute;
+      top: var(--border-width);
+      left: var(--border-width);
+      content: "";
+      display: block;
+      width: calc(100% - calc(var(--border-width) * 2));
+      height: calc(100% - calc(var(--border-width) * 2));
+      background-color: var(--light-no-translucent);
+      border-radius: calc($-radius-medium - var(--border-width));
+      z-index: -1;
+
+      @include media-mx(1024) {
+        border-radius: calc(22px - var(--border-width));
+      }
+    }
+
+
+    border-radius: $-radius-medium;
+    z-index: 1;
+    cursor: pointer;
+
+    @include media-mx(1024) {
+      border-radius: 22px;
+    }
+  }
+
+  &__checkbox-input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+
+    &:checked+.choose-training__checkbox {
+      background: var(--gradient-classic);
+      border: 0;
+
+      &::after {
+        --border-width: 1px;
+
+        position: absolute;
+        top: var(--border-width);
+        left: var(--border-width);
+        content: "";
+        display: block;
+        width: calc(100% - calc(var(--border-width) * 2));
+        height: calc(100% - calc(var(--border-width) * 2));
+        background-color: var(--light-no-translucent);
+        border-radius: calc($-radius-medium - var(--border-width));
+        z-index: -1;
+
+        @include media-mx(1024) {
+          border-radius: calc(22px - var(--border-width));
+        }
+      }
+    }
+  }
+
+  &__checkbox-box {
+    visibility: hidden;
+  }
+
+  &__checkbox-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 4px;
+    width: 100%;
+    @include remove-selection;
+  }
+
+  &__checkbox-title {
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0.066px;
+
+    @include media-mx(420) {
+      font-weight: 600;
+    }
+  }
+
+  &__checkbox-text {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.066px;
+    color: var(--bright-gray-two);
+  }
+}

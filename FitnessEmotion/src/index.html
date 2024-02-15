@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+'title': 'Главная'
+})
+
+<body>
+  @@include('html/icons.html')
+
+  <div class="wrapper">
+    @@include('html/header.html')
+
+    <main class="page">
+      <div data-observ></div>
+      
+      @@include('html/intro.html')
+      @@include('html/choose-training.html')
+
+      @@include('html/ticker.html')
+
+      @@include('html/create-plan.html')  
+      @@include('html/choose-plan.html')
+    </main>
+
+    @@include('html/footer.html')
+  </div>
+
+  <!-- @@include('html/popupExample.html') -->
+  @@include('html/script.html')
+</body>
+
+</html>

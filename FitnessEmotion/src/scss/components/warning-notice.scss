@@ -1,0 +1,157 @@
+.warning-notice__wrapper {
+  position: absolute;
+  top: 172px;
+  right: 15.5%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 20;
+
+  @include media-mx(1660) {
+    right: 10.4%;
+  }
+
+  @include media-mx(1440) {
+    right: 0.8%;
+  }
+
+  @include media-mx(1280) {
+    top: 145px;
+    right: 2%;
+  }
+
+  @include media-mx(1024) {
+    top: 95px;
+  }
+
+  @include media-mx(820) {
+    right: 24px;
+  }
+
+  @include media-mx(420) {
+    position: static;
+    width: 100%;
+  }
+
+  @include media-mx(390) {
+    top: 94px;
+    right: 0;
+    width: 102.4%;
+  }
+}
+
+.warning-notice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -10px;
+  padding: 15px 14px;
+  min-width: 492px;
+  background-color: var(--blue-dark-color);
+  border-radius: $-radius-tiny;
+  border: var(--border-warning-notice);
+  transition: all var(--bs-transition);
+  transform: translateX(5%);
+  opacity: 0;
+  z-index: -20;
+
+  @include media-mx(1280) {
+    top: 140px;
+    right: 20px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+
+  @include media-mx(1024) {
+    top: 88px;
+  }
+
+  @include media-mx(820) {
+    top: 85px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-width: 450px;
+  }
+
+  @include media-mx(768) {
+    min-width: 400px;
+  }
+
+  @include media-mx(420) {
+    display: none;
+    min-width: 100%;
+  }
+
+  &:last-child {
+    margin-bottom: 32px;
+  }
+
+  &.active {
+    transform: translateX(0);
+    opacity: 1;
+    z-index: 5;
+
+    @include media-mx(420) {
+      display: flex;
+    }
+  }
+
+  &__content {
+    margin-right: 40px;
+
+    @include media-mx(420) {
+      margin-right: 10px;
+    }
+
+    span {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: -0.05px;
+      line-height: 20px;
+      color: var(--light-color-two);
+
+      &::before {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-image: url("../images/information-circle-contained-filled.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+
+        @include media-mx(1024) {
+          width: 18px;
+          height: 18px;
+        }
+      }
+    }
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    @include media-mx(420) {
+      gap: 6px;
+    }
+  }
+
+  &__link {
+    font-size: 14px;
+    text-decoration: underline;
+    color: var(--accent-color);
+    text-wrap: nowrap;
+  }
+
+  &__close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+  }
+}

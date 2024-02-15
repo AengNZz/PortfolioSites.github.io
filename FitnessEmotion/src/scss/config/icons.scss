@@ -1,0 +1,100 @@
+.icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--bright-gray);
+  transition: fill var(--bs-transition);
+
+  @include media-mx(1280) {
+    width: 18px;
+    height: 18px;
+  }
+
+  &--arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -3px;
+    width: 24px;
+    height: 24px;
+    fill: #c8ceda;
+
+    @include media-mx(1280) {
+      width: 22px;
+      height: 22px;
+    }
+
+    @include media-mx(1024) {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &--arrow-mobile {
+    width: 32px;
+    height: 32px;
+    fill: var(--bright-gray);
+  }
+
+  &--arrow-two {
+    width: 16px;
+    height: 16px;
+  }
+
+  &--arrow-explore {
+    width: 24px;
+    height: 24px;
+    transform: rotate(90deg);
+    fill: var(--bright-gray);
+    transition: fill var(--bs-transition);
+  }
+
+  &--arrow-footer {
+    width: 24px;
+    height: 24px;
+    transition: transform var(--bs-transition);
+    fill: var(--light-color);
+    opacity: 0.7;
+  }
+
+  &--close {
+    width: 24px;
+    height: 24px;
+  }
+
+  &--input-btn {
+    width: 32px;
+    height: 32px;
+  }
+
+  &--exclamatory {
+    width: 24px;
+    height: 24px;
+
+    @include media-mx(820) {
+      margin-right: 10px;
+    }
+
+    &:hover+.tooltip {
+      opacity: 1;
+      visibility: visible;
+      z-index: 1;
+    }
+  }
+
+  &--check-mark {
+    width: 24px;
+    height: 24px;
+  }
+
+  &--minus {
+    width: 24px;
+    height: 24px;
+  }
+
+  &--footer {
+    width: 20px;
+    height: 20px;
+    fill: var(--light-translucent-three);
+    transition: fill var(--bs-transition);
+  }
+}

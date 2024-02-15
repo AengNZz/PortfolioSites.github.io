@@ -1,0 +1,157 @@
+.ticker {
+  position: relative;
+  overflow: hidden;
+  padding: 100px 0;
+  width: 100%;
+
+  @include media-mx(1024) {
+    padding: 95px 0;
+  }
+
+  @include media-mx(820) {
+    padding: 70px 0;
+  }
+
+  @include media-mx(420) {
+    padding: 5 8px 0;
+  }
+
+  @include media-mx(390) {
+    padding: 38px 0;
+  }
+
+  &__wrapper {
+    position: relative;
+    left: -4%;
+    display: flex;
+    background: var(--gradient-classic-bluish);
+    width: 105%;
+
+    @include media-mx(820) {
+      left: -1%;
+    }
+
+    @include media-mx(420) {
+      left: -2.5%;
+    }
+
+    &--one {
+      position: relative;
+      top: 49px;
+      opacity: 30%;
+      transform: rotate(3deg);
+
+      .ticker__list {
+        animation: ticker 34s linear infinite;
+      }
+
+      @include media-mx(1280) {
+        top: 52px;
+      }
+
+      @include media-mx(1024) {
+        top: 55px;
+      }
+
+      @include media-mx(820) {
+        transform: rotate(5deg);
+      }
+
+
+      @include media-mx(420) {
+        top: 50px;
+        transform: rotate(6deg);
+      }
+    }
+
+    &--two {
+      position: relative;
+      bottom: 17px;
+      transform: rotate(-5deg);
+
+      .ticker__list {
+        animation: ticker 34s linear reverse infinite;
+      }
+
+      @include media-mx(1280) {
+        bottom: 22px;
+      }
+
+      @include media-mx(1024) {
+        bottom: 13px;
+      }
+
+      @include media-mx(820) {
+        bottom: 14px;
+        transform: rotate(-7deg);
+      }
+
+      @include media-mx(420) {
+        bottom: 12px;
+        transform: rotate(-9deg);
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    position: relative;
+    margin: 8px 0;
+    padding: 0 20px;
+    flex-shrink: 0;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 56px;
+    letter-spacing: -0.8px;
+    text-transform: uppercase;
+    white-space: nowrap;
+
+    @include media-mx(1280) {
+      font-size: 38px;
+    }
+
+    @include media-mx(1024) {
+      padding: 0 25px;
+      font-size: 32px;
+    }
+
+    @include media-mx(820) {
+      margin: 6px 0;
+      padding: 0 22px;
+    }
+
+    @include media-mx(420) {
+      margin: 2px 0;
+      padding: 0 20px;
+      font-size: 26px;
+      line-height: 56px;
+      letter-spacing: -0.56px;
+    }
+
+    &::after {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      content: "";
+      width: 1px;
+      height: 40px;
+      background-color: var(--dark-color-two);
+    }
+
+    @include remove-selection;
+  }
+}
+
+@keyframes ticker {
+  0% {
+    transform: translateZ(0);
+  }
+
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}

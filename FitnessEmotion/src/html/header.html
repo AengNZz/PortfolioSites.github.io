@@ -1,0 +1,74 @@
+@@include('./mobileMenu.html', {})
+<header class="header">
+  <div class="header__container">
+    <div class="header__left">
+      <a href="#" class="header__logo logo">
+        <img src="./images/logo.svg" alt="Fitness emotion">
+      </a>
+      <nav class="header__menu menu">
+        <ul class="menu__list">
+          <li class="menu__item"><a href="#" class="menu__link">Features</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Pricing</a></li>
+          <li class="menu__item menu__item-sublist">
+            <div class="menu__item-opening" data-dropdown-opener>
+              <span class="menu__link">Class</span>
+              <svg class="icon--arrow">
+                <use xlink:href="#icon__arrow"></use>
+              </svg>
+            </div>
+            <ul class="menu__sublist" data-dropdown>
+              <li class="menu__item"><a href="#" class="menu__link">Class</a></li>
+              <li class="menu__item"><a href="#" class="menu__link">Class</a></li>
+            </ul>
+          </li>
+          <li class="menu__item active"><a href="#" class="menu__link">Lifestyle</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__right">
+      <ul class="social__list">
+        <li class="social__item">
+          <a href="#" class="social__link">
+            <svg class="icon">
+              <use xlink:href="#icon__facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link">
+            <svg class="icon">
+              <use xlink:href="#icon__instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link">
+            <svg class="icon">
+              <use xlink:href="#icon__twitter"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <ul class="menu__list">
+        <li class="menu__item menu__item-sublist">
+          <button class="menu__lang-btn" data-dropdown-opener>
+            <span class="menu__lang-active" data-lang-active="en">En</span>
+            <svg class="icon--arrow">
+              <use xlink:href="#icon__arrow"></use>
+            </svg>
+          </button>
+          <ul class="menu__sublist" data-dropdown>
+            <li class="menu__item">
+              <button class="menu__lang-language" data-lang="en">En</button>
+            </li>
+            <li class="menu__item">
+              <button class="menu__lang-language" data-lang="ru">Ru</button>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <button class="menu__button button--gradient">Start now</button>
+    </div>
+    @@include('./iconMenu.html', {})
+  </div>
+</header>
